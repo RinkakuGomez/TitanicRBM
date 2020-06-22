@@ -270,13 +270,16 @@ class RBM:
         dW = tf.compat.v1.zeros_like((self.n_visible, self.n_hidden))
         dbh = tf.compat.v1.zeros_like((self.n_hidden))
         dbv = tf.compat.v1.zeros_like((self.n_visible))
-                    
-        #Shape para multiplicar
-        V0 = tf.reshape(V0, [self.n_visible, 1])
-        ph0 = tf.reshape(ph0, [1, self.n_hidden])
         
-        Vk = tf.reshape(Vk, [self.n_visible, 1])
-        phk = tf.reshape(phk, [1, self.n_hidden])
+        """
+        * Cambio en reshape 1 ---> self.batch_size
+        """            
+        #Shape para multiplicar
+        V0 = tf.reshape(V0, [self.n_visible, self.batch_size])
+        ph0 = tf.reshape(ph0, [self.batch_size, self.n_hidden])
+        
+        Vk = tf.reshape(Vk, [self.n_visible, self.batch_size])
+        phk = tf.reshape(phk, [self.batch_size, self.n_hidden])
         
         #Cal gradientes
         dW = tf.subtract(tf.matmul(V0, ph0),tf.matmul(Vk, phk))
