@@ -1,0 +1,122 @@
+Prueba Multi Entrenamiento
+	Valores de la red:
+		Num epoch: 1000		 LR: 0.1
+		Num visible: 3		 Num hidden: 6
+		Batch size: 16		 K: 1
+	Valor inicial pesos y bias
+		W, <tf.Variable 'weights:0' shape=(3, 6) dtype=float32, numpy=
+array([[-0.4096986 ,  0.2827673 , -1.3603694 ,  0.20320797, -0.24297741,
+         0.00873723],
+       [-0.7107911 , -1.2015446 ,  0.35264322,  0.24701431,  0.73984313,
+        -0.41561317],
+       [-0.14621286,  0.16800776,  0.45407635, -0.3337809 ,  0.575505  ,
+        -0.00284807]], dtype=float32)>
+		bias visible, <tf.Variable 'visible_bias:0' shape=(1, 3) dtype=float32, numpy=array([[0., 0., 0.]], dtype=float32)>
+		bias hidden, <tf.Variable 'hidden_bias:0' shape=(1, 6) dtype=float32, numpy=array([[0., 0., 0., 0., 0., 0.]], dtype=float32)>
+Valor final pesos y bias
+	W, <tf.Variable 'weights:0' shape=(3, 6) dtype=float32, numpy=
+array([[-0.71019566, -0.01773143, -1.6608684 , -0.09729077, -0.5434748 ,
+        -0.29176348],
+       [-1.0112841 , -1.5020437 ,  0.05214428, -0.05348434,  0.4393433 ,
+        -0.71611047],
+       [-0.44671246, -0.13249154,  0.15357678, -0.6342778 ,  0.27500674,
+        -0.30334887]], dtype=float32)>
+	bias visible, <tf.Variable 'visible_bias:0' shape=(1, 3) dtype=float32, numpy=array([[0.11250214, 0.11250214, 0.11250214]], dtype=float32)>
+	bias hidden, <tf.Variable 'hidden_bias:0' shape=(1, 6) dtype=float32, numpy=
+array([[-2.7234013, -2.7234013, -2.7234013, -2.7234013, -2.7234013,
+        -2.7234013]], dtype=float32)>
+
+
+	Distribución combinatoria Data set:
+		Dict Data set 
+	Número 110, distr: 52, probs: 0.05869074492099323
+		Dict Data set 
+	Número 010, distr: 404, probs: 0.45598194130925507
+		Dict Data set 
+	Número 111, distr: 182, probs: 0.2054176072234763
+		Dict Data set 
+	Número 101, distr: 51, probs: 0.05756207674943566
+		Dict Data set 
+	Número 011, distr: 82, probs: 0.09255079006772009
+		Dict Data set 
+	Número 000, distr: 59, probs: 0.06659142212189616
+		Dict Data set 
+	Número 001, distr: 27, probs: 0.030474040632054177
+		Dict Data set 
+	Número 100, distr: 29, probs: 0.0327313769751693
+
+
+	Distribución combinatoria Train set:
+		Dict Data Train 
+	Número 110, distr: 36, probs: 0.057692307692307696
+		Dict Data Train 
+	Número 010, distr: 283, probs: 0.453525641025641
+		Dict Data Train 
+	Número 111, distr: 127, probs: 0.20352564102564102
+		Dict Data Train 
+	Número 101, distr: 36, probs: 0.057692307692307696
+		Dict Data Train 
+	Número 011, distr: 57, probs: 0.09134615384615384
+		Dict Data Train 
+	Número 000, distr: 41, probs: 0.06570512820512821
+		Dict Data Train 
+	Número 001, distr: 19, probs: 0.030448717948717948
+		Dict Data Train 
+	Número 100, distr: 20, probs: 0.03205128205128205
+
+
+	Distribución combinatoria Recons Train:
+		Dict Recons Data Train 
+	Número 110, distr: 82, probs: 0.13141025641025642
+		Dict Recons Data Train 
+	Número 010, distr: 80, probs: 0.1282051282051282
+		Dict Recons Data Train 
+	Número 111, distr: 92, probs: 0.14743589743589744
+		Dict Recons Data Train 
+	Número 101, distr: 82, probs: 0.13141025641025642
+		Dict Recons Data Train 
+	Número 011, distr: 84, probs: 0.1346153846153846
+		Dict Recons Data Train 
+	Número 000, distr: 72, probs: 0.11538461538461539
+		Dict Recons Data Train 
+	Número 001, distr: 63, probs: 0.10096153846153846
+		Dict Recons Data Train 
+	Número 100, distr: 64, probs: 0.10256410256410256
+
+
+	Distribución combinatoria Test set:
+		Dict Data Test 
+	Número 110, distr: 16, probs: 0.058823529411764705
+		Dict Data Test 
+	Número 010, distr: 121, probs: 0.44485294117647056
+		Dict Data Test 
+	Número 111, distr: 55, probs: 0.20220588235294118
+		Dict Data Test 
+	Número 101, distr: 15, probs: 0.05514705882352941
+		Dict Data Test 
+	Número 011, distr: 25, probs: 0.09191176470588236
+		Dict Data Test 
+	Número 000, distr: 18, probs: 0.0661764705882353
+		Dict Data Test 
+	Número 001, distr: 8, probs: 0.029411764705882353
+		Dict Data Test 
+	Número 100, distr: 9, probs: 0.03308823529411765
+
+
+	Distribución combinatoria Recons Test:
+		Dict Recons Data Test 
+	Número 110, distr: 38, probs: 0.13970588235294118
+		Dict Recons Data Test 
+	Número 010, distr: 37, probs: 0.13602941176470587
+		Dict Recons Data Test 
+	Número 111, distr: 30, probs: 0.11029411764705882
+		Dict Recons Data Test 
+	Número 101, distr: 28, probs: 0.10294117647058823
+		Dict Recons Data Test 
+	Número 011, distr: 36, probs: 0.1323529411764706
+		Dict Recons Data Test 
+	Número 000, distr: 40, probs: 0.14705882352941177
+		Dict Recons Data Test 
+	Número 001, distr: 37, probs: 0.13602941176470587
+		Dict Recons Data Test 
+	Número 100, distr: 21, probs: 0.07720588235294118
