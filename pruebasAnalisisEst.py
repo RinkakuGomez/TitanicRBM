@@ -129,11 +129,6 @@ class PruebasEstadistica:
                     acc = tf.where(bool_mask, x=tf.abs(tf.subtract(v0,vk)), y=tf.zeros_like(v0))
                     #print('Precisión acc: {}'.format(acc))
                     n_values = tf.math.reduce_sum(mask)
-                    #print('Precisión n_values: {}'.format(n_values))
-                    
-                    #print('Precisión divide: {}'.format(tf.divide(tf.math.reduce_sum(acc), n_values)))
-                          
-                    #print('Precisión subtract: {}'.format(tf.subtract(1.0, tf.divide(tf.math.reduce_sum(acc), n_values))))
                     
                     accuracy_total += tf.subtract(1.0, tf.divide(tf.math.reduce_sum(acc), n_values))
                                                 
@@ -260,8 +255,8 @@ class PruebasEstadistica:
                     
                     #print('La época actual es: '+str(epoch))
                     
-                    j = 0 # batch ctrl
-                    accuracy_total = 0
+                    j = 1 # batch ctrl
+                    accuracy_batchTrain = 0
                     print('La época actual es: '+str(epoch))
                     file.write('Calculo precisión train:\n\n')
                     file.write('\tLa época actual es: '+str(epoch)+'\n')
@@ -269,16 +264,17 @@ class PruebasEstadistica:
                     #Inicio bucle batch
                     for batch_n in self.trainingData:
                         
+                        accuracy_dataTrain = 0
                         #Inicalización de los auxiliares de los diferenciales 
                         arr_dW = []
                         arr_dBh = []
                         arr_dBv = []
                                             
                         i = 1 # data ctrl
-                        
+
                         #Inicio bucle datos
                         for data_n in batch_n:                        
-                                                            
+                                                        
                             #Calculamos los diferenciales de los parámetros.
                             dW, dbh, dbv, v0, ph0, vk, phk = self.prueba.training(data_n)                                                
     
@@ -298,18 +294,20 @@ class PruebasEstadistica:
                             #print('Precisión acc: {}'.format(acc))
                             n_values = tf.math.reduce_sum(mask)
                             
-                            accuracy_total += tf.subtract(1.0, tf.divide(tf.math.reduce_sum(acc), n_values))
+                            accuracy_dataTrain += tf.subtract(1.0, tf.divide(tf.math.reduce_sum(acc), n_values))
                         
                             i += 1
-                            
+                        
+                        accuracy_batchTrain += accuracy_dataTrain/i   
                         j += 1
                                             
                         #Actualizamos los parámetros
                         self.prueba._updateParams(arr_dW, arr_dBh, arr_dBv)
-                    accuracy = accuracy_total/(j*i)
+
+                    accuracy_epochTrain = accuracy_batchTrain/j
                     
-                    print('Precisión training: {}'.format(accuracy))
-                    file.write('\t\tPrecisión training: {}\n'.format(accuracy))
+                    print('Precisión training: {}'.format(accuracy_epochTrain))
+                    file.write('\t\tPrecisión training: {}\n'.format(accuracy_epochTrain))
                         
                 file.write('\n\n\tValor inicial pesos y bias\n')
                 file.write("\t\tW, {}\n".format(pesos_init))
@@ -335,7 +333,16 @@ class PruebasEstadistica:
                 
                 #print('Inicio proceso test')
                 #Inicio bucle batch
+                j = 1 # batch ctrl
+                file.write('Calculo precisión test:\n\n')
+                
+                accuracy_batchTest = 0
+                
                 for batch_n in self.testData:
+                    
+                    i = 1 # data ctrl
+                    accuracy_dataTest = 0
+                    
                     #Inicio bucle data
                     for data_n in batch_n:
                         
@@ -352,7 +359,30 @@ class PruebasEstadistica:
                         for strg in self.arr_StringComb:
                             if(str_vNew == strg):
                                 probs_dictTest[strg] += 1
-                
+                        
+                        #Inicialización de la máscara 
+                        mask = tf.where(tf.less(data_n,0.0), x=tf.zeros_like(data_n), y=tf.ones_like(data_n))
+                        #print('Precisión mask: {}'.format(mask))
+                        bool_mask = tf.cast(mask, dtype=tf.bool)
+                        #print('Precisión bool mask: {}'.format(bool_mask))
+                        
+                        #Calculo de accuracy
+                        acc = tf.where(bool_mask, x=tf.abs(tf.subtract(data_n,v_)), y=tf.zeros_like(data_n))
+                        #print('Precisión acc: {}'.format(acc))
+                        n_values = tf.math.reduce_sum(mask)
+                        
+                        accuracy_dataTest += tf.subtract(1.0, tf.divide(tf.math.reduce_sum(acc), n_values))
+                        
+                        i += 1
+                    
+                    accuracy_batchTest += accuracy_dataTest/i        
+                    j += 1
+                    
+                    accuracy_test = accuracy_batchTest/j
+                    
+                    print('Precisión test: {}'.format(accuracy_test))
+                    file.write('\t\tPrecisión test: {}\n'.format(accuracy_test))
+                    
                 for batch_n in self.trainingData:
                     #Inicio bucle data
                     for data_n in batch_n:
