@@ -27,8 +27,8 @@ class PruebasEstadistica:
         #arr_fieldString = ['Sex','Age','Survived']
         
         #Titanic dataset 1300
-        nameCSV = 'Titanic1300.csv'
-        input_data = self._readCSVdata(nameCSV, arr_fieldString)
+        self.nameCSV = 'Titanic1300.csv'
+        input_data = self._readCSVdata(self.nameCSV, arr_fieldString)
         
         #Titanic dataset 886
         #nameCSV = 'TitanicSex.csv'
@@ -480,6 +480,51 @@ class PruebasEstadistica:
             print('Número '+key+', probs: '+str(prob))
             
         return ''
+    
+    
+    def prueba_ClassInput(self):
+        
+        with open(self.nameCSV, 'r') as csvfile:
+            csvreader = csv.DictReader(csvfile)
+            
+            dictClass = {}
+            dictClassSurv = {}
+            dictClassMuerte = {}
+            
+            dictClass['1st'] = 0
+            dictClass['2nd'] = 0
+            dictClass['3rd'] = 0
+            
+            dictClassSurv['1st'] = 0
+            dictClassSurv['2nd'] = 0
+            dictClassSurv['3rd'] = 0
+            
+            dictClassMuerte['1st'] = 0
+            dictClassMuerte['2nd'] = 0
+            dictClassMuerte['3rd'] = 0
+            
+            for row in csvreader:
+                
+                dictClass[str(row['PClass'])] += 1 
+                
+                print('survived: '+str(row['Survived']))
+                if(int(row['Survived']) == 0):
+                    dictClassMuerte[row['PClass']] += 1
+       
+                elif(int(row['Survived']) == 1):
+                    dictClassSurv[row['PClass']] += 1
+                else:
+                    print('aaaaa')
+                
+            for key, prob in dictClass.items():
+                print('Clase '+key+', probs: '+str(prob))
+            for key, prob in dictClassMuerte.items():
+                print('Clase '+key+' ratio muerte: '+str(prob))
+            for key, prob in dictClassSurv.items():
+                print('Clase '+key+' ratio survi: '+str(prob))
+            
+                                
+            return ''
     """            
     Métodos AUX
     """
@@ -560,6 +605,7 @@ class PruebasEstadistica:
                 auxSex = 0
                 auxAge = 0
                 auxSurvived = 0
+                auxClass = 0
                 
                 for key in arr_fieldString:
                     if(key == 'Age'):
@@ -583,8 +629,15 @@ class PruebasEstadistica:
                             auxSex = 1
                         else:
                             auxSex = 0
+                    elif(key == 'PClass'):
+                        if(row[key] == '1st'):
+                            auxClass = 1
+                        elif(row[key] == '2nd'):
+                            auxClass = 0
+                        elif(row[key] == '3rd'):
+                            auxClass = 0
                         
-                dataSet.append([auxSex,auxAge,auxSurvived])
+                dataSet.append([auxSex,auxAge,auxClass,auxSurvived])
                     
             return np.array(dataSet, np.float32)
         
@@ -599,7 +652,7 @@ class PruebasEstadistica:
                
                 
                 # Almacenamos en el array las combinaciones de v
-                if(len(comb) < 8):
+                if(len(comb) < (2)**self.prueba.n_visible):
                     
                     key = ''
                     
@@ -670,6 +723,11 @@ class PruebasEstadistica:
                     if(key == strg):
                         dict_data[strg] += 1                                     
                         dict_dataDistr[key].append(data)                    
+             
+            for key, prob in dict_data.items():
+                print('Clase '+key+', probs: '+str(prob))
+            for key, prob in dict_dataDistr.items():
+                print('Clase '+key+', probs: '+str(prob))
                 
             return dict_data, dict_dataDistr
         
