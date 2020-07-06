@@ -13,7 +13,7 @@ if __name__== '__main__':
     
     arr_BatchSize = [64, 40, 32, 16, 8]
     arr_LR = [0.01, 1.0, 0.1, 0.001]
-    arr_hidden = [2, 8, 4] 
+    arr_hidden = [8, 4, 2] 
     num_epoch = 2000
     n_visible = 4
     k = 1
