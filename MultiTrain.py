@@ -20,14 +20,10 @@ if __name__== '__main__':
     arr_fString = ['Sex','Age','Survived', 'PClass']
     i = 1 
     
-    name_CSVPrueba = 'pruebasPrecision/pruebaMultiV'+str(n_visible)+'H'+str(8)+'E'+str(num_epoch)+'LR'+str(1.0)+'BS'+str(8)+'.txt'
-    prueba = pruebasAnalisisEst.PruebasEstadistica(n_epoch=num_epoch, lr=1.0, bs=8, num_visible=n_visible, num_hidden=8, num_k=k, arr_fieldString=arr_fString)
-    prueba.pruebaTest(name_CSVPrueba)
-    
     for batch_size in arr_BatchSize:                
         print('Entrenamiento número H=8 Y LR= 0.001: '+str(i))
         name_CSVPrueba = 'pruebasPrecision/pruebaMultiV'+str(n_visible)+'H'+str(8)+'E'+str(num_epoch)+'LR'+str(0.001)+'BS'+str(batch_size)+'.txt'
-        prueba = pruebasAnalisisEst.PruebasEstadistica(n_epoch=num_epoch, lr=learning_rate, bs=batch_size, num_visible=n_visible, num_hidden=8, num_k=k, arr_fieldString=arr_fString)
+        prueba = pruebasAnalisisEst.PruebasEstadistica(n_epoch=num_epoch, lr=0.001, bs=batch_size, num_visible=n_visible, num_hidden=8, num_k=k, arr_fieldString=arr_fString)
         prueba.pruebaTest(name_CSVPrueba)
 
     for n_hidden in arr_hidden:
