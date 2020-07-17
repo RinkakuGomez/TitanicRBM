@@ -14,7 +14,7 @@ if __name__== '__main__':
     arr_BatchSize = [64, 40, 32, 16, 8]
     arr_LR = [0.01, 1.0, 0.1, 0.001]
     arr_hidden = [2, 8, 4] 
-    num_epoch = 10000
+    num_epoch = 5000
     n_visible = 4
     k = 1
     arr_fString = ['Sex','Age','Survived', 'PClass']
