@@ -20,14 +20,14 @@ Num data = 800
 
 class PruebasEstadistica:
     
-    def __init__(self, n_epoch, lr, bs, num_visible, num_hidden, num_k, arr_fieldString):
+    def __init__(self, nameDataset, n_epoch, lr, bs, num_visible, num_hidden, num_k, arr_fieldString):
         
         #nameCSV = 'dataSetTitanic.csv'
         #input_data = self._readCSVdata(nameCSV, arr_fieldString)
         #arr_fieldString = ['Sex','Age','Survived']
         
         #Titanic dataset 1300
-        self.nameCSV = 'Titanic1300.csv'
+        self.nameCSV = nameDataset
         input_data = self._readCSVdata(self.nameCSV, arr_fieldString)
         
         #Titanic dataset 886
@@ -494,27 +494,27 @@ class PruebasEstadistica:
             dictClass['1st'] = 0
             dictClass['2nd'] = 0
             dictClass['3rd'] = 0
+            dictClass['crew'] = 0
             
             dictClassSurv['1st'] = 0
             dictClassSurv['2nd'] = 0
             dictClassSurv['3rd'] = 0
+            dictClassSurv['crew'] = 0
             
             dictClassMuerte['1st'] = 0
             dictClassMuerte['2nd'] = 0
             dictClassMuerte['3rd'] = 0
+            dictClassMuerte['crew'] = 0
             
             for row in csvreader:
                 
                 dictClass[str(row['PClass'])] += 1 
                 
-                print('survived: '+str(row['Survived']))
                 if(int(row['Survived']) == 0):
                     dictClassMuerte[row['PClass']] += 1
        
                 elif(int(row['Survived']) == 1):
                     dictClassSurv[row['PClass']] += 1
-                else:
-                    print('aaaaa')
                 
             for key, prob in dictClass.items():
                 print('Clase '+key+', probs: '+str(prob))
@@ -612,10 +612,16 @@ class PruebasEstadistica:
                         if(row[key] == '' or row[key] == ' '):
                             auxAge = 0                         
                         else:
-                            if(float(row[key]) > 18):
-                                auxAge = 1   
-                            else:
-                                auxAge = 0                                
+                            if(self.nameCSV == 'Titanic1300.csv'):
+                                if(float(row[key]) > 18):
+                                    auxAge = 1   
+                                else:
+                                    auxAge = 0 
+                            elif(self.nameCSV == 'Titanic2200.csv'):
+                                if(row[key] == 'adult'):
+                                    auxAge = 1   
+                                else:
+                                    auxAge = 0 
                         
                     elif(key == 'Survived'):
                         if(row[key] == '' or row[key] == ' '):
@@ -634,6 +640,8 @@ class PruebasEstadistica:
                             auxClass = 1
                         elif(row[key] == '2nd'):
                             auxClass = 0
+                        elif(row[key] == 'crew'):
+                            auxClass = 0 #evaluar
                         elif(row[key] == '3rd'):
                             auxClass = 0
                         
@@ -723,11 +731,6 @@ class PruebasEstadistica:
                     if(key == strg):
                         dict_data[strg] += 1                                     
                         dict_dataDistr[key].append(data)                    
-             
-            for key, prob in dict_data.items():
-                print('Clase '+key+', probs: '+str(prob))
-            for key, prob in dict_dataDistr.items():
-                print('Clase '+key+', probs: '+str(prob))
                 
             return dict_data, dict_dataDistr
         
