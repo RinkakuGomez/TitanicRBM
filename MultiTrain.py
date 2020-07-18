@@ -33,3 +33,4 @@ if __name__== '__main__':
                 prueba = pruebasAnalisisEst.PruebasEstadistica(nameDataset = name_dataSet,n_epoch=num_epoch, lr=learning_rate, bs=batch_size, num_visible=n_visible, num_hidden=n_hidden, num_k=k, arr_fieldString=arr_fString)
                 prueba.pruebaTest(name_CSVPrueba)
                 i+=1
+
