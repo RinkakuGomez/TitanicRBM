@@ -387,10 +387,10 @@ class PruebasEstadistica:
                     #Inicio bucle data
                     for data_n in batch_n:
                         
-                        #aux_data = data_n
-                        #aux_data[2] = -1.0
+                        aux_data = data_n
+                        aux_data[2] = -1.0
                         
-                        phv,h_,pvh,v_ = self.prueba.inference(data_n)
+                        phv,h_,pvh,v_ = self.prueba.inference(aux_data)
                         
                         str_vNew = ''
                         
@@ -617,17 +617,18 @@ class PruebasEstadistica:
                                     auxAge = 1   
                                 else:
                                     auxAge = 0 
+                                
                             elif(self.nameCSV == 'Titanic2200.csv'):
                                 if(row[key] == 'adult'):
                                     auxAge = 1   
                                 else:
                                     auxAge = 0 
-                        
                     elif(key == 'Survived'):
                         if(row[key] == '' or row[key] == ' '):
                             auxSurvived = 0
                         else:
                             auxSurvived = row[key]
+
                     elif(key == 'Sex'):
                         if(row[key] == 'male'):
                             auxSex = 0
@@ -635,6 +636,7 @@ class PruebasEstadistica:
                             auxSex = 1
                         else:
                             auxSex = 0
+                        
                     elif(key == 'PClass'):
                         if(row[key] == '1st'):
                             auxClass = 1
@@ -644,7 +646,7 @@ class PruebasEstadistica:
                             auxClass = 0 #evaluar
                         elif(row[key] == '3rd'):
                             auxClass = 0
-                        
+
                 dataSet.append([auxSex,auxAge,auxClass,auxSurvived])
                     
             return np.array(dataSet, np.float32)
