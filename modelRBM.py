@@ -41,18 +41,13 @@ class RBM:
         """
         Definición de pesos y bias
         """    
-        #self.visible_bias = tf.Variable(tf.random.uniform([1, self.n_visible]), name='visible_bias')
         self.visible_bias = tf.compat.v1.get_variable(name='visible_bias', shape=(1, self.n_visible), initializer=self._init_bias_zeros())
-        #self.visible_bias = tf.compat.v1.get_variable(tf.compat.v1.zeros_like((1, self.n_visible), dtype=tf.float32), name='visible_bias')
         
-        #self.hidden_bias = tf.Variable(tf.random.uniform([1, self.n_hidden]), name='hidden_bias')
         self.hidden_bias = tf.compat.v1.get_variable(name='hidden_bias', shape=(1, self.n_hidden), initializer=self._init_bias_zeros())
-        #self.hidden_bias = tf.compat.v1.get_variable(tf.compat.v1.zeros_like((1, self.n_hidden), dtype=tf.float32), name='hidden_bias')
         
         """
         * Añadir std_dev como variable
         """
-        #self.weights = tf.Variable(self._init_weight_distNormal(0.5), name='weights')
         self.weights = tf.compat.v1.get_variable(name='weights', shape=(self.n_visible, self.n_hidden), initializer=self._init_weight_distNormal(0.5))      
     
     """
