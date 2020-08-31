@@ -72,7 +72,7 @@ class BateriaPruebasRBM5:
     """
     def pruebaGS(self):
         
-        v0, ph0, vk, phk, dW, dbh, dbv = self.prueba.training([1.0,1.0])
+        v0, ph0, vk, phk, dW, dbh, dbv = self.prueba.training([1.0,1.0,0.0])
                         
         print('Prueba GS 1: ')
         
@@ -229,10 +229,10 @@ class BateriaPruebasRBM5:
         
         x = tf.reduce_sum(v)
         print('Reduce sum: {}'.format(x))
+    
     """
     Prueba inferencia
     """
-    
     def pruebaInferencia(self, v):
         
         phv,h_,pvh,v_ = self.prueba.inference(v)

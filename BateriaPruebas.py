@@ -1,34 +1,24 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Jan 30 09:12:26 2020
+Created on Fri Aug 14 11:27:55 2020
 
 @author: Pc
 """
+
 from modelRBM import RBM
 import tensorflow as tf
 import numpy as np
 import csv
 
-"""
-LR = 0.01
-Visible = 3
-Hidden = 8
-Epoch = 1000
-Batch size = 16
-Num data = 800
-"""
-
-class PruebasEstadistica:
-    
+class BateriaPruebas:
     def __init__(self, nameDataset, n_epoch, lr, bs, num_visible, num_hidden, num_k, arr_fieldString):
-
+        
+        #Titanic dataset 1300
         self.nameCSV = nameDataset
         input_data = self._readCSVdata(self.nameCSV, arr_fieldString)
-
-                
-        
+                      
         if(len(input_data) > 0):
-            #Probar con un lr menor
+
             self.prueba = RBM(num_epoch=n_epoch, learning_rate=lr, batch_size=bs, n_visible=num_visible, n_hidden=num_hidden, k=num_k)
             self.input_random = np.random.permutation(input_data)
             print(len(self.input_random))
@@ -36,7 +26,7 @@ class PruebasEstadistica:
             self.arr_StringComb, self.arr_Comb = self._getCombinatorial() # Obtenemos los valores de la combinatoria
             self.dict_dataComb, self.dict_dataDist = self._init_dictData(self.input_random) # Contiene la distribución de los datos y 
                                                                                             # los datos separados por tipo de valores
-            
+
             arr_train = []  
             arr_test = []                                                                   
             
@@ -48,7 +38,8 @@ class PruebasEstadistica:
                 
                 for data in arr_valores[round(len(arr_valores)*0.7):]:
                     arr_test.append(data)
-                        
+            
+            
             # Contiene la distribución de los datos y los datos separados 
             # por tipo de valores para los data set de train y test
             self.dict_trainComb, self.dict_trainDist = self._init_dictData(arr_train)
@@ -60,159 +51,178 @@ class PruebasEstadistica:
         
         else:
             print('El fichero del data set seleccionado no contiene ningún registro')
-        
-    def pruebaAccuracy(self):
-        
-        #Comprobamos si el conjunto de training está vacío
-        if(len(self.trainingData) == 0):
-            
-            print('El conjunto de datos de entrenamiento está vacío. El tamaño es: '+ str(len(self.trainingData)))
-                
-        else:
-            print('El conjunto de datos de entrenamiento tiene un tamaño de: '+ str(len(self.trainingData)))
-            
-            print('Inicio proceso Training')
-            
-            
-            #Inicio bucle épocas
-            for epoch in range(1, self.prueba.num_epoch+1):
-                                
-                print('La época actual es: '+str(epoch))
-                                
-                j = 0 # batch ctrl
-                accuracy_total = 0
-
-                #Inicio bucle batch
-                for batch_n in self.trainingData:
-                    
-                    #Inicalización de los auxiliares de los diferenciales 
-                    arr_dW = []
-                    arr_dBh = []
-                    arr_dBv = []
-                                        
-                    i = 1 # data ctrl
-                    print('batch número: '+str(j))
-                    #Inicio bucle datos
-                    for data_n in batch_n:                        
-                                                
-                        #Calculamos los diferenciales de los parámetros.
-                        dW, dbh, dbv, v0, ph0, vk, phk = self.prueba.training(data_n)                        
-                        
-                        #Insertamos los nuevos diferenciales calculados a la lista
-                        arr_dW.append(dW)
-                        arr_dBh.append(dbh)
-                        arr_dBv.append(dbv)                                                                                         
-                        
-                        i += 1                                                              
-                        
-                        #print('Precisión v0: {}'.format(v0))
-                        #print('Precisión vk: {}'.format(vk))
-                        
-                    #Inicialización de la máscara 
-                    mask = tf.where(tf.less(v0,0.0), x=tf.zeros_like(v0), y=tf.ones_like(v0))
-                    #print('Precisión mask: {}'.format(mask))
-                    bool_mask = tf.cast(mask, dtype=tf.bool)
-                    #print('Precisión bool mask: {}'.format(bool_mask))
-                    
-                    #Calculo de accuracy
-                    acc = tf.where(bool_mask, x=tf.abs(tf.subtract(v0,vk)), y=tf.zeros_like(v0))
-                    #print('Precisión acc: {}'.format(acc))
-                    n_values = tf.math.reduce_sum(mask)
-                    
-                    accuracy_total += tf.subtract(1.0, tf.divide(tf.math.reduce_sum(acc), n_values))
-                                                
-                    j += 1
-                                        
-                    #Actualizamos los parámetros
-                    self.prueba._updateParams(arr_dW, arr_dBh, arr_dBv)
-                    
-                    accuracy = accuracy_total/(i)
-                    print('Precisión total training: {}'.format(accuracy_total))
-                    print('Precisión training: {}'.format(accuracy))
-                    
-                    accuracy_total = 0
-                    
-            """
-            * Considerar emplear lanzadera para agrupar el update y training. 
-            """
-        return ''
     
     """
-    * Método: training_Normal_Zeros
-    * Descripción: Prueba entrenamiento W con dist normal y bias zeros
-    * Variables: 
-    *       - None
-    """ 
-    def training_Normal_Zeros(self):
+    Prueba readCSV división data set train y test, y división batch 
+    """
+    def prueba_readCSV(self):        
         
-        if(len(self.trainingData) == 0):
-            
-            print('El conjunto de datos de entrenamiento está vacío. El tamaño es: '+ str(len(self.trainingData)))
+        if((len(self.trainingData) > 0) or (len(self.testData) > 0)):
+            i = 1   
+            print('Data set de entrenamiento\n')
+            for batch_data in self.trainingData:            
+                print('Batch número: '+str(i)+'\n')
                 
+                for data in batch_data:
+                    print('Valor dato de entrada: '+str(data))
+                i+=1
+                
+            i = 1   
+            print('Data set de test\n')
+            for batch_data in self.testData:            
+                print('Batch número: '+str(i)+'\n')
+                
+                for data in batch_data:
+                    print('Valor dato de entrada: '+str(data))
+                i+=1
+            
+            return 'OK'
+        
         else:
-            print('El conjunto de datos de entrenamiento tiene un tamaño de: '+ str(len(self.trainingData)))
+            print('Los data set de entrenamiento o test están vacíos\n\n')
             
-            print('Inicio proceso Training')
-
-            """
-            * Al final de cada época mostramos los datos obtenidos
-            """                
-            print("Inicio epocas:")
-            print("\tW, {}".format(self.prueba.weights))
-            print("\tbias visible, {}".format(self.prueba.visible_bias))
-            print("\tbias hidden, {}".format(self.prueba.hidden_bias))                
-            
-            #Inicio bucle épocas
-            for epoch in range(1, self.prueba.num_epoch+1):            
-                
-                print('La época actual es: '+str(epoch))
-                
-                j = 0 # batch ctrl
-                
-                #Inicio bucle batch
-                for batch_n in self.trainingData:
-                    
-                    #Inicalización de los auxiliares de los diferenciales 
-                    arr_dW = []
-                    arr_dBh = []
-                    arr_dBv = []
-                                        
-                    i = 1 # data ctrl
-                    #Inicio bucle datos
-                    for data_n in batch_n:
-                        
-                        #Calculamos los diferenciales de los parámetros.
-                        dW, dbh, dbv, v0, ph0, vk, phk = self.prueba.training(data_n)                        
-                        
-                        #Insertamos los nuevos diferenciales calculados a la lista
-                        arr_dW.append(dW)
-                        arr_dBh.append(dbh)
-                        arr_dBv.append(dbv)
-                        
-                        i += 1
-                        
-                    j += 1
-                                        
-                    #Actualizamos los parámetros
-                    self.prueba._updateParams(arr_dW, arr_dBh, arr_dBv)
-                    
-            """
-            * Al final de cada época mostramos los datos obtenidos
-            """                
-            print("Fin epocas "+str(epoch)+": ")
-            print("\tW, {}".format(self.prueba.weights))
-            print("\tbias visible, {}".format(self.prueba.visible_bias))
-            print("\tbias hidden, {}".format(self.prueba.hidden_bias))
-                
-        return ''
+            return 'fail'
     
     """
-    * Método: training_Normal_Zeros
-    * Descripción: Prueba entrenamiento W con dist normal y bias zeros
+    Prueba combinatoria datos de entrada e inicialización de diccionarios
+    """
+    def prueba_CombDict(self):        
+        
+        if((len(self.arr_StringComb) > 0) or (len(self.arr_Comb) > 0)):
+            
+            print('\nArray string valores combinatoria')
+            for str_comb in self.arr_StringComb:
+                print('Valor: '+str(str_comb))
+                        
+            print('Array valores combinatoria')
+            for data_comb in self.arr_Comb:        
+                print('Valor: '+str(data_comb))
+            
+            print('\n')
+            
+        else:
+            print('Error al inicializar los arrays con las combinatorias\n\n')
+            
+        input('Pulse [intro] para continuar:')
+        
+        if((len(self.dict_dataComb) > 0) or (len(self.dict_dataDist) > 0)):
+            
+            print('Distribución data set completo')
+            for key, prob in self.dict_dataComb.items():
+                print('Valor key: '+str(key)+' distribución: '+str(prob))
+                        
+            print('\nData set completo')
+            for key, prob in self.dict_dataDist.items():
+                print('Valor key: '+str(key)+' data set: '+str(prob))
+                
+            print('\n')
+        else:
+            print('Error al inicializar los diccionarios del data set completo.')
+        
+        input('Pulse [intro] para continuar:')
+        
+        if((len(self.dict_trainComb) > 0) or (len(self.dict_trainDist) > 0)):
+            
+            print('Distribución train data set')
+            for key, prob in self.dict_trainComb.items():
+                print('Valor key: '+str(key)+' distribución: '+str(prob))
+                        
+            print('\nTrain data set')
+            for key, prob in self.dict_trainDist.items():
+                print('Valor key: '+str(key)+' data set: '+str(prob))
+            
+            print('\n')
+            
+        else:
+            print('Error al inicializar los diccionarios del train data set.')
+        
+        input('Pulse [intro] para continuar:')
+        
+        if((len(self.dict_testComb) > 0) or (len(self.dict_testDist) > 0)):
+            
+            print('Distribución test data set')
+            for key, prob in self.dict_testComb.items():
+                print('Valor key: '+str(key)+' distribución: '+str(prob))
+                        
+            print('\nTest data set')
+            for key, prob in self.dict_testDist.items():
+                print('Valor key: '+str(key)+' data set: '+str(prob))
+            
+            print('\n')
+        
+        else:
+            print('Error al inicializar los diccionarios del test data set.')
+        
+        return 'OK'
+        
+    """
+    Prueba Hidden y Visible sample única iteracción
+    """
+    def pruebaGS_Hidden(self):
+        
+        prob, bernouille = self.prueba._hidden_sample([1.0,0.0])
+
+        print('Prueba prob: '.format(prob))
+        print('Prueba bernouille: '.format(bernouille))
+        print('Prueba shape: '.format(tf.shape(prob)))
+        
+        prob, bernouille = self.prueba._visible_sample(bernouille)
+
+        print('Prueba prob2: '.format(prob))
+     
+        print('Prueba bernouille2: '.format(bernouille))
+        
+    """
+    Prueba Gibb Sampling y Compute Gradient única iteracción
+    """
+    def pruebaGS(self):
+        
+        v0, ph0, vk, phk, dW, dbh, dbv = self.prueba.training([1.0,0.0,0.0,-1.0])
+                        
+        print('Prueba GS: ')
+        
+        print('V0: ')
+        print(v0)
+
+        print('PH0: {}'.format(ph0))
+        
+        print('Prueba GS 2: ')
+        
+        print('VK: {}'.format(vk))
+
+        print('PHK: {}'.format(phk))
+        
+        print('Prueba diff: ')
+
+        print('dW: {}'.format(dW))
+   
+        print('dbh: {}'.format(dbh))
+        
+        print('dbv: {}'.format(dbv))
+
+    """
+    * Método: pruebaInferencia
+    * Descripción: Prueba proceso inferencia.
     * Variables: 
-    *       - None
+    *       - v: array con los datos a inferir.
+    """
+    def pruebaInferencia(self, v):
+        
+        phv,h_,pvh,v_ = self.prueba.inference(v)
+        
+        print('Valor inicial v: '+str(v))
+        print('Valor phv: '+str(phv))
+        
+        print('Valor v bernouille: '+str(v_))
+        print('Valor pvh: '+str(pvh))
+        
+    """
+    * Método: pruebaTest
+    * Descripción: Prueba procesos train y test
+    * Variables: 
+    *       - name_FilePrueba: string con el nombre del fichero generado con los resultados.
     """ 
-    def pruebaTest(self, name_CSVPrueba):
+    def pruebaTest(self, name_FilePrueba):
         
         
         if((len(self.trainingData) == 0) or (len(self.testData) == 0)):
@@ -221,7 +231,7 @@ class PruebasEstadistica:
             print('El conjunto de datos de test está vacío. El tamaño es: '+ str(len(self.testData)))
                 
         else:
-            with open(name_CSVPrueba, 'w+') as file:  
+            with open(name_FilePrueba, 'w+') as file:  
                 file.write('Prueba Multi Entrenamiento\n')
                 
                 file.write('\tValores de la red:\n')
@@ -229,21 +239,15 @@ class PruebasEstadistica:
                 file.write('\t\tNum visible: '+str(self.prueba.n_visible)+'\t\t Num hidden: '+str(self.prueba.n_hidden)+'\n')
                 file.write('\t\tBatch size: '+str(self.prueba.batch_size)+'\t\t K: '+str(self.prueba.k)+'\n')
                 
-                #print('El conjunto de datos de entrenamiento tiene un tamaño de: '+ str(len(self.trainingData)))
-                
                 pesos_init = self.prueba.weights
                 biasV_init = self.prueba.visible_bias
                 biasH_init = self.prueba.hidden_bias            
-                
-                #print('Inicio proceso Training')#Inicio bucle épocas
-                
+                                
                 probs_dictTest = {}
                 probs_dictTrain = {}
                 
                 for epoch in range(1, self.prueba.num_epoch+1):            
-                    
-                    #print('La época actual es: '+str(epoch))
-                    
+                                        
                     j = 1 # batch ctrl
                     accuracy_batchTrain = 0
                     print('La época actual es: '+str(epoch))
@@ -274,13 +278,10 @@ class PruebasEstadistica:
                             
                             #Inicialización de la máscara 
                             mask = tf.where(tf.less(v0,0.0), x=tf.zeros_like(v0), y=tf.ones_like(v0))
-                            #print('Precisión mask: {}'.format(mask))
                             bool_mask = tf.cast(mask, dtype=tf.bool)
-                            #print('Precisión bool mask: {}'.format(bool_mask))
                             
                             #Calculo de accuracy
                             acc = tf.where(bool_mask, x=tf.abs(tf.subtract(v0,vk)), y=tf.zeros_like(v0))
-                            #print('Precisión acc: {}'.format(acc))
                             n_values = tf.math.reduce_sum(mask)
                             
                             accuracy_dataTrain += tf.subtract(1.0, tf.divide(tf.math.reduce_sum(acc), n_values))
@@ -291,7 +292,7 @@ class PruebasEstadistica:
                         j += 1
                                             
                         #Actualizamos los parámetros
-                        self.prueba._updateParams(arr_dW, arr_dBh, arr_dBv)
+                        self.prueba.updateParams(arr_dW, arr_dBh, arr_dBv)
 
                     accuracy_epochTrain = accuracy_batchTrain/j
                     
@@ -320,7 +321,6 @@ class PruebasEstadistica:
                     probs_dictTest[strg] = 0
                     probs_dictTrain[strg] = 0
                 
-                #print('Inicio proceso test')
                 #Inicio bucle batch
                 j = 1 # batch ctrl
                 file.write('Calculo precisión test:\n\n')
@@ -351,13 +351,10 @@ class PruebasEstadistica:
                         
                         #Inicialización de la máscara 
                         mask = tf.where(tf.less(data_n,0.0), x=tf.zeros_like(data_n), y=tf.ones_like(data_n))
-                        #print('Precisión mask: {}'.format(mask))
                         bool_mask = tf.cast(mask, dtype=tf.bool)
-                        #print('Precisión bool mask: {}'.format(bool_mask))
                         
                         #Calculo de accuracy
                         acc = tf.where(bool_mask, x=tf.abs(tf.subtract(data_n,v_)), y=tf.zeros_like(data_n))
-                        #print('Precisión acc: {}'.format(acc))
                         n_values = tf.math.reduce_sum(mask)
                         
                         accuracy_dataTest += tf.subtract(1.0, tf.divide(tf.math.reduce_sum(acc), n_values))
@@ -371,6 +368,7 @@ class PruebasEstadistica:
                     
                     print('Precisión test: {}'.format(accuracy_test))
                     file.write('\t\tPrecisión test: {}\n'.format(accuracy_test))
+                print('Fin proceso test')
                     
                 for batch_n in self.trainingData:
                     #Inicio bucle data
@@ -409,114 +407,19 @@ class PruebasEstadistica:
                 file.write('\n\n\tDistribución combinatoria Recons Test:\n')
                 for key, prob in probs_dictTest.items():
                     file.write('\t\tDict Recons Data Test \n\tNúmero '+key+', distr: '+str(prob)+', probs: '+str(prob/(len(self.testData)*self.prueba.batch_size))+'\n')
-                    
-                #print('Fin proceso test')
-                
-                #print('Valores de las probabilidades')
-                
-                """
-                * Reconstrucción del data set completo
-                """
-                # for data_n in self.arr_Comb:
-                    
-                #     phv,h_,pvh,v_ = self.prueba.inference(data_n)
-                    
-                #     print('Valor de los datos de entrada: '+str(data_n))
-                #     print('Valor de la probabilidad de hidden: '+str(phv[0]))
-                #     print('Valor de los datos de hidden: '+str(h_[0]))
-                #     print('Valor de la probailidad de visible recons: '+str(pvh[0]))
-                #     print('Valor de los datos de visible recons: '+str(v_[0]))                    
-            
         return ''
     
-    
-    def _pruebaDict(self):
-        
-        arr_num = [1,2,5,4,1,2,5,5,4]
-        arr_stringNum = []
-        probs_dict = {}        
-        
-        for num in arr_num:
-            i = 1
-            
-            if(len(arr_stringNum) == 0):
-                arr_stringNum.append(str(num))
-                                    
-            else:
-    
-                for strg in arr_stringNum:
-                    
-                    if(strg == str(num)):
-                        break
-                    
-                    elif(strg != str(num) and i == len(arr_stringNum)):
-                        arr_stringNum.append(str(num))                        
-                        break 
-                    
-                    else:                                        
-                        i +=1
-                        
-        for strg in arr_stringNum:
-            probs_dict[strg] = 0
-        
-        for num in arr_num:
-            for strg in arr_stringNum:
-                if(strg == str(num)):
-                   probs_dict[strg] += 1 
-               
-                
-        for key, prob in probs_dict.items():
-            print('Número '+key+', probs: '+str(prob))
-            
-        return ''
-    
-    
-    def prueba_ClassInput(self):
-        
-        with open(self.nameCSV, 'r') as csvfile:
-            csvreader = csv.DictReader(csvfile)
-            
-            dictClass = {}
-            dictClassSurv = {}
-            dictClassMuerte = {}
-            
-            dictClass['1st'] = 0
-            dictClass['2nd'] = 0
-            dictClass['3rd'] = 0
-            dictClass['crew'] = 0
-            
-            dictClassSurv['1st'] = 0
-            dictClassSurv['2nd'] = 0
-            dictClassSurv['3rd'] = 0
-            dictClassSurv['crew'] = 0
-            
-            dictClassMuerte['1st'] = 0
-            dictClassMuerte['2nd'] = 0
-            dictClassMuerte['3rd'] = 0
-            dictClassMuerte['crew'] = 0
-            
-            for row in csvreader:
-                
-                dictClass[str(row['PClass'])] += 1 
-                
-                if(int(row['Survived']) == 0):
-                    dictClassMuerte[row['PClass']] += 1
-       
-                elif(int(row['Survived']) == 1):
-                    dictClassSurv[row['PClass']] += 1
-                
-            for key, prob in dictClass.items():
-                print('Clase '+key+', probs: '+str(prob))
-            for key, prob in dictClassMuerte.items():
-                print('Clase '+key+' ratio muerte: '+str(prob))
-            for key, prob in dictClassSurv.items():
-                print('Clase '+key+' ratio survi: '+str(prob))
-            
-                                
-            return ''
     """            
     Métodos AUX
-    """       
+    """
+    
+    """
+    * Método: _readCSVdata
+    * Descripción: Método lectura fichero CSV.
+    * Variables: 
+    *       - namecsv: string con el nombre del fichero CSV con el data set.
+    *       - arr_fieldString: array con los nombres de las variables a usar.
+    """
     def _readCSVdata(self, namecsv, arr_fieldString):
         
         with open(namecsv, 'r') as csvfile:
@@ -573,7 +476,13 @@ class PruebasEstadistica:
                 dataSet.append([auxSex,auxAge,auxClass,auxSurvived])
                     
             return np.array(dataSet, np.float32)
-        
+      
+    """
+    * Método: _getCombinatorial
+    * Descripción: Método obtención combinación de valores del data set.
+    * Variables: 
+    *       - None
+    """    
     def _getCombinatorial(self):
         
         comb = []
@@ -635,6 +544,12 @@ class PruebasEstadistica:
             
             return [], []
     
+    """
+    * Método: _init_dictData
+    * Descripción: Método inicialización diccionarios.
+    * Variables: 
+    *       - input_data: lista con el conjunto de datos.
+    """
     def _init_dictData(self, input_data):
         
         if(len(input_data) > 0):
@@ -664,7 +579,13 @@ class PruebasEstadistica:
             print('El conjunto de datos seleccionado no tiene ningún valor')
             
             return {}, {}
-        
+   
+    """
+    * Método: _create_batch
+    * Descripción: Método división en batch data set.
+    * Variables: 
+    *       - dataArr: lista con el conjunto de datos a dividir en batch.
+    """ 
     def _create_batch(self, dataArr):
         
         arrPpl = []
@@ -690,6 +611,56 @@ class PruebasEstadistica:
                                                                         
                     i += 1
 
-            return np.array(arrPpl)
+            return np.array(arrPpl)        
 
-
+    """
+    * Método: _classInput
+    * Descripción: Método empleado para determinar el valor binario que 
+    * corresponde a cada uno de los tipos de la clase existentes en función de 
+    * la proporción de supervivientes/ahogamientos que este presenta.
+    * Variables: 
+    *       - None
+    """        
+    def _classInput(self):
+        
+        with open(self.nameCSV, 'r') as csvfile:
+            csvreader = csv.DictReader(csvfile)
+            
+            dictClass = {}
+            dictClassSurv = {}
+            dictClassMuerte = {}
+            
+            dictClass['1st'] = 0
+            dictClass['2nd'] = 0
+            dictClass['3rd'] = 0
+            dictClass['crew'] = 0
+            
+            dictClassSurv['1st'] = 0
+            dictClassSurv['2nd'] = 0
+            dictClassSurv['3rd'] = 0
+            dictClassSurv['crew'] = 0
+            
+            dictClassMuerte['1st'] = 0
+            dictClassMuerte['2nd'] = 0
+            dictClassMuerte['3rd'] = 0
+            dictClassMuerte['crew'] = 0
+            
+            for row in csvreader:
+                
+                dictClass[str(row['PClass'])] += 1 
+                
+                if(int(row['Survived']) == 0):
+                    dictClassMuerte[row['PClass']] += 1
+       
+                elif(int(row['Survived']) == 1):
+                    dictClassSurv[row['PClass']] += 1
+                
+            for key, prob in dictClass.items():
+                print('Clase '+key+', probs: '+str(prob))
+            for key, prob in dictClassMuerte.items():
+                print('Clase '+key+' ratio muerte: '+str(prob))
+            for key, prob in dictClassSurv.items():
+                print('Clase '+key+' ratio survi: '+str(prob))
+            
+                                
+            return ''

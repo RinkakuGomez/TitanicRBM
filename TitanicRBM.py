@@ -1,95 +1,482 @@
 # -*- coding: utf-8 -*-
 """
-Editor de Spyder
+Created on Fri Aug 14 18:42:21 2020
 
-Este es un archivo temporal.
+@author: Pc
 """
 
+from modelRBM import RBM
 import tensorflow as tf
-import csv
 import numpy as np
+import csv
 
-class RBM_TitacnicSex:
+class TitanicRBM:
     
-    def __init__(self, n_visible, n_hidden, n_iteraciones, learning_rate, name_file):
+    def __init__(self, nameDataset, n_epoch, lr, bs, num_visible, num_hidden, num_k, arr_fieldString):
         
-        """
-        Creamos el grafo
-        """
-        self._graph = tf.Graph()
+        self.nameCSV = nameDataset
+        input_data = self._readCSVdata(self.nameCSV, arr_fieldString)
         
-        """
-        Inicializamos el grafo
-        """
+        if(len(input_data) > 0):
+
+            self.rbm = RBM(num_epoch=n_epoch, learning_rate=lr, batch_size=bs, n_visible=num_visible, n_hidden=num_hidden, k=num_k)
+            self.input_random = np.random.permutation(input_data)
+            
+            self.arr_StringComb, self.arr_Comb = self._getCombinatorial() # Obtenemos los valores de la combinatoria
+            self.dict_dataComb, self.dict_dataDist = self._init_dictData(self.input_random) # Contiene la distribución de los datos y 
+                                                                                            # los datos separados por tipo de valores
+            
+            arr_train = []  
+            arr_test = []                                                                   
+            
+            # Separamos los valores por la combinación e introducimos el 70% 
+            # de ellos en el train arr y el otro en el test
+            for key, arr_valores in self.dict_dataDist.items():
+                for data in arr_valores[:round(len(arr_valores)*0.7)]:
+                    arr_train.append(data)             
+                
+                for data in arr_valores[round(len(arr_valores)*0.7):]:
+                    arr_test.append(data)
+            
+            
+            # Contiene la distribución de los datos y los datos separados 
+            # por tipo de valores para los data set de train y test
+            self.dict_trainComb, self.dict_trainDist = self._init_dictData(arr_train)
+            self.dict_testComb, self.dict_testDist = self._init_dictData(arr_test)        
+            
+            # Dividimos los data set de train y test en batch        
+            self.trainingData = self._create_batch(np.random.permutation(arr_train))
+            self.testData = self._create_batch(np.random.permutation(arr_test))
         
-        with self._graph.as_default():
-        
-            self.n_iteraciones = n_iteraciones
+        else:
+            print('El fichero del data set seleccionado no contiene ningún registro')
             
-            """
-            Definición de pesos y bias
-            """
+    """
+    * Método: trainRBM
+    * Descripción: Método procesos train y test
+    * Variables: 
+    *       - name_FileTxt: string con el nombre del fichero generado con los resultados.
+    """ 
+    def trainRBM(self, name_FileTxt):
+                
+        if((len(self.trainingData) == 0) or (len(self.testData) == 0)):
             
-            self.visible_bias = tf.Variable(tf.random_uniform([1,n_visible]), name='visible_bias')
-            self.hidden_bias = tf.Variable(tf.random_uniform([1,n_hidden]), name='hidden_bias')
+            print('El conjunto de datos de entrenamiento está vacío.\n')
+            print('El conjunto de datos de test está vacío.\n\n')
             
-            self.weights = tf.Variable(tf.random_normal((n_visible,n_hidden), mean=0.0, stddev=0.01), name='weights')
-            
-            """
-            Definición placeholder input y ratio de aprendizaje
-            """
-            
-            self._input = tf.placeholder(tf.float32, [n_visible], name='input')
-            self._lerning_rate = tf.Variable(tf.fill([n_visible, n_hidden], learning_rate), name='learning_rate')
-            
-            """
-            Definición de las variables state
-            """
-            
-            self._hidden_state = tf.Variable(tf.zeros([1, n_hidden], tf.float32, name='hidden_state'))
-            
-            """
-            Definición de variables Gibs Sampling
-            """
-            
-            input_data = self.readCSV(name_file)
-            input_matrix = tf.transpose(tf.stack([self._input for i in input_data]))
-            
-            _prob_hidden = tf.sigmoid(tf.add(tf.multiply(self.weights, input_matrix), tf.stack(self.hidden_bias[0] for i in range(n_visible))))
-            self._hidden_state = self.calc_state(_prob_hidden)
-            
-            """
-            _prob_visible = tf.sigmoid(tf.add(tf.multiply(self._hidden_state, self.weights), tf.transpose(tf.stack([self.visible_bias[0] for i in range(n_hidden)]))))
-            self.visible_state = self.calc_state(_prob_visible)
-            """
-            
-            """
-            Inizalización de variables y sesión
-            """
-            self._sess = tf.Session()
-            initialization = tf.global_variables_initializer()
-            self._sess.run(initialization)
-            
-    def calc_state(self, probability):
-        return tf.floor(probability + tf.random_uniform(tf.shape(probability), 0, 1))
+            return 'fail'
+                
+        else:
+            with open(name_FileTxt, 'w+') as file:  
+                file.write('Prueba Multi Entrenamiento\n')
+                
+                file.write('\tValores de la red:\n')
+                file.write('\t\tNum epoch: '+str(self.rbm.num_epoch)+'\t\t LR: '+str(self.rbm.learning_rate)+'\n')
+                file.write('\t\tNum visible: '+str(self.rbm.n_visible)+'\t\t Num hidden: '+str(self.rbm.n_hidden)+'\n')
+                file.write('\t\tBatch size: '+str(self.rbm.batch_size)+'\t\t K: '+str(self.rbm.k)+'\n')
+                                
+                pesos_init = self.rbm.weights
+                biasV_init = self.rbm.visible_bias
+                biasH_init = self.rbm.hidden_bias            
+                
+                
+                probs_dictTest = {}
+                probs_dictTrain = {}
+                
+                for epoch in range(1, self.rbm.num_epoch+1):            
+                                        
+                    j = 1 # batch ctrl
+                    accuracy_batchTrain = 0
+                    print('La época actual es: '+str(epoch))
+                    file.write('Calculo precisión train:\n\n')
+                    file.write('\tLa época actual es: '+str(epoch)+'\n')
+                    
+                    #Inicio bucle batch
+                    for batch_n in self.trainingData:
+                        
+                        accuracy_dataTrain = 0
+                        #Inicalización de los auxiliares de los diferenciales 
+                        arr_dW = []
+                        arr_dBh = []
+                        arr_dBv = []
+                                            
+                        i = 1 # data ctrl
+
+                        #Inicio bucle datos
+                        for data_n in batch_n:                        
+                                                        
+                            #Calculamos los diferenciales de los parámetros.
+                            dW, dbh, dbv, v0, ph0, vk, phk = self.rbm.training(data_n)                                                
     
-    def train_RBM(self, lerning_rate):
-        tf.train.GradientDescentOptimizer(self._learning_rate)
+                            #Insertamos los nuevos diferenciales calculados a la lista
+                            arr_dW.append(dW)
+                            arr_dBh.append(dbh)
+                            arr_dBv.append(dbv)
+                            
+                            #Inicialización de la máscara 
+                            mask = tf.where(tf.less(v0,0.0), x=tf.zeros_like(v0), y=tf.ones_like(v0))
+                            bool_mask = tf.cast(mask, dtype=tf.bool)
+                            
+                            #Calculo de accuracy
+                            acc = tf.where(bool_mask, x=tf.abs(tf.subtract(v0,vk)), y=tf.zeros_like(v0))
+                            n_values = tf.math.reduce_sum(mask)
+                            
+                            accuracy_dataTrain += tf.subtract(1.0, tf.divide(tf.math.reduce_sum(acc), n_values))
+                        
+                            i += 1
+                        
+                        accuracy_batchTrain += accuracy_dataTrain/i   
+                        j += 1
+                                            
+                        #Actualizamos los parámetros
+                        self.rbm.updateParams(arr_dW, arr_dBh, arr_dBv)
+
+                    accuracy_epochTrain = accuracy_batchTrain/j
+                    
+                    print('Precisión training: {}'.format(accuracy_epochTrain))
+                    file.write('\t\tPrecisión training: {}\n'.format(accuracy_epochTrain))
+                        
+                file.write('\n\n\tValor inicial pesos y bias\n')
+                file.write("\t\tW, {}\n".format(pesos_init))
+                file.write("\t\tbias visible, {}\n".format(biasV_init))
+                file.write("\t\tbias hidden, {}\n".format(biasH_init))
+                
+                file.write('Valor final pesos y bias\n')
+                file.write("\tW, {}\n".format(self.rbm.weights))
+                file.write("\tbias visible, {}\n".format(self.rbm.visible_bias))
+                file.write("\tbias hidden, {}\n".format(self.rbm.hidden_bias))        
+                print('Fin proceso training')
+                
+                            
+                """
+                * Comenzamos proceso de test
+                """
+                
+                #Obtenemos las claves String para el diccionario            
+                
+                for strg in self.arr_StringComb:
+                    probs_dictTest[strg] = 0
+                    probs_dictTrain[strg] = 0
+                
+                print('Inicio proceso test')
+                #Inicio bucle batch
+                j = 1 # batch ctrl
+                file.write('Calculo precisión test:\n\n')
+                
+                accuracy_batchTest = 0
+                
+                for batch_n in self.testData:
+                    
+                    i = 1 # data ctrl
+                    accuracy_dataTest = 0
+                    
+                    #Inicio bucle data
+                    for data_n in batch_n:
+                        
+                        aux_data = data_n
+                        aux_data[2] = -1.0
+                        
+                        phv,h_,pvh,v_ = self.rbm.inference(aux_data)
+                        
+                        str_vNew = ''
+                        
+                        for binary in v_[0]:
+                            str_vNew += str(int(binary))
+                            
+                        for strg in self.arr_StringComb:
+                            if(str_vNew == strg):
+                                probs_dictTest[strg] += 1
+                        
+                        #Inicialización de la máscara 
+                        mask = tf.where(tf.less(data_n,0.0), x=tf.zeros_like(data_n), y=tf.ones_like(data_n))
+                        bool_mask = tf.cast(mask, dtype=tf.bool)
+                        
+                        #Calculo de accuracy
+                        acc = tf.where(bool_mask, x=tf.abs(tf.subtract(data_n,v_)), y=tf.zeros_like(data_n))
+                        n_values = tf.math.reduce_sum(mask)
+                        
+                        accuracy_dataTest += tf.subtract(1.0, tf.divide(tf.math.reduce_sum(acc), n_values))
+                        
+                        i += 1
+                    
+                    accuracy_batchTest += accuracy_dataTest/i        
+                    j += 1
+                    
+                    accuracy_test = accuracy_batchTest/j
+                    
+                    print('Precisión test: {}'.format(accuracy_test))
+                    file.write('\t\tPrecisión test: {}\n'.format(accuracy_test))
+                print('Fin proceso test')   
+                
+                for batch_n in self.trainingData:
+                    #Inicio bucle data
+                    for data_n in batch_n:
+                        
+                        aux_data = data_n
+                        aux_data[2] = -1.0
+                        
+                        phv,h_,pvh,v_ = self.rbm.inference(aux_data)
+                        
+                        str_vNew = ''
+                        
+                        for binary in v_[0]:
+                            str_vNew += str(int(binary))
+                            
+                        for strg in self.arr_StringComb:
+                            if(str_vNew == strg):
+                                probs_dictTrain[strg] += 1
+                
+                file.write('\n\n\tDistribución combinatoria Data set:\n')               
+                for key, prob in self.dict_dataComb.items():
+                    file.write('\t\tDict Data set \n\tNúmero '+key+', distr: '+str(prob)+', probs: '+str(prob/len(self.input_random))+'\n')
+                
+                file.write('\n\n\tDistribución combinatoria Train set:\n')               
+                for key, prob in self.dict_trainComb.items():
+                    file.write('\t\tDict Data Train \n\tNúmero '+key+', distr: '+str(prob)+', probs: '+str(prob/(len(self.trainingData)*self.rbm.batch_size))+'\n') 
+                    
+                file.write('\n\n\tDistribución combinatoria Recons Train:\n')               
+                for key, prob in probs_dictTrain.items():
+                    file.write('\t\tDict Recons Data Train \n\tNúmero '+key+', distr: '+str(prob)+', probs: '+str(prob/(len(self.trainingData)*self.rbm.batch_size))+'\n') 
+                
+                file.write('\n\n\tDistribución combinatoria Test set:\n')
+                for key, prob in self.dict_testComb.items():
+                    file.write('\t\tDict Data Test \n\tNúmero '+key+', distr: '+str(prob)+', probs: '+str(prob/(len(self.testData)*self.rbm.batch_size))+'\n')
+                    
+                file.write('\n\n\tDistribución combinatoria Recons Test:\n')
+                for key, prob in probs_dictTest.items():
+                    file.write('\t\tDict Recons Data Test \n\tNúmero '+key+', distr: '+str(prob)+', probs: '+str(prob/(len(self.testData)*self.rbm.batch_size))+'\n')                    
         
-    def readCSV(self, namecsv):
+        self.rbm.trained = True
+        
+        return 'OK'
+    
+    """
+    * Método: inferenceRBM
+    * Descripción: Método proceso inferencia.
+    * Variables: 
+    *       - v: array con los datos a inferir.
+    """ 
+    def inferenceRBM(self, v):
+        
+        if(self.rbm.trained == True):
+            
+            phv,h_,pvh,v_ = self.rbm.inference(v)
+            
+            print('\tResultados de la inferencia:')
+            print('\t\tValor inicial v: '+str(v))
+            print('\t\tValor phv: '+str(phv))
+            
+            print('\t\tValor v bernouille: '+str(v_))
+            print('\t\tValor pvh: '+str(pvh))
+            
+            return 'OK'
+            
+        else:
+            
+            print('El modelo no ha sido entrenado aún, para poder realizar inferencias sobre los datos primero entrene el modelo.')
+            
+            return 'fail'
+    
+    """            
+    Métodos AUX
+    """ 
+    
+    """
+    * Método: _readCSVdata
+    * Descripción: Método lectura fichero CSV.
+    * Variables: 
+    *       - namecsv: string con el nombre del fichero CSV con el data set.
+    *       - arr_fieldString: array con los nombres de las variables a usar.
+    """ 
+    def _readCSVdata(self, namecsv, arr_fieldString):
+        
         with open(namecsv, 'r') as csvfile:
-            csvreader = csv.reader(csvfile)
-            i = 0
-            fields = []
-            data = []
-            for row in csvreader:
+            csvreader = csv.DictReader(csvfile)
+            
+            dataSet = []            
+            
+            for row in csvreader:  
+                auxSex = 0
+                auxAge = 0
+                auxSurvived = 0
+                auxClass = 0
                 
-                if(i==0):
-                    fields.append(row[0])
-                    fields.append(row[1])
+                for key in arr_fieldString:
+                    if(key == 'Age'):
+                        if(row[key] == '' or row[key] == ' '):
+                            auxAge = 0                         
+                        else:
+                            if(self.nameCSV == 'Titanic1300.csv'):
+                                if(float(row[key]) > 18):
+                                    auxAge = 1   
+                                else:
+                                    auxAge = 0 
+                                
+                            elif(self.nameCSV == 'Titanic2200.csv'):
+                                if(row[key] == 'adult'):
+                                    auxAge = 1   
+                                else:
+                                    auxAge = 0 
+                    elif(key == 'Survived'):
+                        if(row[key] == '' or row[key] == ' '):
+                            auxSurvived = 0
+                        else:
+                            auxSurvived = row[key]
 
-                else:
-                    data.append([row[0],row[1]])
+                    elif(key == 'Sex'):
+                        if(row[key] == 'male'):
+                            auxSex = 0
+                        elif(row[key] == 'female'):
+                            auxSex = 1
+                        else:
+                            auxSex = 0
+                        
+                    elif(key == 'PClass'):
+                        if(row[key] == '1st'):
+                            auxClass = 1
+                        elif(row[key] == '2nd'):
+                            auxClass = 0
+                        elif(row[key] == 'crew'):
+                            auxClass = 0 #evaluar
+                        elif(row[key] == '3rd'):
+                            auxClass = 0
+
+                dataSet.append([auxSex,auxAge,auxClass,auxSurvived])
+                    
+            return np.array(dataSet, np.float32)
+    
+    """
+    * Método: _getCombinatorial
+    * Descripción: Método obtención combinación de valores del data set.
+    * Variables: 
+    *       - None
+    """     
+    def _getCombinatorial(self):
+        
+        comb = []
+        combString = []
+        
+        if(len(self.input_random) > 0):
+            
+            for data_n in self.input_random:
+               
                 
-                i = i + 1
-            return data
+                # Almacenamos en el array las combinaciones de v
+                if(len(comb) < (2)**self.rbm.n_visible):
+                    
+                    key = ''
+                    
+                    
+                    # Si aún no se ha añadido ningún valor al arr de la 
+                    # combinatoria se introduce el primero                 
+                    if(len(comb) == 0):
+                        
+                        comb.append(data_n)
+                        
+                        for binary in data_n:
+                            key += str(int(binary))
+                            
+                        combString.append(key)
+                    else:
+                        
+                        i = 1
+                        
+                        
+                        # Recorremos el arr de la combinatoria                    
+                        for v in comb:                                                                        
+                            
+                            # Comprobamos si el dato de entrada coincide con 
+                            # los que contiene el arr de combinatoria, si coincide finalizamos el bucle
+                            if(np.array_equal(data_n, v) == True):
+                                break
+                            
+                            # Si el último elemento del arr de combinatoria no 
+                            # coincide, se inserta el valor de la entrada
+                            elif(np.array_equal(data_n, v) == False and i == len(comb)):                            
+                                
+                                comb.append(data_n)
+                                
+                                for binary in data_n:
+                                    key += str(int(binary))
+                                
+                                combString.append(key)
+                                
+                                break
+                            
+                            else:                                        
+                                i +=1
+                
+            return combString, comb
+        else:
+            print('El conjunto de datos seleccionado no tiene ningún valor')
+            
+            return [], []
+    
+    """
+    * Método: _init_dictData
+    * Descripción: Método inicialización diccionarios.
+    * Variables: 
+    *       - input_data: lista con el conjunto de datos.
+    """ 
+    def _init_dictData(self, input_data):
+        
+        if(len(input_data) > 0):
+            
+            dict_data = {}
+            dict_dataDistr = {}
+            
+            for strg in self.arr_StringComb:
+                dict_data[strg] = 0
+                dict_dataDistr[strg] = []
+                
+            for data in input_data:
+                key = ''
+                
+                for binary in data:
+                    key += str(int(binary))                
+                
+                for strg in self.arr_StringComb:
+                    if(key == strg):
+                        dict_data[strg] += 1                                     
+                        dict_dataDistr[key].append(data)                    
+                
+            return dict_data, dict_dataDistr
+        
+        else: 
+            
+            print('El conjunto de datos seleccionado no tiene ningún valor')
+            
+            return {}, {}
+      
+    """
+    * Método: _create_batch
+    * Descripción: Método división en batch data set.
+    * Variables: 
+    *       - dataArr: lista con el conjunto de datos a dividir en batch.
+    """ 
+    def _create_batch(self, dataArr):
+        
+        arrPpl = []
+        arrAux = []
+        i = 1
+                
+        if(len(dataArr) == 0):
+            
+            print('Array sobre el que aplicar el batch está vació')
+            
+        else:
+
+            for data in dataArr:
+                
+                if(i <= len(dataArr)):
+                    #print('I = '+str(i))
+                    arrAux.append(data)
+                    
+                    if(i % self.rbm.batch_size == 0) or (i == len(dataArr)):
+                        arrPpl.append(arrAux)
+                        
+                        arrAux = []
+                                                                        
+                    i += 1
+
+            return np.array(arrPpl)

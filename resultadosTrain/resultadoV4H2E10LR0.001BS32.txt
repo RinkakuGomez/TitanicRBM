@@ -1,0 +1,245 @@
+Prueba Multi Entrenamiento
+	Valores de la red:
+		Num epoch: 10		 LR: 0.001
+		Num visible: 4		 Num hidden: 2
+		Batch size: 32		 K: 1
+Calculo precisión train:
+
+	La época actual es: 1
+		Precisión training: 0.45195072889328003
+Calculo precisión train:
+
+	La época actual es: 2
+		Precisión training: 0.45431816577911377
+Calculo precisión train:
+
+	La época actual es: 3
+		Precisión training: 0.4591856002807617
+Calculo precisión train:
+
+	La época actual es: 4
+		Precisión training: 0.45952650904655457
+Calculo precisión train:
+
+	La época actual es: 5
+		Precisión training: 0.4588068723678589
+Calculo precisión train:
+
+	La época actual es: 6
+		Precisión training: 0.4655682444572449
+Calculo precisión train:
+
+	La época actual es: 7
+		Precisión training: 0.4685606062412262
+Calculo precisión train:
+
+	La época actual es: 8
+		Precisión training: 0.47615528106689453
+Calculo precisión train:
+
+	La época actual es: 9
+		Precisión training: 0.4720453917980194
+Calculo precisión train:
+
+	La época actual es: 10
+		Precisión training: 0.45797356963157654
+
+
+	Valor inicial pesos y bias
+		W, <tf.Variable 'weights:0' shape=(4, 2) dtype=float32, numpy=
+array([[ 0.48483357,  0.3136209 ],
+       [-0.19293544, -0.31534874],
+       [ 0.15408736, -0.76802003],
+       [ 0.09496292,  0.02342528]], dtype=float32)>
+		bias visible, <tf.Variable 'visible_bias:0' shape=(1, 4) dtype=float32, numpy=
+array([[-0.17637508, -0.17637508, -0.17637508, -0.17637508]],
+      dtype=float32)>
+		bias hidden, <tf.Variable 'hidden_bias:0' shape=(1, 2) dtype=float32, numpy=array([[-0.058082, -0.058082]], dtype=float32)>
+Valor final pesos y bias
+	W, <tf.Variable 'weights:0' shape=(4, 2) dtype=float32, numpy=
+array([[ 0.48483357,  0.3136209 ],
+       [-0.19293544, -0.31534874],
+       [ 0.15408736, -0.76802003],
+       [ 0.09496292,  0.02342528]], dtype=float32)>
+	bias visible, <tf.Variable 'visible_bias:0' shape=(1, 4) dtype=float32, numpy=
+array([[-0.17637508, -0.17637508, -0.17637508, -0.17637508]],
+      dtype=float32)>
+	bias hidden, <tf.Variable 'hidden_bias:0' shape=(1, 2) dtype=float32, numpy=array([[-0.058082, -0.058082]], dtype=float32)>
+Calculo precisión test:
+
+		Precisión test: 0.21212118864059448
+		Precisión test: 0.2525252103805542
+		Precisión test: 0.3030302822589874
+		Precisión test: 0.30505046248435974
+		Precisión test: 0.32154878973960876
+		Precisión test: 0.3304472863674164
+		Precisión test: 0.33838382363319397
+		Precisión test: 0.35129067301750183
+		Precisión test: 0.3676767647266388
+		Precisión test: 0.36730945110321045
+		Precisión test: 0.37710437178611755
+		Precisión test: 0.38383835554122925
+		Precisión test: 0.3888888657093048
+		Precisión test: 0.39057236909866333
+		Precisión test: 0.3958333134651184
+		Precisión test: 0.4010694921016693
+		Precisión test: 0.4034792184829712
+		Precisión test: 0.4093566834926605
+		Precisión test: 0.40959590673446655
+		Precisión test: 0.4102933406829834
+		Precisión test: 0.41317474842071533
+
+
+	Distribución combinatoria Data set:
+		Dict Data set 
+	Número 0110, distr: 118, probs: 0.05361199454793276
+		Dict Data set 
+	Número 0100, distr: 1211, probs: 0.5502044525215811
+		Dict Data set 
+	Número 1101, distr: 176, probs: 0.07996365288505225
+		Dict Data set 
+	Número 1111, distr: 140, probs: 0.06360745115856428
+		Dict Data set 
+	Número 0101, distr: 281, probs: 0.12766924125397547
+		Dict Data set 
+	Número 0001, distr: 24, probs: 0.010904134484325307
+		Dict Data set 
+	Número 0111, distr: 57, probs: 0.025897319400272602
+		Dict Data set 
+	Número 1100, distr: 105, probs: 0.04770558836892322
+		Dict Data set 
+	Número 0000, distr: 35, probs: 0.01590186278964107
+		Dict Data set 
+	Número 1001, distr: 27, probs: 0.01226715129486597
+		Dict Data set 
+	Número 1110, distr: 4, probs: 0.001817355747387551
+		Dict Data set 
+	Número 1000, distr: 17, probs: 0.007723761926397092
+		Dict Data set 
+	Número 0011, distr: 5, probs: 0.002271694684234439
+		Dict Data set 
+	Número 1011, distr: 1, probs: 0.00045433893684688776
+
+
+	Distribución combinatoria Train set:
+		Dict Data Train 
+	Número 0110, distr: 83, probs: 0.05293367346938776
+		Dict Data Train 
+	Número 0100, distr: 848, probs: 0.5408163265306123
+		Dict Data Train 
+	Número 1101, distr: 123, probs: 0.0784438775510204
+		Dict Data Train 
+	Número 1111, distr: 98, probs: 0.0625
+		Dict Data Train 
+	Número 0101, distr: 197, probs: 0.1256377551020408
+		Dict Data Train 
+	Número 0001, distr: 17, probs: 0.010841836734693877
+		Dict Data Train 
+	Número 0111, distr: 40, probs: 0.025510204081632654
+		Dict Data Train 
+	Número 1100, distr: 74, probs: 0.047193877551020405
+		Dict Data Train 
+	Número 0000, distr: 24, probs: 0.015306122448979591
+		Dict Data Train 
+	Número 1001, distr: 19, probs: 0.01211734693877551
+		Dict Data Train 
+	Número 1110, distr: 3, probs: 0.001913265306122449
+		Dict Data Train 
+	Número 1000, distr: 12, probs: 0.007653061224489796
+		Dict Data Train 
+	Número 0011, distr: 4, probs: 0.002551020408163265
+		Dict Data Train 
+	Número 1011, distr: 1, probs: 0.0006377551020408163
+
+
+	Distribución combinatoria Recons Train:
+		Dict Recons Data Train 
+	Número 0110, distr: 45, probs: 0.028698979591836735
+		Dict Recons Data Train 
+	Número 0100, distr: 91, probs: 0.05803571428571429
+		Dict Recons Data Train 
+	Número 1101, distr: 102, probs: 0.06505102040816327
+		Dict Recons Data Train 
+	Número 1111, distr: 50, probs: 0.03188775510204082
+		Dict Recons Data Train 
+	Número 0101, distr: 83, probs: 0.05293367346938776
+		Dict Recons Data Train 
+	Número 0001, distr: 144, probs: 0.09183673469387756
+		Dict Recons Data Train 
+	Número 0111, distr: 53, probs: 0.03380102040816327
+		Dict Recons Data Train 
+	Número 1100, distr: 100, probs: 0.06377551020408163
+		Dict Recons Data Train 
+	Número 0000, distr: 128, probs: 0.08163265306122448
+		Dict Recons Data Train 
+	Número 1001, distr: 149, probs: 0.09502551020408163
+		Dict Recons Data Train 
+	Número 1110, distr: 55, probs: 0.035076530612244895
+		Dict Recons Data Train 
+	Número 1000, distr: 179, probs: 0.11415816326530612
+		Dict Recons Data Train 
+	Número 0011, distr: 82, probs: 0.05229591836734694
+		Dict Recons Data Train 
+	Número 1011, distr: 91, probs: 0.05803571428571429
+
+
+	Distribución combinatoria Test set:
+		Dict Data Test 
+	Número 0110, distr: 35, probs: 0.052083333333333336
+		Dict Data Test 
+	Número 0100, distr: 363, probs: 0.5401785714285714
+		Dict Data Test 
+	Número 1101, distr: 53, probs: 0.07886904761904762
+		Dict Data Test 
+	Número 1111, distr: 42, probs: 0.0625
+		Dict Data Test 
+	Número 0101, distr: 84, probs: 0.125
+		Dict Data Test 
+	Número 0001, distr: 7, probs: 0.010416666666666666
+		Dict Data Test 
+	Número 0111, distr: 17, probs: 0.025297619047619048
+		Dict Data Test 
+	Número 1100, distr: 31, probs: 0.046130952380952384
+		Dict Data Test 
+	Número 0000, distr: 11, probs: 0.01636904761904762
+		Dict Data Test 
+	Número 1001, distr: 8, probs: 0.011904761904761904
+		Dict Data Test 
+	Número 1110, distr: 1, probs: 0.001488095238095238
+		Dict Data Test 
+	Número 1000, distr: 5, probs: 0.00744047619047619
+		Dict Data Test 
+	Número 0011, distr: 1, probs: 0.001488095238095238
+		Dict Data Test 
+	Número 1011, distr: 0, probs: 0.0
+
+
+	Distribución combinatoria Recons Test:
+		Dict Recons Data Test 
+	Número 0110, distr: 22, probs: 0.03273809523809524
+		Dict Recons Data Test 
+	Número 0100, distr: 41, probs: 0.06101190476190476
+		Dict Recons Data Test 
+	Número 1101, distr: 54, probs: 0.08035714285714286
+		Dict Recons Data Test 
+	Número 1111, distr: 19, probs: 0.028273809523809524
+		Dict Recons Data Test 
+	Número 0101, distr: 23, probs: 0.03422619047619048
+		Dict Recons Data Test 
+	Número 0001, distr: 51, probs: 0.07589285714285714
+		Dict Recons Data Test 
+	Número 0111, distr: 19, probs: 0.028273809523809524
+		Dict Recons Data Test 
+	Número 1100, distr: 42, probs: 0.0625
+		Dict Recons Data Test 
+	Número 0000, distr: 64, probs: 0.09523809523809523
+		Dict Recons Data Test 
+	Número 1001, distr: 68, probs: 0.10119047619047619
+		Dict Recons Data Test 
+	Número 1110, distr: 27, probs: 0.04017857142857143
+		Dict Recons Data Test 
+	Número 1000, distr: 77, probs: 0.11458333333333333
+		Dict Recons Data Test 
+	Número 0011, distr: 30, probs: 0.044642857142857144
+		Dict Recons Data Test 
+	Número 1011, distr: 48, probs: 0.07142857142857142

@@ -5,7 +5,7 @@ Created on Fri Jun 19 10:34:18 2020
 @author: Pc
 """
 
-import pruebasAnalisisEst
+import TitanicRBM
 import os
     
 if __name__== '__main__':
@@ -29,8 +29,8 @@ if __name__== '__main__':
             for batch_size in arr_BatchSize:
                 
                 print('Entrenamiento número: '+str(i))
-                name_CSVPrueba = dir_name+'/pruebaMultiV'+str(n_visible)+'H'+str(n_hidden)+'E'+str(num_epoch)+'LR'+str(learning_rate)+'BS'+str(batch_size)+'.txt'
-                prueba = pruebasAnalisisEst.PruebasEstadistica(nameDataset = name_dataSet,n_epoch=num_epoch, lr=learning_rate, bs=batch_size, num_visible=n_visible, num_hidden=n_hidden, num_k=k, arr_fieldString=arr_fString)
-                prueba.pruebaTest(name_CSVPrueba)
+                name_filePrueba = dir_name+'/pruebaMultiV'+str(n_visible)+'H'+str(n_hidden)+'E'+str(num_epoch)+'LR'+str(learning_rate)+'BS'+str(batch_size)+'.txt'
+                prueba = TitanicRBM.TitanicRBM(nameDataset = name_dataSet,n_epoch=num_epoch, lr=learning_rate, bs=batch_size, num_visible=n_visible, num_hidden=n_hidden, num_k=k, arr_fieldString=arr_fString)
+                prueba.pruebaTest(name_filePrueba)
                 i+=1
 

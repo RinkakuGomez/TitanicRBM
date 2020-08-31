@@ -195,7 +195,7 @@ class RBM:
     * Variables: 
     *       - v: visible input vector
     """    
-    def _updateParams(self, dW, dbh, dbv):
+    def updateParams(self, dW, dbh, dbv):
         
         #Aplicar el alpha sobre la diferencia de los gradientes
         
@@ -217,7 +217,7 @@ class RBM:
     * Variables: 
     *       - v: visible input vector
     """    
-    def _computeGradientes(self, V0, ph0, Vk, phk):
+    """def _computeGradientes(self, V0, ph0, Vk, phk):
         
         def condition(i, V0, ph0, Vk, phk, dW, dbh, dbv):
             
@@ -257,7 +257,7 @@ class RBM:
         [i, V0, ph0, Vk, phk, dW, dbh, dbv] = tf.while_loop(condition, body, [i, V0, ph0, Vk, phk, dW, dbh, dbv])        
         
         return dW, dbh, dbv
-    
+    """
     
     """
     * Método: _computeGradientes
@@ -316,7 +316,6 @@ class RBM:
         dW, dbh, dbv = self._computeGradientes_v2(v0, ph0, vk, phk)        
         
         return dW, dbh, dbv, v0, ph0, vk, phk
-        #return dW, dbh, dbv
     
                            
     """
