@@ -8,28 +8,6 @@ Este es un archivo temporal.
 
 import tensorflow as tf
 
-#from flags import Flags
-
-# Num Epoch
-#tf.compat.v1.flags.DEFINE_integer('num_epoch', default = 1, help = 'Número de épocas', lower_bound = 1, flag_values = 50)
-
-# Learning Rate
-#tf.compat.v1.flags.DEFINE_float('learning_rate', default = 0.1, help = 'Ratio de aprendizaje', lower_bound = 0.001, upper_bound = 1.0, flag_values = 0.1)
-
-# Batch Size
-#tf.compat.v1.flags.DEFINE_integer('batch_size', default = 1, help = 'Tamaño del batch' , lower_bound = 1, flag_values = 80)
-
-# Number visible
-#tf.compat.v1.flags.DEFINE_integer('n_visible', default = 1, help = 'Número de nodos visibles', lower_bound = 1, flag_values = 2)
-
-# Number hidden
-#tf.compat.v1.flags.DEFINE_integer('n_hidden', default = 2, help = 'Número de nodos ocultos', lower_bound = 1, flag_values = 4)
-
-# Número de ejecuciones del Gibb Sampling
-#tf.compat.v1.flags.DEFINE_integer('k', default = 1, help = 'Variable de ejecución Gibb Sampling', lower_bound = 1, flag_values = 10)
-
-#FLAGS = tf.compat.v1.flags
-
 class RBM:
     
     """
@@ -87,7 +65,8 @@ class RBM:
     *   Método: _hidden_sample 
     *   Descripción: Calcula una distribucción probabilistica a partir de los 
     *   datos introducidos en la variable visible_node
-    *   visible_nodes: contiene los valores de las entradas que recibe la capa hidden
+    *   Variables:
+    *       - visible_nodes: contiene los valores de las entradas que recibe la capa hidden
     """
     def _hidden_sample (self, visible_nodes):              
             
@@ -103,7 +82,8 @@ class RBM:
     *   Método: _visible_sample 
     *   Descripción: Calcula una distribucción probabilistica a partir de los 
     *   datos introducidos en la variable hidden_node
-    *   hidden_nodes: contiene los valores de las entradas que recibe la capa visible
+    *   Variables:
+    *       - hidden_nodes: contiene los valores de las entradas que recibe la capa visible
     """
     
     def _visible_sample (self, hidden_nodes):              
@@ -116,6 +96,14 @@ class RBM:
         
         return probability, v_bernouille
     
+    """
+    *   Método: _bernouille_sample 
+    *   Descripción: Calcula una distribucción probabilistica a partir de los 
+    *   datos introducidos en la variable hidden_node.
+    *   Variables:
+    *       - probs: valores de las neuronas ocultas.
+    *       - shape: estructura array probs.
+    """
     def _bernouille_sample(self, probs, shape):
         
         return tf.where(
@@ -123,53 +111,13 @@ class RBM:
                 x=tf.zeros_like(probs),
                 y=tf.ones_like(probs))
     
-        
-    """
-    * Método: _gibbsSampling_v
-    * Descripción:
-    * Variables: 
-    *       - v: visible input vector
-    """
-    def _gibbsSampling_v(self, v):
-        
-    
-        def condition(i, Vk, Hk, v):
-            
-            result = tf.less(i, self.k)            
-                
-            return result
-    
-        def body(i, Vk, Hk, v):
-            
-            # Sampling hidden and visible
-            _,vector_h = self._hidden_sample(v)
-            _,vector_v = self._visible_sample(vector_h)
-            
-            
-            return [i+1, vector_v, vector_h, v]        
-        
-        ph0,_ = self._hidden_sample(v)
-        
-        i = 0
-        
-        print(self._sess.run(tf.less(i, self.k)))
-        Vk = v
-        Hk = tf.zeros_like(ph0)
-        
-        [i, Vk, Hk, v] = tf.while_loop_v2(condition, body, [i, Vk, Hk, v])
-
-        
-        phk = self._hidden_sample(Vk)
-        
-        return v, Vk, ph0, phk 
-    
     """
     * Método: _gibbsSampling_v2
     * Descripción:
     * Variables: 
     *       - v: visible input vector
     """
-    def _gibbsSampling_v2(self, v):
+    def _gibbsSampling(self, v):
         
         i = 0
         gibb_sampling = []
@@ -210,62 +158,13 @@ class RBM:
                 
         return update_param
     
-    
     """
-    * Método: _computeGradientes
+    * Método: _computeGradients
     * Descripción:
     * Variables: 
     *       - v: visible input vector
     """    
-    """def _computeGradientes(self, V0, ph0, Vk, phk):
-        
-        def condition(i, V0, ph0, Vk, phk, dW, dbh, dbv):
-            
-            result = tf.less(i, self.k)
-            
-            return result[0]
-        
-        def body(i, V0, ph0, Vk, phk, dW, dbh, dbv):
-            
-            v0_gradient = V0[i]
-            ph0_gradient = ph0[i]
-            
-            Vk_gradient = Vk[i]
-            phk_gradient = phk[i]
-                        
-            #Shape para multiplicar
-            v0_gradient = tf.reshape(v0_gradient, [self.n_visible, 1])
-            ph0_gradient = tf.reshape(ph0_gradient, [1, self.n_hidden])
-            
-            Vk_gradient = tf.reshape(Vk_gradient, [self.n_visible, 1])
-            phk_gradient = tf.reshape(phk_gradient, [1, self.n_hidden])
-            
-            #Cal gradientes
-            dW__gradient = tf.subtract(tf.matmul(v0_gradient, ph0_gradient),tf.matmul(Vk_gradient, phk_gradient))
-            dbh_gradient = tf.subtract(ph0_gradient, phk_gradient)
-            dbv_gradient = tf.subtract(v0_gradient, Vk_gradient)
-            
-            
-            return dW__gradient, dbh_gradient, dbv_gradient 
-                
-        i = 0
-        
-        dW = tf.compat.v1.zeros_like((self.n_visible, self.n_hidden))
-        dbh = tf.compat.v1.zeros_like((self.n_hidden))
-        dbv = tf.compat.v1.zeros_like((self.n_visible))
-        
-        [i, V0, ph0, Vk, phk, dW, dbh, dbv] = tf.while_loop(condition, body, [i, V0, ph0, Vk, phk, dW, dbh, dbv])        
-        
-        return dW, dbh, dbv
-    """
-    
-    """
-    * Método: _computeGradientes
-    * Descripción:
-    * Variables: 
-    *       - v: visible input vector
-    """    
-    def _computeGradientes_v2(self, V0, ph0, Vk, phk):        
+    def _computeGradients(self, V0, ph0, Vk, phk):        
                                                 
         dW = tf.compat.v1.zeros_like((self.n_visible, self.n_hidden))
         dbh = tf.compat.v1.zeros_like((self.n_hidden))
@@ -293,7 +192,7 @@ class RBM:
     """    
     def training(self, v):        
         
-        gibb_S = self._gibbsSampling_v2(v)
+        gibb_S = self._gibbsSampling(v)
         
         i = 0      
 
@@ -313,7 +212,7 @@ class RBM:
                 
             i+=1
         
-        dW, dbh, dbv = self._computeGradientes_v2(v0, ph0, vk, phk)        
+        dW, dbh, dbv = self._computeGradients(v0, ph0, vk, phk)        
         
         return dW, dbh, dbv, v0, ph0, vk, phk
     
