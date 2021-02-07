@@ -5,7 +5,7 @@ Created on Sat Aug 15 09:45:14 2020
 @author: Pc
 """
 
-import TitanicRBM
+import model.TitanicRBM
 import os
 
 class ModelApp:
@@ -14,7 +14,7 @@ class ModelApp:
         
         self.arr_fString = ['Sex','Age','Survived', 'PClass']
         
-        self.model = TitanicRBM.TitanicRBM(nameDataset = name_dataSet,n_epoch=num_epoch, lr=learning_rate, bs=batch_size, num_visible=n_visible, num_hidden=n_hidden, num_k=k, arr_fieldString=arr_fString)
+        self.model = model.TitanicRBM.TitanicRBM(nameDataset = name_dataSet, n_epoch=num_epoch, lr=learning_rate, bs=batch_size, num_visible=n_visible, num_hidden=n_hidden, num_k=k, arr_fieldString=arr_fString)
         
         """
         *
@@ -201,18 +201,18 @@ class ModelApp:
 if __name__== '__main__':
     
     #Cambiar valores por combinación óptima trás el análisis del modelo
-    batch_size = 32
-    learning_rate = 0.001
-    n_hidden = 2
+    batch_size = 16
+    learning_rate = 0.01
+    n_hidden = 4
     
     
     n_visible = 4
     k = 1
     arr_fString = ['Sex','Age','Survived', 'PClass']
-    num_epoch = 1
+    num_epoch = 2000
     
     dir_name = 'resultadosTrain'
-    name_dataSet = 'Titanic2200.csv'
+    name_dataSet = 'datasets/Titanic2200.csv'
     
     if not os.path.exists(dir_name):
         os.mkdir(dir_name)

@@ -1,8 +1,0 @@
-Prueba Multi Entrenamiento
-	Valores de la red:
-		Num epoch: 1		 LR: 0.001
-		Num visible: 4		 Num hidden: 2
-		Batch size: 32		 K: 1
-Calculo precisión train:
-
-	La época actual es: 1

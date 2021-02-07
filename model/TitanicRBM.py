@@ -5,7 +5,7 @@ Created on Fri Aug 14 18:42:21 2020
 @author: Pc
 """
 
-from modelRBM import RBM
+from model.modelRBM import RBM
 import tensorflow as tf
 import numpy as np
 import csv
@@ -19,34 +19,44 @@ class TitanicRBM:
         
         if(len(input_data) > 0):
 
-            self.rbm = RBM(num_epoch=n_epoch, learning_rate=lr, batch_size=bs, n_visible=num_visible, n_hidden=num_hidden, k=num_k)
-            self.input_random = np.random.permutation(input_data)
+            if((n_epoch < 1) or (lr == 0) or (bs < 1) or (num_visible < 1) or (num_hidden < 1) or (num_k < 1)):
+                print('Alguno de los parámetros tiene valor incorrecto: \n\n')
+                print('\tNúmero de épocas: '+str(n_epoch)+' debe tener valor >= 1.\n')
+                print('\tRatio de aprendizaje: '+str(lr)+' debe tener valor != 0.\n')
+                print('\tTamaño del batch: '+str(bs)+' debe tener valor >= 1.\n')
+                print('\tNúmero de neuronas visibles: '+str(num_visible)+' debe tener valor >= 1.\n')
+                print('\tNúmero de neuronas ocultas: '+str(num_hidden)+' debe tener valor >= 1.\n')
+                print('\tValor del parámetro k: '+str(num_k)+' debe tener valor >= 1.\n')
             
-            self.arr_StringComb, self.arr_Comb = self._getCombinatorial() # Obtenemos los valores de la combinatoria
-            self.dict_dataComb, self.dict_dataDist = self._init_dictData(self.input_random) # Contiene la distribución de los datos y 
-                                                                                            # los datos separados por tipo de valores
-            
-            arr_train = []  
-            arr_test = []                                                                   
-            
-            # Separamos los valores por la combinación e introducimos el 70% 
-            # de ellos en el train arr y el otro en el test
-            for key, arr_valores in self.dict_dataDist.items():
-                for data in arr_valores[:round(len(arr_valores)*0.7)]:
-                    arr_train.append(data)             
+            else:    
+                self.rbm = RBM(num_epoch=n_epoch, learning_rate=lr, batch_size=bs, n_visible=num_visible, n_hidden=num_hidden, k=num_k)
+                self.input_random = np.random.permutation(input_data)
                 
-                for data in arr_valores[round(len(arr_valores)*0.7):]:
-                    arr_test.append(data)
-            
-            
-            # Contiene la distribución de los datos y los datos separados 
-            # por tipo de valores para los data set de train y test
-            self.dict_trainComb, self.dict_trainDist = self._init_dictData(arr_train)
-            self.dict_testComb, self.dict_testDist = self._init_dictData(arr_test)        
-            
-            # Dividimos los data set de train y test en batch        
-            self.trainingData = self._create_batch(np.random.permutation(arr_train))
-            self.testData = self._create_batch(np.random.permutation(arr_test))
+                self.arr_StringComb, self.arr_Comb = self._getCombinatorial() # Obtenemos los valores de la combinatoria
+                self.dict_dataComb, self.dict_dataDist = self._init_dictData(self.input_random) # Contiene la distribución de los datos y 
+                                                                                                # los datos separados por tipo de valores
+                
+                arr_train = []  
+                arr_test = []                                                                   
+                
+                # Separamos los valores por la combinación e introducimos el 70% 
+                # de ellos en el train arr y el otro en el test
+                for key, arr_valores in self.dict_dataDist.items():
+                    for data in arr_valores[:round(len(arr_valores)*0.7)]:
+                        arr_train.append(data)             
+                    
+                    for data in arr_valores[round(len(arr_valores)*0.7):]:
+                        arr_test.append(data)
+                
+                
+                # Contiene la distribución de los datos y los datos separados 
+                # por tipo de valores para los data set de train y test
+                self.dict_trainComb, self.dict_trainDist = self._init_dictData(arr_train)
+                self.dict_testComb, self.dict_testDist = self._init_dictData(arr_test)        
+                
+                # Dividimos los data set de train y test en batch        
+                self.trainingData = self._create_batch(np.random.permutation(arr_train))
+                self.testData = self._create_batch(np.random.permutation(arr_test))
         
         else:
             print('El fichero del data set seleccionado no contiene ningún registro')
@@ -358,15 +368,13 @@ class TitanicRBM:
         
         if(len(self.input_random) > 0):
             
-            for data_n in self.input_random:
-               
+            for data_n in self.input_random:               
                 
                 # Almacenamos en el array las combinaciones de v
                 if(len(comb) < (2)**self.rbm.n_visible):
                     
                     key = ''
-                    
-                    
+                                        
                     # Si aún no se ha añadido ningún valor al arr de la 
                     # combinatoria se introduce el primero                 
                     if(len(comb) == 0):
@@ -380,8 +388,7 @@ class TitanicRBM:
                     else:
                         
                         i = 1
-                        
-                        
+                                                
                         # Recorremos el arr de la combinatoria                    
                         for v in comb:                                                                        
                             
@@ -462,8 +469,9 @@ class TitanicRBM:
                 
         if(len(dataArr) == 0):
             
-            print('Array sobre el que aplicar el batch está vació')
-            
+            print('Array sobre el que aplicar el batch está vacio.\n\n')
+        elif(self.rbm.batch_size < 1):
+            print('El tamaño de batch es 0, este valor debe ser mayor o igual a 1.\n\n')
         else:
 
             for data in dataArr:

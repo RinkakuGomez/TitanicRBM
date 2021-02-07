@@ -5,7 +5,7 @@ Created on Fri Aug 14 11:27:55 2020
 @author: Pc
 """
 
-from modelRBM import RBM
+from model.modelRBM import RBM
 import tensorflow as tf
 import numpy as np
 import csv
@@ -154,23 +154,6 @@ class BateriaPruebas:
             print('Error al inicializar los diccionarios del test data set.')
         
         return 'OK'
-        
-    """
-    Prueba Hidden y Visible sample única iteracción
-    """
-    def pruebaGS_Hidden(self):
-        
-        prob, bernouille = self.prueba._hidden_sample([1.0,0.0])
-
-        print('Prueba prob: '.format(prob))
-        print('Prueba bernouille: '.format(bernouille))
-        print('Prueba shape: '.format(tf.shape(prob)))
-        
-        prob, bernouille = self.prueba._visible_sample(bernouille)
-
-        print('Prueba prob2: '.format(prob))
-     
-        print('Prueba bernouille2: '.format(bernouille))
         
     """
     Prueba Gibb Sampling y Compute Gradient única iteracción
@@ -656,11 +639,7 @@ class BateriaPruebas:
                     dictClassSurv[row['PClass']] += 1
                 
             for key, prob in dictClass.items():
-                print('Clase '+key+', probs: '+str(prob))
-            for key, prob in dictClassMuerte.items():
-                print('Clase '+key+' ratio muerte: '+str(prob))
-            for key, prob in dictClassSurv.items():
-                print('Clase '+key+' ratio survi: '+str(prob))
-            
+                print('Clase '+key+', total personas: '+str(prob)+' número muertes: '+str(dictClassMuerte[key])+' número supervivientes: '+str(dictClassSurv[key]))
+                print('Porce muertos: '+str((dictClassMuerte[key]/prob)*100)+' / Porcen supervivientes: '+str((dictClassSurv[key]/prob)*100)+'\n\n')                
                                 
             return ''
