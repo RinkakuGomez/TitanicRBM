@@ -1,0 +1,5157 @@
+Prueba Multi Entrenamiento
+	Valores de la red:
+		Num epoch: 2000		 LR: 0.1
+		Num visible: 4		 Num hidden: 4
+		Batch size: 16		 K: 1
+Calculo precisión train:
+
+	La época actual es: 1
+		Precisión training: 0.4963422119617462
+Calculo precisión train:
+
+	La época actual es: 2
+		Precisión training: 0.4900585412979126
+Calculo precisión train:
+
+	La época actual es: 3
+		Precisión training: 0.4989309012889862
+Calculo precisión train:
+
+	La época actual es: 4
+		Precisión training: 0.5022883415222168
+Calculo precisión train:
+
+	La época actual es: 5
+		Precisión training: 0.48581936955451965
+Calculo precisión train:
+
+	La época actual es: 6
+		Precisión training: 0.49651116132736206
+Calculo precisión train:
+
+	La época actual es: 7
+		Precisión training: 0.48726361989974976
+Calculo precisión train:
+
+	La época actual es: 8
+		Precisión training: 0.49664247035980225
+Calculo precisión train:
+
+	La época actual es: 9
+		Precisión training: 0.49392256140708923
+Calculo precisión train:
+
+	La época actual es: 10
+		Precisión training: 0.4936787486076355
+Calculo precisión train:
+
+	La época actual es: 11
+		Precisión training: 0.49844321608543396
+Calculo precisión train:
+
+	La época actual es: 12
+		Precisión training: 0.49191540479660034
+Calculo precisión train:
+
+	La época actual es: 13
+		Precisión training: 0.48585692048072815
+Calculo precisión train:
+
+	La época actual es: 14
+		Precisión training: 0.49938103556632996
+Calculo precisión train:
+
+	La época actual es: 15
+		Precisión training: 0.4962860941886902
+Calculo precisión train:
+
+	La época actual es: 16
+		Precisión training: 0.4896271228790283
+Calculo precisión train:
+
+	La época actual es: 17
+		Precisión training: 0.49744898080825806
+Calculo precisión train:
+
+	La época actual es: 18
+		Precisión training: 0.49133411049842834
+Calculo precisión train:
+
+	La época actual es: 19
+		Precisión training: 0.49622970819473267
+Calculo precisión train:
+
+	La época actual es: 20
+		Precisión training: 0.4993246793746948
+Calculo precisión train:
+
+	La época actual es: 21
+		Precisión training: 0.4779037535190582
+Calculo precisión train:
+
+	La época actual es: 22
+		Precisión training: 0.4969988167285919
+Calculo precisión train:
+
+	La época actual es: 23
+		Precisión training: 0.4850691258907318
+Calculo precisión train:
+
+	La época actual es: 24
+		Precisión training: 0.4807361960411072
+Calculo precisión train:
+
+	La época actual es: 25
+		Precisión training: 0.49667996168136597
+Calculo precisión train:
+
+	La época actual es: 26
+		Precisión training: 0.4914465844631195
+Calculo precisión train:
+
+	La época actual es: 27
+		Precisión training: 0.49124032258987427
+Calculo precisión train:
+
+	La época actual es: 28
+		Precisión training: 0.4927408993244171
+Calculo precisión train:
+
+	La época actual es: 29
+		Precisión training: 0.48535043001174927
+Calculo precisión train:
+
+	La época actual es: 30
+		Precisión training: 0.502438485622406
+Calculo precisión train:
+
+	La época actual es: 31
+		Precisión training: 0.49097761511802673
+Calculo precisión train:
+
+	La época actual es: 32
+		Precisión training: 0.4922720193862915
+Calculo precisión train:
+
+	La época actual es: 33
+		Precisión training: 0.48677605390548706
+Calculo precisión train:
+
+	La época actual es: 34
+		Precisión training: 0.4879764914512634
+Calculo precisión train:
+
+	La época actual es: 35
+		Precisión training: 0.49088379740715027
+Calculo precisión train:
+
+	La época actual es: 36
+		Precisión training: 0.5071278810501099
+Calculo precisión train:
+
+	La época actual es: 37
+		Precisión training: 0.4855380058288574
+Calculo precisión train:
+
+	La época actual es: 38
+		Precisión training: 0.4939038157463074
+Calculo precisión train:
+
+	La época actual es: 39
+		Precisión training: 0.4911278188228607
+Calculo precisión train:
+
+	La época actual es: 40
+		Precisión training: 0.4893645942211151
+Calculo precisión train:
+
+	La época actual es: 41
+		Precisión training: 0.48653221130371094
+Calculo precisión train:
+
+	La época actual es: 42
+		Precisión training: 0.4914279580116272
+Calculo precisión train:
+
+	La época actual es: 43
+		Precisión training: 0.4930034875869751
+Calculo precisión train:
+
+	La época actual es: 44
+		Precisión training: 0.48388734459877014
+Calculo precisión train:
+
+	La época actual es: 45
+		Precisión training: 0.4794042408466339
+Calculo precisión train:
+
+	La época actual es: 46
+		Precisión training: 0.49426019191741943
+Calculo precisión train:
+
+	La época actual es: 47
+		Precisión training: 0.48795777559280396
+Calculo precisión train:
+
+	La época actual es: 48
+		Precisión training: 0.49386635422706604
+Calculo precisión train:
+
+	La época actual es: 49
+		Precisión training: 0.4936225712299347
+Calculo precisión train:
+
+	La época actual es: 50
+		Precisión training: 0.48868927359580994
+Calculo precisión train:
+
+	La época actual es: 51
+		Precisión training: 0.4802858829498291
+Calculo precisión train:
+
+	La época actual es: 52
+		Precisión training: 0.4893271028995514
+Calculo precisión train:
+
+	La época actual es: 53
+		Precisión training: 0.49275970458984375
+Calculo precisión train:
+
+	La época actual es: 54
+		Precisión training: 0.4902274012565613
+Calculo precisión train:
+
+	La época actual es: 55
+		Precisión training: 0.48943963646888733
+Calculo precisión train:
+
+	La época actual es: 56
+		Precisión training: 0.48898938298225403
+Calculo precisión train:
+
+	La época actual es: 57
+		Precisión training: 0.48696368932724
+Calculo precisión train:
+
+	La época actual es: 58
+		Precisión training: 0.4900960326194763
+Calculo precisión train:
+
+	La época actual es: 59
+		Precisión training: 0.493453711271286
+Calculo precisión train:
+
+	La época actual es: 60
+		Precisión training: 0.49497297406196594
+Calculo precisión train:
+
+	La época actual es: 61
+		Precisión training: 0.49934348464012146
+Calculo precisión train:
+
+	La época actual es: 62
+		Precisión training: 0.492234468460083
+Calculo precisión train:
+
+	La época actual es: 63
+		Precisión training: 0.5001499652862549
+Calculo precisión train:
+
+	La época actual es: 64
+		Precisión training: 0.4908650815486908
+Calculo precisión train:
+
+	La época actual es: 65
+		Precisión training: 0.5017068982124329
+Calculo precisión train:
+
+	La época actual es: 66
+		Precisión training: 0.49105265736579895
+Calculo precisión train:
+
+	La época actual es: 67
+		Precisión training: 0.48364344239234924
+Calculo precisión train:
+
+	La época actual es: 68
+		Precisión training: 0.4957420527935028
+Calculo precisión train:
+
+	La época actual es: 69
+		Precisión training: 0.4911278188228607
+Calculo precisión train:
+
+	La época actual es: 70
+		Precisión training: 0.48587566614151
+Calculo precisión train:
+
+	La época actual es: 71
+		Precisión training: 0.4982743561267853
+Calculo precisión train:
+
+	La época actual es: 72
+		Precisión training: 0.5009003281593323
+Calculo precisión train:
+
+	La época actual es: 73
+		Precisión training: 0.4901335835456848
+Calculo precisión train:
+
+	La época actual es: 74
+		Precisión training: 0.4940726161003113
+Calculo precisión train:
+
+	La época actual es: 75
+		Precisión training: 0.48919573426246643
+Calculo precisión train:
+
+	La época actual es: 76
+		Precisión training: 0.4903399348258972
+Calculo precisión train:
+
+	La época actual es: 77
+		Precisión training: 0.490133672952652
+Calculo precisión train:
+
+	La época actual es: 78
+		Precisión training: 0.4846564829349518
+Calculo precisión train:
+
+	La época actual es: 79
+		Precisión training: 0.48572561144828796
+Calculo precisión train:
+
+	La época actual es: 80
+		Precisión training: 0.4989120364189148
+Calculo precisión train:
+
+	La época actual es: 81
+		Precisión training: 0.4870760440826416
+Calculo precisión train:
+
+	La época actual es: 82
+		Precisión training: 0.4843563437461853
+Calculo precisión train:
+
+	La época actual es: 83
+		Precisión training: 0.5003938674926758
+Calculo precisión train:
+
+	La época actual es: 84
+		Precisión training: 0.48510661721229553
+Calculo precisión train:
+
+	La época actual es: 85
+		Precisión training: 0.49133405089378357
+Calculo precisión train:
+
+	La época actual es: 86
+		Precisión training: 0.500562846660614
+Calculo precisión train:
+
+	La época actual es: 87
+		Precisión training: 0.5022508502006531
+Calculo precisión train:
+
+	La época actual es: 88
+		Precisión training: 0.49531063437461853
+Calculo precisión train:
+
+	La época actual es: 89
+		Precisión training: 0.48204904794692993
+Calculo precisión train:
+
+	La época actual es: 90
+		Precisión training: 0.4945039451122284
+Calculo precisión train:
+
+	La época actual es: 91
+		Precisión training: 0.49247828125953674
+Calculo precisión train:
+
+	La época actual es: 92
+		Precisión training: 0.48831427097320557
+Calculo precisión train:
+
+	La época actual es: 93
+		Precisión training: 0.4854443073272705
+Calculo precisión train:
+
+	La época actual es: 94
+		Precisión training: 0.48270559310913086
+Calculo precisión train:
+
+	La época actual es: 95
+		Precisión training: 0.4815615117549896
+Calculo precisión train:
+
+	La época actual es: 96
+		Precisión training: 0.49170923233032227
+Calculo precisión train:
+
+	La época actual es: 97
+		Precisión training: 0.48771390318870544
+Calculo precisión train:
+
+	La época actual es: 98
+		Precisión training: 0.4857442080974579
+Calculo precisión train:
+
+	La época actual es: 99
+		Precisión training: 0.49731767177581787
+Calculo precisión train:
+
+	La época actual es: 100
+		Precisión training: 0.48452505469322205
+Calculo precisión train:
+
+	La época actual es: 101
+		Precisión training: 0.48555681109428406
+Calculo precisión train:
+
+	La época actual es: 102
+		Precisión training: 0.486888587474823
+Calculo precisión train:
+
+	La época actual es: 103
+		Precisión training: 0.49896833300590515
+Calculo precisión train:
+
+	La época actual es: 104
+		Precisión training: 0.5010315775871277
+Calculo precisión train:
+
+	La época actual es: 105
+		Precisión training: 0.48953333497047424
+Calculo precisión train:
+
+	La época actual es: 106
+		Precisión training: 0.49840566515922546
+Calculo precisión train:
+
+	La época actual es: 107
+		Precisión training: 0.4908275604248047
+Calculo precisión train:
+
+	La época actual es: 108
+		Precisión training: 0.49551692605018616
+Calculo precisión train:
+
+	La época actual es: 109
+		Precisión training: 0.48823902010917664
+Calculo precisión train:
+
+	La época actual es: 110
+		Precisión training: 0.4942789375782013
+Calculo precisión train:
+
+	La época actual es: 111
+		Precisión training: 0.48842674493789673
+Calculo precisión train:
+
+	La época actual es: 112
+		Precisión training: 0.48655086755752563
+Calculo precisión train:
+
+	La época actual es: 113
+		Precisión training: 0.4983117878437042
+Calculo precisión train:
+
+	La época actual es: 114
+		Precisión training: 0.49606093764305115
+Calculo precisión train:
+
+	La época actual es: 115
+		Precisión training: 0.4933973550796509
+Calculo precisión train:
+
+	La época actual es: 116
+		Precisión training: 0.4929284453392029
+Calculo precisión train:
+
+	La época actual es: 117
+		Precisión training: 0.4854629933834076
+Calculo precisión train:
+
+	La época actual es: 118
+		Precisión training: 0.49457910656929016
+Calculo precisión train:
+
+	La época actual es: 119
+		Precisión training: 0.4871324300765991
+Calculo precisión train:
+
+	La época actual es: 120
+		Precisión training: 0.5002437233924866
+Calculo precisión train:
+
+	La época actual es: 121
+		Precisión training: 0.485744446516037
+Calculo precisión train:
+
+	La época actual es: 122
+		Precisión training: 0.4918593168258667
+Calculo precisión train:
+
+	La época actual es: 123
+		Precisión training: 0.4944291412830353
+Calculo precisión train:
+
+	La época actual es: 124
+		Precisión training: 0.4934348165988922
+Calculo precisión train:
+
+	La época actual es: 125
+		Precisión training: 0.48865169286727905
+Calculo precisión train:
+
+	La época actual es: 126
+		Precisión training: 0.49362242221832275
+Calculo precisión train:
+
+	La época actual es: 127
+		Precisión training: 0.4881264865398407
+Calculo precisión train:
+
+	La época actual es: 128
+		Precisión training: 0.4897584617137909
+Calculo precisión train:
+
+	La época actual es: 129
+		Precisión training: 0.48486268520355225
+Calculo precisión train:
+
+	La época actual es: 130
+		Precisión training: 0.492028146982193
+Calculo precisión train:
+
+	La época actual es: 131
+		Precisión training: 0.49958738684654236
+Calculo precisión train:
+
+	La época actual es: 132
+		Precisión training: 0.4944291114807129
+Calculo precisión train:
+
+	La época actual es: 133
+		Precisión training: 0.4959671199321747
+Calculo precisión train:
+
+	La época actual es: 134
+		Precisión training: 0.48962709307670593
+Calculo precisión train:
+
+	La época actual es: 135
+		Precisión training: 0.48837029933929443
+Calculo precisión train:
+
+	La época actual es: 136
+		Precisión training: 0.4948979914188385
+Calculo precisión train:
+
+	La época actual es: 137
+		Precisión training: 0.4883516728878021
+Calculo precisión train:
+
+	La época actual es: 138
+		Precisión training: 0.4879015386104584
+Calculo precisión train:
+
+	La época actual es: 139
+		Precisión training: 0.48703864216804504
+Calculo precisión train:
+
+	La época actual es: 140
+		Precisión training: 0.49407267570495605
+Calculo precisión train:
+
+	La época actual es: 141
+		Precisión training: 0.48392486572265625
+Calculo precisión train:
+
+	La época actual es: 142
+		Precisión training: 0.4942227303981781
+Calculo precisión train:
+
+	La época actual es: 143
+		Precisión training: 0.5070715546607971
+Calculo precisión train:
+
+	La época actual es: 144
+		Precisión training: 0.491409033536911
+Calculo precisión train:
+
+	La época actual es: 145
+		Precisión training: 0.4880141019821167
+Calculo precisión train:
+
+	La época actual es: 146
+		Precisión training: 0.48482516407966614
+Calculo precisión train:
+
+	La época actual es: 147
+		Precisión training: 0.4928346872329712
+Calculo precisión train:
+
+	La época actual es: 148
+		Precisión training: 0.4915778934955597
+Calculo precisión train:
+
+	La época actual es: 149
+		Precisión training: 0.4924033284187317
+Calculo precisión train:
+
+	La época actual es: 150
+		Precisión training: 0.4938850700855255
+Calculo precisión train:
+
+	La época actual es: 151
+		Precisión training: 0.5012754797935486
+Calculo precisión train:
+
+	La época actual es: 152
+		Precisión training: 0.4952167570590973
+Calculo precisión train:
+
+	La época actual es: 153
+		Precisión training: 0.4848252236843109
+Calculo precisión train:
+
+	La época actual es: 154
+		Precisión training: 0.4786352813243866
+Calculo precisión train:
+
+	La época actual es: 155
+		Precisión training: 0.49561071395874023
+Calculo precisión train:
+
+	La época actual es: 156
+		Precisión training: 0.4841687083244324
+Calculo precisión train:
+
+	La época actual es: 157
+		Precisión training: 0.4892894923686981
+Calculo precisión train:
+
+	La época actual es: 158
+		Precisión training: 0.4918968081474304
+Calculo precisión train:
+
+	La época actual es: 159
+		Precisión training: 0.49020859599113464
+Calculo precisión train:
+
+	La época actual es: 160
+		Precisión training: 0.4927220642566681
+Calculo precisión train:
+
+	La época actual es: 161
+		Precisión training: 0.48450636863708496
+Calculo precisión train:
+
+	La época actual es: 162
+		Precisión training: 0.4965299069881439
+Calculo precisión train:
+
+	La época actual es: 163
+		Precisión training: 0.49159663915634155
+Calculo precisión train:
+
+	La época actual es: 164
+		Precisión training: 0.48581936955451965
+Calculo precisión train:
+
+	La época actual es: 165
+		Precisión training: 0.4896272122859955
+Calculo precisión train:
+
+	La época actual es: 166
+		Precisión training: 0.47265154123306274
+Calculo precisión train:
+
+	La época actual es: 167
+		Precisión training: 0.48846420645713806
+Calculo precisión train:
+
+	La época actual es: 168
+		Precisión training: 0.4927971065044403
+Calculo precisión train:
+
+	La época actual es: 169
+		Precisión training: 0.4917842745780945
+Calculo precisión train:
+
+	La época actual es: 170
+		Precisión training: 0.4908277094364166
+Calculo precisión train:
+
+	La época actual es: 171
+		Precisión training: 0.485613077878952
+Calculo precisión train:
+
+	La época actual es: 172
+		Precisión training: 0.4861946403980255
+Calculo precisión train:
+
+	La época actual es: 173
+		Precisión training: 0.49739277362823486
+Calculo precisión train:
+
+	La época actual es: 174
+		Precisión training: 0.494204044342041
+Calculo precisión train:
+
+	La época actual es: 175
+		Precisión training: 0.49257197976112366
+Calculo precisión train:
+
+	La época actual es: 176
+		Precisión training: 0.5030761957168579
+Calculo precisión train:
+
+	La época actual es: 177
+		Precisión training: 0.49836811423301697
+Calculo precisión train:
+
+	La época actual es: 178
+		Precisión training: 0.49264708161354065
+Calculo precisión train:
+
+	La época actual es: 179
+		Precisión training: 0.4947103261947632
+Calculo precisión train:
+
+	La época actual es: 180
+		Precisión training: 0.4940725862979889
+Calculo precisión train:
+
+	La época actual es: 181
+		Precisión training: 0.49446654319763184
+Calculo precisión train:
+
+	La época actual es: 182
+		Precisión training: 0.4937725365161896
+Calculo precisión train:
+
+	La época actual es: 183
+		Precisión training: 0.4908275306224823
+Calculo precisión train:
+
+	La época actual es: 184
+		Precisión training: 0.4837185740470886
+Calculo precisión train:
+
+	La época actual es: 185
+		Precisión training: 0.4927596151828766
+Calculo precisión train:
+
+	La época actual es: 186
+		Precisión training: 0.49728021025657654
+Calculo precisión train:
+
+	La época actual es: 187
+		Precisión training: 0.49761781096458435
+Calculo precisión train:
+
+	La época actual es: 188
+		Precisión training: 0.4905087649822235
+Calculo precisión train:
+
+	La época actual es: 189
+		Precisión training: 0.48778894543647766
+Calculo precisión train:
+
+	La época actual es: 190
+		Precisión training: 0.48726361989974976
+Calculo precisión train:
+
+	La época actual es: 191
+		Precisión training: 0.4891957640647888
+Calculo precisión train:
+
+	La época actual es: 192
+		Precisión training: 0.492290735244751
+Calculo precisión train:
+
+	La época actual es: 193
+		Precisión training: 0.5013129711151123
+Calculo precisión train:
+
+	La época actual es: 194
+		Precisión training: 0.49307847023010254
+Calculo precisión train:
+
+	La época actual es: 195
+		Precisión training: 0.4846189022064209
+Calculo precisión train:
+
+	La época actual es: 196
+		Precisión training: 0.49622976779937744
+Calculo precisión train:
+
+	La época actual es: 197
+		Precisión training: 0.4978805184364319
+Calculo precisión train:
+
+	La época actual es: 198
+		Precisión training: 0.49570444226264954
+Calculo precisión train:
+
+	La época actual es: 199
+		Precisión training: 0.4881078004837036
+Calculo precisión train:
+
+	La época actual es: 200
+		Precisión training: 0.4903023838996887
+Calculo precisión train:
+
+	La época actual es: 201
+		Precisión training: 0.48996463418006897
+Calculo precisión train:
+
+	La época actual es: 202
+		Precisión training: 0.48829537630081177
+Calculo precisión train:
+
+	La época actual es: 203
+		Precisión training: 0.4815426170825958
+Calculo precisión train:
+
+	La época actual es: 204
+		Precisión training: 0.5025884509086609
+Calculo precisión train:
+
+	La época actual es: 205
+		Precisión training: 0.47696587443351746
+Calculo precisión train:
+
+	La época actual es: 206
+		Precisión training: 0.49754270911216736
+Calculo precisión train:
+
+	La época actual es: 207
+		Precisión training: 0.4830619692802429
+Calculo precisión train:
+
+	La época actual es: 208
+		Precisión training: 0.48928946256637573
+Calculo precisión train:
+
+	La época actual es: 209
+		Precisión training: 0.48874548077583313
+Calculo precisión train:
+
+	La época actual es: 210
+		Precisión training: 0.49313491582870483
+Calculo precisión train:
+
+	La época actual es: 211
+		Precisión training: 0.49197182059288025
+Calculo precisión train:
+
+	La época actual es: 212
+		Precisión training: 0.47951677441596985
+Calculo precisión train:
+
+	La época actual es: 213
+		Precisión training: 0.49553579092025757
+Calculo precisión train:
+
+	La época actual es: 214
+		Precisión training: 0.487563818693161
+Calculo precisión train:
+
+	La época actual es: 215
+		Precisión training: 0.4921218454837799
+Calculo precisión train:
+
+	La época actual es: 216
+		Precisión training: 0.4958357512950897
+Calculo precisión train:
+
+	La época actual es: 217
+		Precisión training: 0.4996248483657837
+Calculo precisión train:
+
+	La época actual es: 218
+		Precisión training: 0.48354965448379517
+Calculo precisión train:
+
+	La época actual es: 219
+		Precisión training: 0.4810924232006073
+Calculo precisión train:
+
+	La época actual es: 220
+		Precisión training: 0.5052708387374878
+Calculo precisión train:
+
+	La época actual es: 221
+		Precisión training: 0.4928722083568573
+Calculo precisión train:
+
+	La época actual es: 222
+		Precisión training: 0.4887080192565918
+Calculo precisión train:
+
+	La época actual es: 223
+		Precisión training: 0.48998352885246277
+Calculo precisión train:
+
+	La época actual es: 224
+		Precisión training: 0.49735528230667114
+Calculo precisión train:
+
+	La época actual es: 225
+		Precisión training: 0.49879953265190125
+Calculo precisión train:
+
+	La época actual es: 226
+		Precisión training: 0.4923095405101776
+Calculo precisión train:
+
+	La época actual es: 227
+		Precisión training: 0.4933973550796509
+Calculo precisión train:
+
+	La época actual es: 228
+		Precisión training: 0.4851066470146179
+Calculo precisión train:
+
+	La época actual es: 229
+		Precisión training: 0.5042204856872559
+Calculo precisión train:
+
+	La época actual es: 230
+		Precisión training: 0.4940539300441742
+Calculo precisión train:
+
+	La época actual es: 231
+		Precisión training: 0.4841875433921814
+Calculo precisión train:
+
+	La época actual es: 232
+		Precisión training: 0.4883703589439392
+Calculo precisión train:
+
+	La época actual es: 233
+		Precisión training: 0.4946915805339813
+Calculo precisión train:
+
+	La época actual es: 234
+		Precisión training: 0.49707385897636414
+Calculo precisión train:
+
+	La época actual es: 235
+		Precisión training: 0.48825788497924805
+Calculo precisión train:
+
+	La época actual es: 236
+		Precisión training: 0.5040328502655029
+Calculo precisión train:
+
+	La época actual es: 237
+		Precisión training: 0.4919905364513397
+Calculo precisión train:
+
+	La época actual es: 238
+		Precisión training: 0.48360592126846313
+Calculo precisión train:
+
+	La época actual es: 239
+		Precisión training: 0.48912063241004944
+Calculo precisión train:
+
+	La época actual es: 240
+		Precisión training: 0.4816552698612213
+Calculo precisión train:
+
+	La época actual es: 241
+		Precisión training: 0.4947667121887207
+Calculo precisión train:
+
+	La época actual es: 242
+		Precisión training: 0.4786915183067322
+Calculo precisión train:
+
+	La época actual es: 243
+		Precisión training: 0.49227190017700195
+Calculo precisión train:
+
+	La época actual es: 244
+		Precisión training: 0.49673616886138916
+Calculo precisión train:
+
+	La época actual es: 245
+		Precisión training: 0.4899272620677948
+Calculo precisión train:
+
+	La época actual es: 246
+		Precisión training: 0.4884079098701477
+Calculo precisión train:
+
+	La época actual es: 247
+		Precisión training: 0.48867055773735046
+Calculo precisión train:
+
+	La época actual es: 248
+		Precisión training: 0.5021008253097534
+Calculo precisión train:
+
+	La época actual es: 249
+		Precisión training: 0.4909025728702545
+Calculo precisión train:
+
+	La época actual es: 250
+		Precisión training: 0.4889143407344818
+Calculo precisión train:
+
+	La época actual es: 251
+		Precisión training: 0.4937162697315216
+Calculo precisión train:
+
+	La época actual es: 252
+		Precisión training: 0.4918217957019806
+Calculo precisión train:
+
+	La época actual es: 253
+		Precisión training: 0.489589661359787
+Calculo precisión train:
+
+	La época actual es: 254
+		Precisión training: 0.4882577359676361
+Calculo precisión train:
+
+	La época actual es: 255
+		Precisión training: 0.4893082082271576
+Calculo precisión train:
+
+	La época actual es: 256
+		Precisión training: 0.48885807394981384
+Calculo precisión train:
+
+	La época actual es: 257
+		Precisión training: 0.4920843541622162
+Calculo precisión train:
+
+	La época actual es: 258
+		Precisión training: 0.49561071395874023
+Calculo precisión train:
+
+	La época actual es: 259
+		Precisión training: 0.4888581335544586
+Calculo precisión train:
+
+	La época actual es: 260
+		Precisión training: 0.49399760365486145
+Calculo precisión train:
+
+	La época actual es: 261
+		Precisión training: 0.48730117082595825
+Calculo precisión train:
+
+	La época actual es: 262
+		Precisión training: 0.49909961223602295
+Calculo precisión train:
+
+	La época actual es: 263
+		Precisión training: 0.49698004126548767
+Calculo precisión train:
+
+	La época actual es: 264
+		Precisión training: 0.4909777045249939
+Calculo precisión train:
+
+	La época actual es: 265
+		Precisión training: 0.4825744330883026
+Calculo precisión train:
+
+	La época actual es: 266
+		Precisión training: 0.4836059808731079
+Calculo precisión train:
+
+	La época actual es: 267
+		Precisión training: 0.490396112203598
+Calculo precisión train:
+
+	La época actual es: 268
+		Precisión training: 0.49394136667251587
+Calculo precisión train:
+
+	La época actual es: 269
+		Precisión training: 0.49017107486724854
+Calculo precisión train:
+
+	La época actual es: 270
+		Precisión training: 0.49289095401763916
+Calculo precisión train:
+
+	La época actual es: 271
+		Precisión training: 0.48700112104415894
+Calculo precisión train:
+
+	La época actual es: 272
+		Precisión training: 0.4900398552417755
+Calculo precisión train:
+
+	La época actual es: 273
+		Precisión training: 0.4912215769290924
+Calculo precisión train:
+
+	La época actual es: 274
+		Precisión training: 0.4956482946872711
+Calculo precisión train:
+
+	La época actual es: 275
+		Precisión training: 0.48634469509124756
+Calculo precisión train:
+
+	La época actual es: 276
+		Precisión training: 0.48450636863708496
+Calculo precisión train:
+
+	La época actual es: 277
+		Precisión training: 0.49170923233032227
+Calculo precisión train:
+
+	La época actual es: 278
+		Precisión training: 0.5002438426017761
+Calculo precisión train:
+
+	La época actual es: 279
+		Precisión training: 0.48838910460472107
+Calculo precisión train:
+
+	La época actual es: 280
+		Precisión training: 0.49641740322113037
+Calculo precisión train:
+
+	La época actual es: 281
+		Precisión training: 0.48341843485832214
+Calculo precisión train:
+
+	La época actual es: 282
+		Precisión training: 0.490396112203598
+Calculo precisión train:
+
+	La época actual es: 283
+		Precisión training: 0.4905462861061096
+Calculo precisión train:
+
+	La época actual es: 284
+		Precisión training: 0.4936412572860718
+Calculo precisión train:
+
+	La época actual es: 285
+		Precisión training: 0.48795780539512634
+Calculo precisión train:
+
+	La época actual es: 286
+		Precisión training: 0.48666343092918396
+Calculo precisión train:
+
+	La época actual es: 287
+		Precisión training: 0.489983469247818
+Calculo precisión train:
+
+	La época actual es: 288
+		Precisión training: 0.5032826066017151
+Calculo precisión train:
+
+	La época actual es: 289
+		Precisión training: 0.4907338619232178
+Calculo precisión train:
+
+	La época actual es: 290
+		Precisión training: 0.4936787784099579
+Calculo precisión train:
+
+	La época actual es: 291
+		Precisión training: 0.4928158223628998
+Calculo precisión train:
+
+	La época actual es: 292
+		Precisión training: 0.4818052053451538
+Calculo precisión train:
+
+	La época actual es: 293
+		Precisión training: 0.491183876991272
+Calculo precisión train:
+
+	La época actual es: 294
+		Precisión training: 0.490283727645874
+Calculo precisión train:
+
+	La época actual es: 295
+		Precisión training: 0.4917466640472412
+Calculo precisión train:
+
+	La época actual es: 296
+		Precisión training: 0.48677605390548706
+Calculo precisión train:
+
+	La época actual es: 297
+		Precisión training: 0.49407270550727844
+Calculo precisión train:
+
+	La época actual es: 298
+		Precisión training: 0.4885767698287964
+Calculo precisión train:
+
+	La época actual es: 299
+		Precisión training: 0.49733632802963257
+Calculo precisión train:
+
+	La época actual es: 300
+		Precisión training: 0.4872261881828308
+Calculo precisión train:
+
+	La época actual es: 301
+		Precisión training: 0.48450636863708496
+Calculo precisión train:
+
+	La época actual es: 302
+		Precisión training: 0.4917842447757721
+Calculo precisión train:
+
+	La época actual es: 303
+		Precisión training: 0.484112411737442
+Calculo precisión train:
+
+	La época actual es: 304
+		Precisión training: 0.4979555308818817
+Calculo precisión train:
+
+	La época actual es: 305
+		Precisión training: 0.4980304539203644
+Calculo precisión train:
+
+	La época actual es: 306
+		Precisión training: 0.49508553743362427
+Calculo precisión train:
+
+	La época actual es: 307
+		Precisión training: 0.47533392906188965
+Calculo precisión train:
+
+	La época actual es: 308
+		Precisión training: 0.49364131689071655
+Calculo precisión train:
+
+	La época actual es: 309
+		Precisión training: 0.4954419434070587
+Calculo precisión train:
+
+	La época actual es: 310
+		Precisión training: 0.4891769587993622
+Calculo precisión train:
+
+	La época actual es: 311
+		Precisión training: 0.49182167649269104
+Calculo precisión train:
+
+	La época actual es: 312
+		Precisión training: 0.4944666624069214
+Calculo precisión train:
+
+	La época actual es: 313
+		Precisión training: 0.49467286467552185
+Calculo precisión train:
+
+	La época actual es: 314
+		Precisión training: 0.4820115864276886
+Calculo precisión train:
+
+	La época actual es: 315
+		Precisión training: 0.4953857362270355
+Calculo precisión train:
+
+	La época actual es: 316
+		Precisión training: 0.4948979616165161
+Calculo precisión train:
+
+	La época actual es: 317
+		Precisión training: 0.4817489981651306
+Calculo precisión train:
+
+	La época actual es: 318
+		Precisión training: 0.4943540394306183
+Calculo precisión train:
+
+	La época actual es: 319
+		Precisión training: 0.47636568546295166
+Calculo precisión train:
+
+	La época actual es: 320
+		Precisión training: 0.4947291910648346
+Calculo precisión train:
+
+	La época actual es: 321
+		Precisión training: 0.49352866411209106
+Calculo precisión train:
+
+	La época actual es: 322
+		Precisión training: 0.49521687626838684
+Calculo precisión train:
+
+	La época actual es: 323
+		Precisión training: 0.4929097592830658
+Calculo precisión train:
+
+	La época actual es: 324
+		Precisión training: 0.49090269207954407
+Calculo precisión train:
+
+	La época actual es: 325
+		Precisión training: 0.483437180519104
+Calculo precisión train:
+
+	La época actual es: 326
+		Precisión training: 0.4912778437137604
+Calculo precisión train:
+
+	La época actual es: 327
+		Precisión training: 0.4858381748199463
+Calculo precisión train:
+
+	La época actual es: 328
+		Precisión training: 0.49294713139533997
+Calculo precisión train:
+
+	La época actual es: 329
+		Precisión training: 0.4898334741592407
+Calculo precisión train:
+
+	La época actual es: 330
+		Precisión training: 0.4830807149410248
+Calculo precisión train:
+
+	La época actual es: 331
+		Precisión training: 0.49214068055152893
+Calculo precisión train:
+
+	La época actual es: 332
+		Precisión training: 0.5007501840591431
+Calculo precisión train:
+
+	La época actual es: 333
+		Precisión training: 0.48463761806488037
+Calculo precisión train:
+
+	La época actual es: 334
+		Precisión training: 0.4883703887462616
+Calculo precisión train:
+
+	La época actual es: 335
+		Precisión training: 0.489533394575119
+Calculo precisión train:
+
+	La época actual es: 336
+		Precisión training: 0.49345359206199646
+Calculo precisión train:
+
+	La época actual es: 337
+		Precisión training: 0.4933410584926605
+Calculo precisión train:
+
+	La época actual es: 338
+		Precisión training: 0.48947712779045105
+Calculo precisión train:
+
+	La época actual es: 339
+		Precisión training: 0.48733872175216675
+Calculo precisión train:
+
+	La época actual es: 340
+		Precisión training: 0.49247828125953674
+Calculo precisión train:
+
+	La época actual es: 341
+		Precisión training: 0.49197182059288025
+Calculo precisión train:
+
+	La época actual es: 342
+		Precisión training: 0.4853879511356354
+Calculo precisión train:
+
+	La época actual es: 343
+		Precisión training: 0.4935663044452667
+Calculo precisión train:
+
+	La época actual es: 344
+		Precisión training: 0.4817676842212677
+Calculo precisión train:
+
+	La época actual es: 345
+		Precisión training: 0.4932473301887512
+Calculo precisión train:
+
+	La época actual es: 346
+		Precisión training: 0.4930221438407898
+Calculo precisión train:
+
+	La época actual es: 347
+		Precisión training: 0.48972088098526
+Calculo precisión train:
+
+	La época actual es: 348
+		Precisión training: 0.4929284453392029
+Calculo precisión train:
+
+	La época actual es: 349
+		Precisión training: 0.490752637386322
+Calculo precisión train:
+
+	La época actual es: 350
+		Precisión training: 0.48838916420936584
+Calculo precisión train:
+
+	La época actual es: 351
+		Precisión training: 0.4815613925457001
+Calculo precisión train:
+
+	La época actual es: 352
+		Precisión training: 0.48852044343948364
+Calculo precisión train:
+
+	La época actual es: 353
+		Precisión training: 0.48568806052207947
+Calculo precisión train:
+
+	La época actual es: 354
+		Precisión training: 0.4936787486076355
+Calculo precisión train:
+
+	La época actual es: 355
+		Precisión training: 0.4914090931415558
+Calculo precisión train:
+
+	La época actual es: 356
+		Precisión training: 0.4890831410884857
+Calculo precisión train:
+
+	La época actual es: 357
+		Precisión training: 0.4927408695220947
+Calculo precisión train:
+
+	La época actual es: 358
+		Precisión training: 0.48927074670791626
+Calculo precisión train:
+
+	La época actual es: 359
+		Precisión training: 0.4935849606990814
+Calculo precisión train:
+
+	La época actual es: 360
+		Precisión training: 0.48465654253959656
+Calculo precisión train:
+
+	La época actual es: 361
+		Precisión training: 0.48973965644836426
+Calculo precisión train:
+
+	La época actual es: 362
+		Precisión training: 0.4837373197078705
+Calculo precisión train:
+
+	La época actual es: 363
+		Precisión training: 0.4867572486400604
+Calculo precisión train:
+
+	La época actual es: 364
+		Precisión training: 0.48945823311805725
+Calculo precisión train:
+
+	La época actual es: 365
+		Precisión training: 0.4868885278701782
+Calculo precisión train:
+
+	La época actual es: 366
+		Precisión training: 0.49632352590560913
+Calculo precisión train:
+
+	La época actual es: 367
+		Precisión training: 0.4850502014160156
+Calculo precisión train:
+
+	La época actual es: 368
+		Precisión training: 0.489777147769928
+Calculo precisión train:
+
+	La época actual es: 369
+		Precisión training: 0.4893082082271576
+Calculo precisión train:
+
+	La época actual es: 370
+		Precisión training: 0.48960837721824646
+Calculo precisión train:
+
+	La época actual es: 371
+		Precisión training: 0.49684879183769226
+Calculo precisión train:
+
+	La época actual es: 372
+		Precisión training: 0.4909777045249939
+Calculo precisión train:
+
+	La época actual es: 373
+		Precisión training: 0.4987807273864746
+Calculo precisión train:
+
+	La época actual es: 374
+		Precisión training: 0.4844501316547394
+Calculo precisión train:
+
+	La época actual es: 375
+		Precisión training: 0.48927080631256104
+Calculo precisión train:
+
+	La época actual es: 376
+		Precisión training: 0.5026636123657227
+Calculo precisión train:
+
+	La época actual es: 377
+		Precisión training: 0.47932928800582886
+Calculo precisión train:
+
+	La época actual es: 378
+		Precisión training: 0.4915027916431427
+Calculo precisión train:
+
+	La época actual es: 379
+		Precisión training: 0.4971300959587097
+Calculo precisión train:
+
+	La época actual es: 380
+		Precisión training: 0.48373720049858093
+Calculo precisión train:
+
+	La época actual es: 381
+		Precisión training: 0.5012942552566528
+Calculo precisión train:
+
+	La época actual es: 382
+		Precisión training: 0.4875263273715973
+Calculo precisión train:
+
+	La época actual es: 383
+		Precisión training: 0.4844124913215637
+Calculo precisión train:
+
+	La época actual es: 384
+		Precisión training: 0.4925908148288727
+Calculo precisión train:
+
+	La época actual es: 385
+		Precisión training: 0.4968487620353699
+Calculo precisión train:
+
+	La época actual es: 386
+		Precisión training: 0.48701977729797363
+Calculo precisión train:
+
+	La época actual es: 387
+		Precisión training: 0.49170926213264465
+Calculo precisión train:
+
+	La época actual es: 388
+		Precisión training: 0.4914465844631195
+Calculo precisión train:
+
+	La época actual es: 389
+		Precisión training: 0.4915216863155365
+Calculo precisión train:
+
+	La época actual es: 390
+		Precisión training: 0.4918406009674072
+Calculo precisión train:
+
+	La época actual es: 391
+		Precisión training: 0.4945603609085083
+Calculo precisión train:
+
+	La época actual es: 392
+		Precisión training: 0.4941100776195526
+Calculo precisión train:
+
+	La época actual es: 393
+		Precisión training: 0.49084633588790894
+Calculo precisión train:
+
+	La época actual es: 394
+		Precisión training: 0.4949356019496918
+Calculo precisión train:
+
+	La época actual es: 395
+		Precisión training: 0.4841875433921814
+Calculo precisión train:
+
+	La época actual es: 396
+		Precisión training: 0.49906212091445923
+Calculo precisión train:
+
+	La época actual es: 397
+		Precisión training: 0.48816409707069397
+Calculo precisión train:
+
+	La época actual es: 398
+		Precisión training: 0.49157801270484924
+Calculo precisión train:
+
+	La época actual es: 399
+		Precisión training: 0.49861204624176025
+Calculo precisión train:
+
+	La época actual es: 400
+		Precisión training: 0.4942414462566376
+Calculo precisión train:
+
+	La época actual es: 401
+		Precisión training: 0.4882766306400299
+Calculo precisión train:
+
+	La época actual es: 402
+		Precisión training: 0.4840749204158783
+Calculo precisión train:
+
+	La época actual es: 403
+		Precisión training: 0.49821802973747253
+Calculo precisión train:
+
+	La época actual es: 404
+		Precisión training: 0.49876201152801514
+Calculo precisión train:
+
+	La época actual es: 405
+		Precisión training: 0.48548176884651184
+Calculo precisión train:
+
+	La época actual es: 406
+		Precisión training: 0.4945228397846222
+Calculo precisión train:
+
+	La época actual es: 407
+		Precisión training: 0.4936786890029907
+Calculo precisión train:
+
+	La época actual es: 408
+		Precisión training: 0.48919567465782166
+Calculo precisión train:
+
+	La época actual es: 409
+		Precisión training: 0.487432599067688
+Calculo precisión train:
+
+	La época actual es: 410
+		Precisión training: 0.47871026396751404
+Calculo precisión train:
+
+	La época actual es: 411
+		Precisión training: 0.49369749426841736
+Calculo precisión train:
+
+	La época actual es: 412
+		Precisión training: 0.4820866584777832
+Calculo precisión train:
+
+	La época actual es: 413
+		Precisión training: 0.4920467436313629
+Calculo precisión train:
+
+	La época actual es: 414
+		Precisión training: 0.49033981561660767
+Calculo precisión train:
+
+	La época actual es: 415
+		Precisión training: 0.4928908348083496
+Calculo precisión train:
+
+	La época actual es: 416
+		Precisión training: 0.4816739857196808
+Calculo precisión train:
+
+	La época actual es: 417
+		Precisión training: 0.49296584725379944
+Calculo precisión train:
+
+	La época actual es: 418
+		Precisión training: 0.4826493561267853
+Calculo precisión train:
+
+	La época actual es: 419
+		Precisión training: 0.49122148752212524
+Calculo precisión train:
+
+	La época actual es: 420
+		Precisión training: 0.49589207768440247
+Calculo precisión train:
+
+	La época actual es: 421
+		Precisión training: 0.48433756828308105
+Calculo precisión train:
+
+	La época actual es: 422
+		Precisión training: 0.4903775751590729
+Calculo precisión train:
+
+	La época actual es: 423
+		Precisión training: 0.4903397858142853
+Calculo precisión train:
+
+	La época actual es: 424
+		Precisión training: 0.4936411678791046
+Calculo precisión train:
+
+	La época actual es: 425
+		Precisión training: 0.48591309785842896
+Calculo precisión train:
+
+	La época actual es: 426
+		Precisión training: 0.4904898703098297
+Calculo precisión train:
+
+	La época actual es: 427
+		Precisión training: 0.493228554725647
+Calculo precisión train:
+
+	La época actual es: 428
+		Precisión training: 0.49396002292633057
+Calculo precisión train:
+
+	La época actual es: 429
+		Precisión training: 0.49071502685546875
+Calculo precisión train:
+
+	La época actual es: 430
+		Precisión training: 0.4797607362270355
+Calculo precisión train:
+
+	La época actual es: 431
+		Precisión training: 0.48897066712379456
+Calculo precisión train:
+
+	La época actual es: 432
+		Precisión training: 0.4917093515396118
+Calculo precisión train:
+
+	La época actual es: 433
+		Precisión training: 0.49272215366363525
+Calculo precisión train:
+
+	La época actual es: 434
+		Precisión training: 0.4908650815486908
+Calculo precisión train:
+
+	La época actual es: 435
+		Precisión training: 0.47764113545417786
+Calculo precisión train:
+
+	La época actual es: 436
+		Precisión training: 0.5017069578170776
+Calculo precisión train:
+
+	La época actual es: 437
+		Precisión training: 0.49551698565483093
+Calculo precisión train:
+
+	La época actual es: 438
+		Precisión training: 0.48910191655158997
+Calculo precisión train:
+
+	La época actual es: 439
+		Precisión training: 0.48910191655158997
+Calculo precisión train:
+
+	La época actual es: 440
+		Precisión training: 0.48900818824768066
+Calculo precisión train:
+
+	La época actual es: 441
+		Precisión training: 0.4993623197078705
+Calculo precisión train:
+
+	La época actual es: 442
+		Precisión training: 0.4886518120765686
+Calculo precisión train:
+
+	La época actual es: 443
+		Precisión training: 0.4816927909851074
+Calculo precisión train:
+
+	La época actual es: 444
+		Precisión training: 0.4963423013687134
+Calculo precisión train:
+
+	La época actual es: 445
+		Precisión training: 0.5001500844955444
+Calculo precisión train:
+
+	La época actual es: 446
+		Precisión training: 0.4968299865722656
+Calculo precisión train:
+
+	La época actual es: 447
+		Precisión training: 0.4941476583480835
+Calculo precisión train:
+
+	La época actual es: 448
+		Precisión training: 0.4969426095485687
+Calculo precisión train:
+
+	La época actual es: 449
+		Precisión training: 0.492440789937973
+Calculo precisión train:
+
+	La época actual es: 450
+		Precisión training: 0.48897066712379456
+Calculo precisión train:
+
+	La época actual es: 451
+		Precisión training: 0.48792022466659546
+Calculo precisión train:
+
+	La época actual es: 452
+		Precisión training: 0.49551698565483093
+Calculo precisión train:
+
+	La época actual es: 453
+		Precisión training: 0.49084633588790894
+Calculo precisión train:
+
+	La época actual es: 454
+		Precisión training: 0.487957626581192
+Calculo precisión train:
+
+	La época actual es: 455
+		Precisión training: 0.4817676842212677
+Calculo precisión train:
+
+	La época actual es: 456
+		Precisión training: 0.487845242023468
+Calculo precisión train:
+
+	La época actual es: 457
+		Precisión training: 0.4802859425544739
+Calculo precisión train:
+
+	La época actual es: 458
+		Precisión training: 0.4926470220088959
+Calculo precisión train:
+
+	La época actual es: 459
+		Precisión training: 0.49328485131263733
+Calculo precisión train:
+
+	La época actual es: 460
+		Precisión training: 0.49307844042778015
+Calculo precisión train:
+
+	La época actual es: 461
+		Precisión training: 0.49765536189079285
+Calculo precisión train:
+
+	La época actual es: 462
+		Precisión training: 0.49664244055747986
+Calculo precisión train:
+
+	La época actual es: 463
+		Precisión training: 0.4787289798259735
+Calculo precisión train:
+
+	La época actual es: 464
+		Precisión training: 0.48505035042762756
+Calculo precisión train:
+
+	La época actual es: 465
+		Precisión training: 0.49576088786125183
+Calculo precisión train:
+
+	La época actual es: 466
+		Precisión training: 0.4938475489616394
+Calculo precisión train:
+
+	La época actual es: 467
+		Precisión training: 0.49542322754859924
+Calculo precisión train:
+
+	La época actual es: 468
+		Precisión training: 0.49155905842781067
+Calculo precisión train:
+
+	La época actual es: 469
+		Precisión training: 0.4861944913864136
+Calculo precisión train:
+
+	La época actual es: 470
+		Precisión training: 0.4944290220737457
+Calculo precisión train:
+
+	La época actual es: 471
+		Precisión training: 0.49930596351623535
+Calculo precisión train:
+
+	La época actual es: 472
+		Precisión training: 0.48587566614151
+Calculo precisión train:
+
+	La época actual es: 473
+		Precisión training: 0.4904525876045227
+Calculo precisión train:
+
+	La época actual es: 474
+		Precisión training: 0.4824431240558624
+Calculo precisión train:
+
+	La época actual es: 475
+		Precisión training: 0.48962709307670593
+Calculo precisión train:
+
+	La época actual es: 476
+		Precisión training: 0.4937349557876587
+Calculo precisión train:
+
+	La época actual es: 477
+		Precisión training: 0.4881078004837036
+Calculo precisión train:
+
+	La época actual es: 478
+		Precisión training: 0.4977490305900574
+Calculo precisión train:
+
+	La época actual es: 479
+		Precisión training: 0.4929472506046295
+Calculo precisión train:
+
+	La época actual es: 480
+		Precisión training: 0.4950667917728424
+Calculo precisión train:
+
+	La época actual es: 481
+		Precisión training: 0.4871886074542999
+Calculo precisión train:
+
+	La época actual es: 482
+		Precisión training: 0.48750752210617065
+Calculo precisión train:
+
+	La época actual es: 483
+		Precisión training: 0.4902086555957794
+Calculo precisión train:
+
+	La época actual es: 484
+		Precisión training: 0.49729883670806885
+Calculo precisión train:
+
+	La época actual es: 485
+		Precisión training: 0.49048998951911926
+Calculo precisión train:
+
+	La época actual es: 486
+		Precisión training: 0.49101513624191284
+Calculo precisión train:
+
+	La época actual es: 487
+		Precisión training: 0.48508787155151367
+Calculo precisión train:
+
+	La época actual es: 488
+		Precisión training: 0.4911465048789978
+Calculo precisión train:
+
+	La época actual es: 489
+		Precisión training: 0.49041491746902466
+Calculo precisión train:
+
+	La época actual es: 490
+		Precisión training: 0.49154040217399597
+Calculo precisión train:
+
+	La época actual es: 491
+		Precisión training: 0.4921970069408417
+Calculo precisión train:
+
+	La época actual es: 492
+		Precisión training: 0.4873011112213135
+Calculo precisión train:
+
+	La época actual es: 493
+		Precisión training: 0.49516063928604126
+Calculo precisión train:
+
+	La época actual es: 494
+		Precisión training: 0.4940725862979889
+Calculo precisión train:
+
+	La época actual es: 495
+		Precisión training: 0.4916529655456543
+Calculo precisión train:
+
+	La época actual es: 496
+		Precisión training: 0.4865134060382843
+Calculo precisión train:
+
+	La época actual es: 497
+		Precisión training: 0.4854629337787628
+Calculo precisión train:
+
+	La época actual es: 498
+		Precisión training: 0.4994184672832489
+Calculo precisión train:
+
+	La época actual es: 499
+		Precisión training: 0.49392247200012207
+Calculo precisión train:
+
+	La época actual es: 500
+		Precisión training: 0.4933411478996277
+Calculo precisión train:
+
+	La época actual es: 501
+		Precisión training: 0.4945603907108307
+Calculo precisión train:
+
+	La época actual es: 502
+		Precisión training: 0.5061712265014648
+Calculo precisión train:
+
+	La época actual es: 503
+		Precisión training: 0.4949916899204254
+Calculo precisión train:
+
+	La época actual es: 504
+		Precisión training: 0.4902086555957794
+Calculo precisión train:
+
+	La época actual es: 505
+		Precisión training: 0.49259084463119507
+Calculo precisión train:
+
+	La época actual es: 506
+		Precisión training: 0.49049004912376404
+Calculo precisión train:
+
+	La época actual es: 507
+		Precisión training: 0.4877701997756958
+Calculo precisión train:
+
+	La época actual es: 508
+		Precisión training: 0.5021384358406067
+Calculo precisión train:
+
+	La época actual es: 509
+		Precisión training: 0.4947667419910431
+Calculo precisión train:
+
+	La época actual es: 510
+		Precisión training: 0.4798732399940491
+Calculo precisión train:
+
+	La época actual es: 511
+		Precisión training: 0.4858568012714386
+Calculo precisión train:
+
+	La época actual es: 512
+		Precisión training: 0.49675506353378296
+Calculo precisión train:
+
+	La época actual es: 513
+		Precisión training: 0.5019882917404175
+Calculo precisión train:
+
+	La época actual es: 514
+		Precisión training: 0.4955919682979584
+Calculo precisión train:
+
+	La época actual es: 515
+		Precisión training: 0.4847688376903534
+Calculo precisión train:
+
+	La época actual es: 516
+		Precisión training: 0.4852379262447357
+Calculo precisión train:
+
+	La época actual es: 517
+		Precisión training: 0.490133672952652
+Calculo precisión train:
+
+	La época actual es: 518
+		Precisión training: 0.4840374290943146
+Calculo precisión train:
+
+	La época actual es: 519
+		Precisión training: 0.49591079354286194
+Calculo precisión train:
+
+	La época actual es: 520
+		Precisión training: 0.4973739683628082
+Calculo precisión train:
+
+	La época actual es: 521
+		Precisión training: 0.49557316303253174
+Calculo precisión train:
+
+	La época actual es: 522
+		Precisión training: 0.4904337525367737
+Calculo precisión train:
+
+	La época actual es: 523
+		Precisión training: 0.4828932285308838
+Calculo precisión train:
+
+	La época actual es: 524
+		Precisión training: 0.4964924156665802
+Calculo precisión train:
+
+	La época actual es: 525
+		Precisión training: 0.48555678129196167
+Calculo precisión train:
+
+	La época actual es: 526
+		Precisión training: 0.49069637060165405
+Calculo precisión train:
+
+	La época actual es: 527
+		Precisión training: 0.49199050664901733
+Calculo precisión train:
+
+	La época actual es: 528
+		Precisión training: 0.4968673884868622
+Calculo precisión train:
+
+	La época actual es: 529
+		Precisión training: 0.49097761511802673
+Calculo precisión train:
+
+	La época actual es: 530
+		Precisión training: 0.5031512379646301
+Calculo precisión train:
+
+	La época actual es: 531
+		Precisión training: 0.48572564125061035
+Calculo precisión train:
+
+	La época actual es: 532
+		Precisión training: 0.4993622899055481
+Calculo precisión train:
+
+	La época actual es: 533
+		Precisión training: 0.4984055459499359
+Calculo precisión train:
+
+	La época actual es: 534
+		Precisión training: 0.48666346073150635
+Calculo precisión train:
+
+	La época actual es: 535
+		Precisión training: 0.49686741828918457
+Calculo precisión train:
+
+	La época actual es: 536
+		Precisión training: 0.4919906258583069
+Calculo precisión train:
+
+	La época actual es: 537
+		Precisión training: 0.48942071199417114
+Calculo precisión train:
+
+	La época actual es: 538
+		Precisión training: 0.49904343485832214
+Calculo precisión train:
+
+	La época actual es: 539
+		Precisión training: 0.4864383637905121
+Calculo precisión train:
+
+	La época actual es: 540
+		Precisión training: 0.49896836280822754
+Calculo precisión train:
+
+	La época actual es: 541
+		Precisión training: 0.4873574674129486
+Calculo precisión train:
+
+	La época actual es: 542
+		Precisión training: 0.4966985881328583
+Calculo precisión train:
+
+	La época actual es: 543
+		Precisión training: 0.49501052498817444
+Calculo precisión train:
+
+	La época actual es: 544
+		Precisión training: 0.49596714973449707
+Calculo precisión train:
+
+	La época actual es: 545
+		Precisión training: 0.48747003078460693
+Calculo precisión train:
+
+	La época actual es: 546
+		Precisión training: 0.47910425066947937
+Calculo precisión train:
+
+	La época actual es: 547
+		Precisión training: 0.49326613545417786
+Calculo precisión train:
+
+	La época actual es: 548
+		Precisión training: 0.49416640400886536
+Calculo precisión train:
+
+	La época actual es: 549
+		Precisión training: 0.47773489356040955
+Calculo precisión train:
+
+	La época actual es: 550
+		Precisión training: 0.4956108331680298
+Calculo precisión train:
+
+	La época actual es: 551
+		Precisión training: 0.48212411999702454
+Calculo precisión train:
+
+	La época actual es: 552
+		Precisión training: 0.48480644822120667
+Calculo precisión train:
+
+	La época actual es: 553
+		Precisión training: 0.4885392189025879
+Calculo precisión train:
+
+	La época actual es: 554
+		Precisión training: 0.49622976779937744
+Calculo precisión train:
+
+	La época actual es: 555
+		Precisión training: 0.4961359202861786
+Calculo precisión train:
+
+	La época actual es: 556
+		Precisión training: 0.5007503032684326
+Calculo precisión train:
+
+	La época actual es: 557
+		Precisión training: 0.49020859599113464
+Calculo precisión train:
+
+	La época actual es: 558
+		Precisión training: 0.49356624484062195
+Calculo precisión train:
+
+	La época actual es: 559
+		Precisión training: 0.49334102869033813
+Calculo precisión train:
+
+	La época actual es: 560
+		Precisión training: 0.4792543053627014
+Calculo precisión train:
+
+	La época actual es: 561
+		Precisión training: 0.5011066794395447
+Calculo precisión train:
+
+	La época actual es: 562
+		Precisión training: 0.49559199810028076
+Calculo precisión train:
+
+	La época actual es: 563
+		Precisión training: 0.48308077454566956
+Calculo precisión train:
+
+	La época actual es: 564
+		Precisión training: 0.49728021025657654
+Calculo precisión train:
+
+	La época actual es: 565
+		Precisión training: 0.4850127696990967
+Calculo precisión train:
+
+	La época actual es: 566
+		Precisión training: 0.4962109625339508
+Calculo precisión train:
+
+	La época actual es: 567
+		Precisión training: 0.4932660758495331
+Calculo precisión train:
+
+	La época actual es: 568
+		Precisión training: 0.4900210201740265
+Calculo precisión train:
+
+	La época actual es: 569
+		Precisión training: 0.49713006615638733
+Calculo precisión train:
+
+	La época actual es: 570
+		Precisión training: 0.4899085760116577
+Calculo precisión train:
+
+	La época actual es: 571
+		Precisión training: 0.4931723475456238
+Calculo precisión train:
+
+	La época actual es: 572
+		Precisión training: 0.4930785298347473
+Calculo precisión train:
+
+	La época actual es: 573
+		Precisión training: 0.49056506156921387
+Calculo precisión train:
+
+	La época actual es: 574
+		Precisión training: 0.48521918058395386
+Calculo precisión train:
+
+	La época actual es: 575
+		Precisión training: 0.49474793672561646
+Calculo precisión train:
+
+	La época actual es: 576
+		Precisión training: 0.49720510840415955
+Calculo precisión train:
+
+	La época actual es: 577
+		Precisión training: 0.4908463656902313
+Calculo precisión train:
+
+	La época actual es: 578
+		Precisión training: 0.4918217658996582
+Calculo precisión train:
+
+	La época actual es: 579
+		Precisión training: 0.49275973439216614
+Calculo precisión train:
+
+	La época actual es: 580
+		Precisión training: 0.4881640374660492
+Calculo precisión train:
+
+	La época actual es: 581
+		Precisión training: 0.4952542781829834
+Calculo precisión train:
+
+	La época actual es: 582
+		Precisión training: 0.48523789644241333
+Calculo precisión train:
+
+	La época actual es: 583
+		Precisión training: 0.4896271824836731
+Calculo precisión train:
+
+	La época actual es: 584
+		Precisión training: 0.4902086853981018
+Calculo precisión train:
+
+	La época actual es: 585
+		Precisión training: 0.4861757755279541
+Calculo precisión train:
+
+	La época actual es: 586
+		Precisión training: 0.49677374958992004
+Calculo precisión train:
+
+	La época actual es: 587
+		Precisión training: 0.4826868772506714
+Calculo precisión train:
+
+	La época actual es: 588
+		Precisión training: 0.4942789673805237
+Calculo precisión train:
+
+	La época actual es: 589
+		Precisión training: 0.49369752407073975
+Calculo precisión train:
+
+	La época actual es: 590
+		Precisión training: 0.49688631296157837
+Calculo precisión train:
+
+	La época actual es: 591
+		Precisión training: 0.49896836280822754
+Calculo precisión train:
+
+	La época actual es: 592
+		Precisión training: 0.4948604702949524
+Calculo precisión train:
+
+	La época actual es: 593
+		Precisión training: 0.4818427860736847
+Calculo precisión train:
+
+	La época actual es: 594
+		Precisión training: 0.49011480808258057
+Calculo precisión train:
+
+	La época actual es: 595
+		Precisión training: 0.48338085412979126
+Calculo precisión train:
+
+	La época actual es: 596
+		Precisión training: 0.49169039726257324
+Calculo precisión train:
+
+	La época actual es: 597
+		Precisión training: 0.5002813339233398
+Calculo precisión train:
+
+	La época actual es: 598
+		Precisión training: 0.4811675548553467
+Calculo precisión train:
+
+	La época actual es: 599
+		Precisión training: 0.4878076910972595
+Calculo precisión train:
+
+	La época actual es: 600
+		Precisión training: 0.4968111217021942
+Calculo precisión train:
+
+	La época actual es: 601
+		Precisión training: 0.4834184944629669
+Calculo precisión train:
+
+	La época actual es: 602
+		Precisión training: 0.4931161105632782
+Calculo precisión train:
+
+	La época actual es: 603
+		Precisión training: 0.4876388609409332
+Calculo precisión train:
+
+	La época actual es: 604
+		Precisión training: 0.4939413368701935
+Calculo precisión train:
+
+	La época actual es: 605
+		Precisión training: 0.5007878541946411
+Calculo precisión train:
+
+	La época actual es: 606
+		Precisión training: 0.501894474029541
+Calculo precisión train:
+
+	La época actual es: 607
+		Precisión training: 0.48088616132736206
+Calculo precisión train:
+
+	La época actual es: 608
+		Precisión training: 0.4780913293361664
+Calculo precisión train:
+
+	La época actual es: 609
+		Precisión training: 0.4955732822418213
+Calculo precisión train:
+
+	La época actual es: 610
+		Precisión training: 0.47923561930656433
+Calculo precisión train:
+
+	La época actual es: 611
+		Precisión training: 0.48741379380226135
+Calculo precisión train:
+
+	La época actual es: 612
+		Precisión training: 0.48763883113861084
+Calculo precisión train:
+
+	La época actual es: 613
+		Precisión training: 0.4989495575428009
+Calculo precisión train:
+
+	La época actual es: 614
+		Precisión training: 0.4973739683628082
+Calculo precisión train:
+
+	La época actual es: 615
+		Precisión training: 0.49017104506492615
+Calculo precisión train:
+
+	La época actual es: 616
+		Precisión training: 0.491277813911438
+Calculo precisión train:
+
+	La época actual es: 617
+		Precisión training: 0.48972088098526
+Calculo precisión train:
+
+	La época actual es: 618
+		Precisión training: 0.49487924575805664
+Calculo precisión train:
+
+	La época actual es: 619
+		Precisión training: 0.4872262179851532
+Calculo precisión train:
+
+	La época actual es: 620
+		Precisión training: 0.4906400144100189
+Calculo precisión train:
+
+	La época actual es: 621
+		Precisión training: 0.48092368245124817
+Calculo precisión train:
+
+	La época actual es: 622
+		Precisión training: 0.4862319529056549
+Calculo precisión train:
+
+	La época actual es: 623
+		Precisión training: 0.4987431764602661
+Calculo precisión train:
+
+	La época actual es: 624
+		Precisión training: 0.4945228695869446
+Calculo precisión train:
+
+	La época actual es: 625
+		Precisión training: 0.4740211069583893
+Calculo precisión train:
+
+	La época actual es: 626
+		Precisión training: 0.49028366804122925
+Calculo precisión train:
+
+	La época actual es: 627
+		Precisión training: 0.4831558167934418
+Calculo precisión train:
+
+	La época actual es: 628
+		Precisión training: 0.4953294098377228
+Calculo precisión train:
+
+	La época actual es: 629
+		Precisión training: 0.4830996096134186
+Calculo precisión train:
+
+	La época actual es: 630
+		Precisión training: 0.4894770681858063
+Calculo precisión train:
+
+	La época actual es: 631
+		Precisión training: 0.498236745595932
+Calculo precisión train:
+
+	La época actual es: 632
+		Precisión training: 0.48662590980529785
+Calculo precisión train:
+
+	La época actual es: 633
+		Precisión training: 0.48957085609436035
+Calculo precisión train:
+
+	La época actual es: 634
+		Precisión training: 0.49923092126846313
+Calculo precisión train:
+
+	La época actual es: 635
+		Precisión training: 0.4846002161502838
+Calculo precisión train:
+
+	La época actual es: 636
+		Precisión training: 0.4925907254219055
+Calculo precisión train:
+
+	La época actual es: 637
+		Precisión training: 0.49362245202064514
+Calculo precisión train:
+
+	La época actual es: 638
+		Precisión training: 0.4846939444541931
+Calculo precisión train:
+
+	La época actual es: 639
+		Precisión training: 0.4864383637905121
+Calculo precisión train:
+
+	La época actual es: 640
+		Precisión training: 0.48951464891433716
+Calculo precisión train:
+
+	La época actual es: 641
+		Precisión training: 0.4926096796989441
+Calculo precisión train:
+
+	La época actual es: 642
+		Precisión training: 0.48829537630081177
+Calculo precisión train:
+
+	La época actual es: 643
+		Precisión training: 0.49082767963409424
+Calculo precisión train:
+
+	La época actual es: 644
+		Precisión training: 0.48568812012672424
+Calculo precisión train:
+
+	La época actual es: 645
+		Precisión training: 0.48045477271080017
+Calculo precisión train:
+
+	La época actual es: 646
+		Precisión training: 0.49576088786125183
+Calculo precisión train:
+
+	La época actual es: 647
+		Precisión training: 0.4870573878288269
+Calculo precisión train:
+
+	La época actual es: 648
+		Precisión training: 0.4838310480117798
+Calculo precisión train:
+
+	La época actual es: 649
+		Precisión training: 0.49005863070487976
+Calculo precisión train:
+
+	La época actual es: 650
+		Precisión training: 0.4871886968612671
+Calculo precisión train:
+
+	La época actual es: 651
+		Precisión training: 0.4939038157463074
+Calculo precisión train:
+
+	La época actual es: 652
+		Precisión training: 0.5007502436637878
+Calculo precisión train:
+
+	La época actual es: 653
+		Precisión training: 0.492440789937973
+Calculo precisión train:
+
+	La época actual es: 654
+		Precisión training: 0.4980867803096771
+Calculo precisión train:
+
+	La época actual es: 655
+		Precisión training: 0.4807547628879547
+Calculo precisión train:
+
+	La época actual es: 656
+		Precisión training: 0.48615705966949463
+Calculo precisión train:
+
+	La época actual es: 657
+		Precisión training: 0.48694485425949097
+Calculo precisión train:
+
+	La época actual es: 658
+		Precisión training: 0.4908839166164398
+Calculo precisión train:
+
+	La época actual es: 659
+		Precisión training: 0.49424147605895996
+Calculo precisión train:
+
+	La época actual es: 660
+		Precisión training: 0.483043372631073
+Calculo precisión train:
+
+	La época actual es: 661
+		Precisión training: 0.4836059808731079
+Calculo precisión train:
+
+	La época actual es: 662
+		Precisión training: 0.4844876229763031
+Calculo precisión train:
+
+	La época actual es: 663
+		Precisión training: 0.4927595555782318
+Calculo precisión train:
+
+	La época actual es: 664
+		Precisión training: 0.4911465048789978
+Calculo precisión train:
+
+	La época actual es: 665
+		Precisión training: 0.4915967285633087
+Calculo precisión train:
+
+	La época actual es: 666
+		Precisión training: 0.49099642038345337
+Calculo precisión train:
+
+	La época actual es: 667
+		Precisión training: 0.4871886074542999
+Calculo precisión train:
+
+	La época actual es: 668
+		Precisión training: 0.47627195715904236
+Calculo precisión train:
+
+	La época actual es: 669
+		Precisión training: 0.48566934466362
+Calculo precisión train:
+
+	La época actual es: 670
+		Precisión training: 0.4930409789085388
+Calculo precisión train:
+
+	La época actual es: 671
+		Precisión training: 0.4990433156490326
+Calculo precisión train:
+
+	La época actual es: 672
+		Precisión training: 0.4765343964099884
+Calculo precisión train:
+
+	La época actual es: 673
+		Precisión training: 0.4835684299468994
+Calculo precisión train:
+
+	La época actual es: 674
+		Precisión training: 0.4875074625015259
+Calculo precisión train:
+
+	La época actual es: 675
+		Precisión training: 0.4902649223804474
+Calculo precisión train:
+
+	La época actual es: 676
+		Precisión training: 0.4834747314453125
+Calculo precisión train:
+
+	La época actual es: 677
+		Precisión training: 0.49302229285240173
+Calculo precisión train:
+
+	La época actual es: 678
+		Precisión training: 0.4939976632595062
+Calculo precisión train:
+
+	La época actual es: 679
+		Precisión training: 0.48735755681991577
+Calculo precisión train:
+
+	La época actual es: 680
+		Precisión training: 0.4852190613746643
+Calculo precisión train:
+
+	La época actual es: 681
+		Precisión training: 0.4845814108848572
+Calculo precisión train:
+
+	La época actual es: 682
+		Precisión training: 0.49748653173446655
+Calculo precisión train:
+
+	La época actual es: 683
+		Precisión training: 0.48692604899406433
+Calculo precisión train:
+
+	La época actual es: 684
+		Precisión training: 0.4994935095310211
+Calculo precisión train:
+
+	La época actual es: 685
+		Precisión training: 0.489645779132843
+Calculo precisión train:
+
+	La época actual es: 686
+		Precisión training: 0.4938100278377533
+Calculo precisión train:
+
+	La época actual es: 687
+		Precisión training: 0.49707385897636414
+Calculo precisión train:
+
+	La época actual es: 688
+		Precisión training: 0.48998352885246277
+Calculo precisión train:
+
+	La época actual es: 689
+		Precisión training: 0.49214062094688416
+Calculo precisión train:
+
+	La época actual es: 690
+		Precisión training: 0.4875076115131378
+Calculo precisión train:
+
+	La época actual es: 691
+		Precisión training: 0.4835122227668762
+Calculo precisión train:
+
+	La época actual es: 692
+		Precisión training: 0.4998311400413513
+Calculo precisión train:
+
+	La época actual es: 693
+		Precisión training: 0.5073153376579285
+Calculo precisión train:
+
+	La época actual es: 694
+		Precisión training: 0.48405617475509644
+Calculo precisión train:
+
+	La época actual es: 695
+		Precisión training: 0.48865175247192383
+Calculo precisión train:
+
+	La época actual es: 696
+		Precisión training: 0.4876950681209564
+Calculo precisión train:
+
+	La época actual es: 697
+		Precisión training: 0.48953327536582947
+Calculo precisión train:
+
+	La época actual es: 698
+		Precisión training: 0.48452508449554443
+Calculo precisión train:
+
+	La época actual es: 699
+		Precisión training: 0.49403512477874756
+Calculo precisión train:
+
+	La época actual es: 700
+		Precisión training: 0.4951794147491455
+Calculo precisión train:
+
+	La época actual es: 701
+		Precisión training: 0.49041497707366943
+Calculo precisión train:
+
+	La época actual es: 702
+		Precisión training: 0.5006001591682434
+Calculo precisión train:
+
+	La época actual es: 703
+		Precisión training: 0.48437508940696716
+Calculo precisión train:
+
+	La época actual es: 704
+		Precisión training: 0.4890456199645996
+Calculo precisión train:
+
+	La época actual es: 705
+		Precisión training: 0.48878297209739685
+Calculo precisión train:
+
+	La época actual es: 706
+		Precisión training: 0.5003751516342163
+Calculo precisión train:
+
+	La época actual es: 707
+		Precisión training: 0.48917698860168457
+Calculo precisión train:
+
+	La época actual es: 708
+		Precisión training: 0.4949541985988617
+Calculo precisión train:
+
+	La época actual es: 709
+		Precisión training: 0.4939038157463074
+Calculo precisión train:
+
+	La época actual es: 710
+		Precisión training: 0.4876014292240143
+Calculo precisión train:
+
+	La época actual es: 711
+		Precisión training: 0.48928946256637573
+Calculo precisión train:
+
+	La época actual es: 712
+		Precisión training: 0.4971676766872406
+Calculo precisión train:
+
+	La época actual es: 713
+		Precisión training: 0.49065884947776794
+Calculo precisión train:
+
+	La época actual es: 714
+		Precisión training: 0.48773258924484253
+Calculo precisión train:
+
+	La época actual es: 715
+		Precisión training: 0.4812425374984741
+Calculo precisión train:
+
+	La época actual es: 716
+		Precisión training: 0.4846939146518707
+Calculo precisión train:
+
+	La época actual es: 717
+		Precisión training: 0.48711368441581726
+Calculo precisión train:
+
+	La época actual es: 718
+		Precisión training: 0.49660488963127136
+Calculo precisión train:
+
+	La época actual es: 719
+		Precisión training: 0.49204686284065247
+Calculo precisión train:
+
+	La época actual es: 720
+		Precisión training: 0.481467604637146
+Calculo precisión train:
+
+	La época actual es: 721
+		Precisión training: 0.49154040217399597
+Calculo precisión train:
+
+	La época actual es: 722
+		Precisión training: 0.4906400442123413
+Calculo precisión train:
+
+	La época actual es: 723
+		Precisión training: 0.4926282465457916
+Calculo precisión train:
+
+	La época actual es: 724
+		Precisión training: 0.4876576364040375
+Calculo precisión train:
+
+	La época actual es: 725
+		Precisión training: 0.49257203936576843
+Calculo precisión train:
+
+	La época actual es: 726
+		Precisión training: 0.48829537630081177
+Calculo precisión train:
+
+	La época actual es: 727
+		Precisión training: 0.48396238684654236
+Calculo precisión train:
+
+	La época actual es: 728
+		Precisión training: 0.4926282465457916
+Calculo precisión train:
+
+	La época actual es: 729
+		Precisión training: 0.5045017600059509
+Calculo precisión train:
+
+	La época actual es: 730
+		Precisión training: 0.4849189519882202
+Calculo precisión train:
+
+	La época actual es: 731
+		Precisión training: 0.4955357015132904
+Calculo precisión train:
+
+	La época actual es: 732
+		Precisión training: 0.4893082082271576
+Calculo precisión train:
+
+	La época actual es: 733
+		Precisión training: 0.48994606733322144
+Calculo precisión train:
+
+	La época actual es: 734
+		Precisión training: 0.4893646240234375
+Calculo precisión train:
+
+	La época actual es: 735
+		Precisión training: 0.49279719591140747
+Calculo precisión train:
+
+	La época actual es: 736
+		Precisión training: 0.4900773763656616
+Calculo precisión train:
+
+	La época actual es: 737
+		Precisión training: 0.4961172342300415
+Calculo precisión train:
+
+	La época actual es: 738
+		Precisión training: 0.48784518241882324
+Calculo precisión train:
+
+	La época actual es: 739
+		Precisión training: 0.4892895817756653
+Calculo precisión train:
+
+	La época actual es: 740
+		Precisión training: 0.4919155240058899
+Calculo precisión train:
+
+	La época actual es: 741
+		Precisión training: 0.5036389827728271
+Calculo precisión train:
+
+	La época actual es: 742
+		Precisión training: 0.48773252964019775
+Calculo precisión train:
+
+	La época actual es: 743
+		Precisión training: 0.49754270911216736
+Calculo precisión train:
+
+	La época actual es: 744
+		Precisión training: 0.49643608927726746
+Calculo precisión train:
+
+	La época actual es: 745
+		Precisión training: 0.4969424903392792
+Calculo precisión train:
+
+	La época actual es: 746
+		Precisión training: 0.5022134184837341
+Calculo precisión train:
+
+	La época actual es: 747
+		Precisión training: 0.49120280146598816
+Calculo precisión train:
+
+	La época actual es: 748
+		Precisión training: 0.49026498198509216
+Calculo precisión train:
+
+	La época actual es: 749
+		Precisión training: 0.4972989559173584
+Calculo precisión train:
+
+	La época actual es: 750
+		Precisión training: 0.4931347370147705
+Calculo precisión train:
+
+	La época actual es: 751
+		Precisión training: 0.48658841848373413
+Calculo precisión train:
+
+	La época actual es: 752
+		Precisión training: 0.49673616886138916
+Calculo precisión train:
+
+	La época actual es: 753
+		Precisión training: 0.4876950979232788
+Calculo precisión train:
+
+	La época actual es: 754
+		Precisión training: 0.49358507990837097
+Calculo precisión train:
+
+	La época actual es: 755
+		Precisión training: 0.49951231479644775
+Calculo precisión train:
+
+	La época actual es: 756
+		Precisión training: 0.4997748136520386
+Calculo precisión train:
+
+	La época actual es: 757
+		Precisión training: 0.49619218707084656
+Calculo precisión train:
+
+	La época actual es: 758
+		Precisión training: 0.4970550537109375
+Calculo precisión train:
+
+	La época actual es: 759
+		Precisión training: 0.48283693194389343
+Calculo precisión train:
+
+	La época actual es: 760
+		Precisión training: 0.4845063388347626
+Calculo precisión train:
+
+	La época actual es: 761
+		Precisión training: 0.4857255220413208
+Calculo precisión train:
+
+	La época actual es: 762
+		Precisión training: 0.49208441376686096
+Calculo precisión train:
+
+	La época actual es: 763
+		Precisión training: 0.5006939768791199
+Calculo precisión train:
+
+	La época actual es: 764
+		Precisión training: 0.493641197681427
+Calculo precisión train:
+
+	La época actual es: 765
+		Precisión training: 0.49157780408859253
+Calculo precisión train:
+
+	La época actual es: 766
+		Precisión training: 0.48951467871665955
+Calculo precisión train:
+
+	La época actual es: 767
+		Precisión training: 0.5026260018348694
+Calculo precisión train:
+
+	La época actual es: 768
+		Precisión training: 0.4979366362094879
+Calculo precisión train:
+
+	La época actual es: 769
+		Precisión training: 0.4862508475780487
+Calculo precisión train:
+
+	La época actual es: 770
+		Precisión training: 0.49851810932159424
+Calculo precisión train:
+
+	La época actual es: 771
+		Precisión training: 0.4850316047668457
+Calculo precisión train:
+
+	La época actual es: 772
+		Precisión training: 0.48955217003822327
+Calculo precisión train:
+
+	La época actual es: 773
+		Precisión training: 0.4792730510234833
+Calculo precisión train:
+
+	La época actual es: 774
+		Precisión training: 0.49139031767845154
+Calculo precisión train:
+
+	La época actual es: 775
+		Precisión training: 0.4976365268230438
+Calculo precisión train:
+
+	La época actual es: 776
+		Precisión training: 0.49698013067245483
+Calculo precisión train:
+
+	La época actual es: 777
+		Precisión training: 0.49296608567237854
+Calculo precisión train:
+
+	La época actual es: 778
+		Precisión training: 0.48940205574035645
+Calculo precisión train:
+
+	La época actual es: 779
+		Precisión training: 0.48311835527420044
+Calculo precisión train:
+
+	La época actual es: 780
+		Precisión training: 0.49709266424179077
+Calculo precisión train:
+
+	La época actual es: 781
+		Precisión training: 0.4933598041534424
+Calculo precisión train:
+
+	La época actual es: 782
+		Precisión training: 0.48285576701164246
+Calculo precisión train:
+
+	La época actual es: 783
+		Precisión training: 0.4893457889556885
+Calculo precisión train:
+
+	La época actual es: 784
+		Precisión training: 0.4890456199645996
+Calculo precisión train:
+
+	La época actual es: 785
+		Precisión training: 0.4898334741592407
+Calculo precisión train:
+
+	La época actual es: 786
+		Precisión training: 0.49596714973449707
+Calculo precisión train:
+
+	La época actual es: 787
+		Precisión training: 0.49902456998825073
+Calculo precisión train:
+
+	La época actual es: 788
+		Precisión training: 0.4936598837375641
+Calculo precisión train:
+
+	La época actual es: 789
+		Precisión training: 0.4810362756252289
+Calculo precisión train:
+
+	La época actual es: 790
+		Precisión training: 0.4915216863155365
+Calculo precisión train:
+
+	La época actual es: 791
+		Precisión training: 0.4879576563835144
+Calculo precisión train:
+
+	La época actual es: 792
+		Precisión training: 0.4909776449203491
+Calculo precisión train:
+
+	La época actual es: 793
+		Precisión training: 0.4910151958465576
+Calculo precisión train:
+
+	La época actual es: 794
+		Precisión training: 0.48940202593803406
+Calculo precisión train:
+
+	La época actual es: 795
+		Precisión training: 0.49356627464294434
+Calculo precisión train:
+
+	La época actual es: 796
+		Precisión training: 0.4916341304779053
+Calculo precisión train:
+
+	La época actual es: 797
+		Precisión training: 0.48602572083473206
+Calculo precisión train:
+
+	La época actual es: 798
+		Precisión training: 0.48797643184661865
+Calculo precisión train:
+
+	La época actual es: 799
+		Precisión training: 0.489589661359787
+Calculo precisión train:
+
+	La época actual es: 800
+		Precisión training: 0.4866260290145874
+Calculo precisión train:
+
+	La época actual es: 801
+		Precisión training: 0.4892144501209259
+Calculo precisión train:
+
+	La época actual es: 802
+		Precisión training: 0.48906436562538147
+Calculo precisión train:
+
+	La época actual es: 803
+		Precisión training: 0.4878076910972595
+Calculo precisión train:
+
+	La época actual es: 804
+		Precisión training: 0.49223440885543823
+Calculo precisión train:
+
+	La época actual es: 805
+		Precisión training: 0.49547943472862244
+Calculo precisión train:
+
+	La época actual es: 806
+		Precisión training: 0.4999437630176544
+Calculo precisión train:
+
+	La época actual es: 807
+		Precisión training: 0.5002250075340271
+Calculo precisión train:
+
+	La época actual es: 808
+		Precisión training: 0.5043892860412598
+Calculo precisión train:
+
+	La época actual es: 809
+		Precisión training: 0.4916154146194458
+Calculo precisión train:
+
+	La época actual es: 810
+		Precisión training: 0.48677605390548706
+Calculo precisión train:
+
+	La época actual es: 811
+		Precisión training: 0.48619458079338074
+Calculo precisión train:
+
+	La época actual es: 812
+		Precisión training: 0.4918780028820038
+Calculo precisión train:
+
+	La época actual es: 813
+		Precisión training: 0.48994606733322144
+Calculo precisión train:
+
+	La época actual es: 814
+		Precisión training: 0.501012921333313
+Calculo precisión train:
+
+	La época actual es: 815
+		Precisión training: 0.49305975437164307
+Calculo precisión train:
+
+	La época actual es: 816
+		Precisión training: 0.49290958046913147
+Calculo precisión train:
+
+	La época actual es: 817
+		Precisión training: 0.4924969971179962
+Calculo precisión train:
+
+	La época actual es: 818
+		Precisión training: 0.49011483788490295
+Calculo precisión train:
+
+	La época actual es: 819
+		Precisión training: 0.49313464760780334
+Calculo precisión train:
+
+	La época actual es: 820
+		Precisión training: 0.48602578043937683
+Calculo precisión train:
+
+	La época actual es: 821
+		Precisión training: 0.48640087246894836
+Calculo precisión train:
+
+	La época actual es: 822
+		Precisión training: 0.49499180912971497
+Calculo precisión train:
+
+	La época actual es: 823
+		Precisión training: 0.49484166502952576
+Calculo precisión train:
+
+	La época actual es: 824
+		Precisión training: 0.49135279655456543
+Calculo precisión train:
+
+	La época actual es: 825
+		Precisión training: 0.48962706327438354
+Calculo precisión train:
+
+	La época actual es: 826
+		Precisión training: 0.4891769587993622
+Calculo precisión train:
+
+	La época actual es: 827
+		Precisión training: 0.4968112111091614
+Calculo precisión train:
+
+	La época actual es: 828
+		Precisión training: 0.4902461767196655
+Calculo precisión train:
+
+	La época actual es: 829
+		Precisión training: 0.4823116660118103
+Calculo precisión train:
+
+	La época actual es: 830
+		Precisión training: 0.49958735704421997
+Calculo precisión train:
+
+	La época actual es: 831
+		Precisión training: 0.4961172640323639
+Calculo precisión train:
+
+	La época actual es: 832
+		Precisión training: 0.4924969971179962
+Calculo precisión train:
+
+	La época actual es: 833
+		Precisión training: 0.4847501516342163
+Calculo precisión train:
+
+	La época actual es: 834
+		Precisión training: 0.4910339117050171
+Calculo precisión train:
+
+	La época actual es: 835
+		Precisión training: 0.48852047324180603
+Calculo precisión train:
+
+	La época actual es: 836
+		Precisión training: 0.4908275902271271
+Calculo precisión train:
+
+	La época actual es: 837
+		Precisión training: 0.4951980710029602
+Calculo precisión train:
+
+	La época actual es: 838
+		Precisión training: 0.4912778437137604
+Calculo precisión train:
+
+	La época actual es: 839
+		Precisión training: 0.4957420825958252
+Calculo precisión train:
+
+	La época actual es: 840
+		Precisión training: 0.5046894550323486
+Calculo precisión train:
+
+	La época actual es: 841
+		Precisión training: 0.4904336631298065
+Calculo precisión train:
+
+	La época actual es: 842
+		Precisión training: 0.47777247428894043
+Calculo precisión train:
+
+	La época actual es: 843
+		Precisión training: 0.5003563761711121
+Calculo precisión train:
+
+	La época actual es: 844
+		Precisión training: 0.487826406955719
+Calculo precisión train:
+
+	La época actual es: 845
+		Precisión training: 0.4956482946872711
+Calculo precisión train:
+
+	La época actual es: 846
+		Precisión training: 0.4906211793422699
+Calculo precisión train:
+
+	La época actual es: 847
+		Precisión training: 0.4920656383037567
+Calculo precisión train:
+
+	La época actual es: 848
+		Precisión training: 0.4994560182094574
+Calculo precisión train:
+
+	La época actual es: 849
+		Precisión training: 0.4911651909351349
+Calculo precisión train:
+
+	La época actual es: 850
+		Precisión training: 0.4918217062950134
+Calculo precisión train:
+
+	La época actual es: 851
+		Precisión training: 0.4854254722595215
+Calculo precisión train:
+
+	La época actual es: 852
+		Precisión training: 0.4919530153274536
+Calculo precisión train:
+
+	La época actual es: 853
+		Precisión training: 0.49825552105903625
+Calculo precisión train:
+
+	La época actual es: 854
+		Precisión training: 0.5025510787963867
+Calculo precisión train:
+
+	La época actual es: 855
+		Precisión training: 0.4780162572860718
+Calculo precisión train:
+
+	La época actual es: 856
+		Precisión training: 0.4915217161178589
+Calculo precisión train:
+
+	La época actual es: 857
+		Precisión training: 0.4901711642742157
+Calculo precisión train:
+
+	La época actual es: 858
+		Precisión training: 0.4921780824661255
+Calculo precisión train:
+
+	La época actual es: 859
+		Precisión training: 0.4921968877315521
+Calculo precisión train:
+
+	La época actual es: 860
+		Precisión training: 0.49881818890571594
+Calculo precisión train:
+
+	La época actual es: 861
+		Precisión training: 0.4729142487049103
+Calculo precisión train:
+
+	La época actual es: 862
+		Precisión training: 0.4809049069881439
+Calculo precisión train:
+
+	La época actual es: 863
+		Precisión training: 0.5048580765724182
+Calculo precisión train:
+
+	La época actual es: 864
+		Precisión training: 0.4936975836753845
+Calculo precisión train:
+
+	La época actual es: 865
+		Precisión training: 0.49137163162231445
+Calculo precisión train:
+
+	La época actual es: 866
+		Precisión training: 0.4891956150531769
+Calculo precisión train:
+
+	La época actual es: 867
+		Precisión training: 0.4894394278526306
+Calculo precisión train:
+
+	La época actual es: 868
+		Precisión training: 0.47979825735092163
+Calculo precisión train:
+
+	La época actual es: 869
+		Precisión training: 0.4946540594100952
+Calculo precisión train:
+
+	La época actual es: 870
+		Precisión training: 0.4902274012565613
+Calculo precisión train:
+
+	La época actual es: 871
+		Precisión training: 0.4888206124305725
+Calculo precisión train:
+
+	La época actual es: 872
+		Precisión training: 0.49549829959869385
+Calculo precisión train:
+
+	La época actual es: 873
+		Precisión training: 0.4852190911769867
+Calculo precisión train:
+
+	La época actual es: 874
+		Precisión training: 0.4917467534542084
+Calculo precisión train:
+
+	La época actual es: 875
+		Precisión training: 0.49664241075515747
+Calculo precisión train:
+
+	La época actual es: 876
+		Precisión training: 0.5001875162124634
+Calculo precisión train:
+
+	La época actual es: 877
+		Precisión training: 0.5047831535339355
+Calculo precisión train:
+
+	La época actual es: 878
+		Precisión training: 0.4782413840293884
+Calculo precisión train:
+
+	La época actual es: 879
+		Precisión training: 0.5017444491386414
+Calculo precisión train:
+
+	La época actual es: 880
+		Precisión training: 0.48283693194389343
+Calculo precisión train:
+
+	La época actual es: 881
+		Precisión training: 0.49559202790260315
+Calculo precisión train:
+
+	La época actual es: 882
+		Precisión training: 0.49849945306777954
+Calculo precisión train:
+
+	La época actual es: 883
+		Precisión training: 0.49030232429504395
+Calculo precisión train:
+
+	La época actual es: 884
+		Precisión training: 0.49199050664901733
+Calculo precisión train:
+
+	La época actual es: 885
+		Precisión training: 0.49782419204711914
+Calculo precisión train:
+
+	La época actual es: 886
+		Precisión training: 0.4917468726634979
+Calculo precisión train:
+
+	La época actual es: 887
+		Precisión training: 0.4875262379646301
+Calculo precisión train:
+
+	La época actual es: 888
+		Precisión training: 0.49726131558418274
+Calculo precisión train:
+
+	La época actual es: 889
+		Precisión training: 0.49493545293807983
+Calculo precisión train:
+
+	La época actual es: 890
+		Precisión training: 0.48658841848373413
+Calculo precisión train:
+
+	La época actual es: 891
+		Precisión training: 0.48079240322113037
+Calculo precisión train:
+
+	La época actual es: 892
+		Precisión training: 0.4942226707935333
+Calculo precisión train:
+
+	La época actual es: 893
+		Precisión training: 0.48868927359580994
+Calculo precisión train:
+
+	La época actual es: 894
+		Precisión training: 0.48876431584358215
+Calculo precisión train:
+
+	La época actual es: 895
+		Precisión training: 0.49020853638648987
+Calculo precisión train:
+
+	La época actual es: 896
+		Precisión training: 0.48572561144828796
+Calculo precisión train:
+
+	La época actual es: 897
+		Precisión training: 0.4944852590560913
+Calculo precisión train:
+
+	La época actual es: 898
+		Precisión training: 0.4924970269203186
+Calculo precisión train:
+
+	La época actual es: 899
+		Precisión training: 0.4984433054924011
+Calculo precisión train:
+
+	La época actual es: 900
+		Precisión training: 0.5014442801475525
+Calculo precisión train:
+
+	La época actual es: 901
+		Precisión training: 0.4926096200942993
+Calculo precisión train:
+
+	La época actual es: 902
+		Precisión training: 0.48919573426246643
+Calculo precisión train:
+
+	La época actual es: 903
+		Precisión training: 0.49334096908569336
+Calculo precisión train:
+
+	La época actual es: 904
+		Precisión training: 0.48852044343948364
+Calculo precisión train:
+
+	La época actual es: 905
+		Precisión training: 0.5007314682006836
+Calculo precisión train:
+
+	La época actual es: 906
+		Precisión training: 0.47839149832725525
+Calculo precisión train:
+
+	La época actual es: 907
+		Precisión training: 0.4868510365486145
+Calculo precisión train:
+
+	La época actual es: 908
+		Precisión training: 0.4897209405899048
+Calculo precisión train:
+
+	La época actual es: 909
+		Precisión training: 0.49656757712364197
+Calculo precisión train:
+
+	La época actual es: 910
+		Precisión training: 0.49311599135398865
+Calculo precisión train:
+
+	La época actual es: 911
+		Precisión training: 0.5035451054573059
+Calculo precisión train:
+
+	La época actual es: 912
+		Precisión training: 0.4888018071651459
+Calculo precisión train:
+
+	La época actual es: 913
+		Precisión training: 0.4799109399318695
+Calculo precisión train:
+
+	La época actual es: 914
+		Precisión training: 0.4900210201740265
+Calculo precisión train:
+
+	La época actual es: 915
+		Precisión training: 0.49486055970191956
+Calculo precisión train:
+
+	La época actual es: 916
+		Precisión training: 0.49941855669021606
+Calculo precisión train:
+
+	La época actual es: 917
+		Precisión training: 0.49214062094688416
+Calculo precisión train:
+
+	La época actual es: 918
+		Precisión training: 0.49277839064598083
+Calculo precisión train:
+
+	La época actual es: 919
+		Precisión training: 0.49154043197631836
+Calculo precisión train:
+
+	La época actual es: 920
+		Precisión training: 0.48842671513557434
+Calculo precisión train:
+
+	La época actual es: 921
+		Precisión training: 0.4905650019645691
+Calculo precisión train:
+
+	La época actual es: 922
+		Precisión training: 0.4898521900177002
+Calculo precisión train:
+
+	La época actual es: 923
+		Precisión training: 0.486888587474823
+Calculo precisión train:
+
+	La época actual es: 924
+		Precisión training: 0.4926658570766449
+Calculo precisión train:
+
+	La época actual es: 925
+		Precisión training: 0.49142786860466003
+Calculo precisión train:
+
+	La época actual es: 926
+		Precisión training: 0.4914841949939728
+Calculo precisión train:
+
+	La época actual es: 927
+		Precisión training: 0.4868324100971222
+Calculo precisión train:
+
+	La época actual es: 928
+		Precisión training: 0.48608195781707764
+Calculo precisión train:
+
+	La época actual es: 929
+		Precisión training: 0.4999625086784363
+Calculo precisión train:
+
+	La época actual es: 930
+		Precisión training: 0.4928533732891083
+Calculo precisión train:
+
+	La época actual es: 931
+		Precisión training: 0.5010691285133362
+Calculo precisión train:
+
+	La época actual es: 932
+		Precisión training: 0.4861569404602051
+Calculo precisión train:
+
+	La época actual es: 933
+		Precisión training: 0.4897959530353546
+Calculo precisión train:
+
+	La época actual es: 934
+		Precisión training: 0.48092371225357056
+Calculo precisión train:
+
+	La época actual es: 935
+		Precisión training: 0.4839436709880829
+Calculo precisión train:
+
+	La época actual es: 936
+		Precisión training: 0.4805859923362732
+Calculo precisión train:
+
+	La época actual es: 937
+		Precisión training: 0.4913715720176697
+Calculo precisión train:
+
+	La época actual es: 938
+		Precisión training: 0.48857665061950684
+Calculo precisión train:
+
+	La época actual es: 939
+		Precisión training: 0.48073604702949524
+Calculo precisión train:
+
+	La época actual es: 940
+		Precisión training: 0.49307847023010254
+Calculo precisión train:
+
+	La época actual es: 941
+		Precisión training: 0.4866447448730469
+Calculo precisión train:
+
+	La época actual es: 942
+		Precisión training: 0.4870573878288269
+Calculo precisión train:
+
+	La época actual es: 943
+		Precisión training: 0.4903773367404938
+Calculo precisión train:
+
+	La época actual es: 944
+		Precisión training: 0.49135273694992065
+Calculo precisión train:
+
+	La época actual es: 945
+		Precisión training: 0.49420395493507385
+Calculo precisión train:
+
+	La época actual es: 946
+		Precisión training: 0.4872637093067169
+Calculo precisión train:
+
+	La época actual es: 947
+		Precisión training: 0.4884078800678253
+Calculo precisión train:
+
+	La época actual es: 948
+		Precisión training: 0.4921593964099884
+Calculo precisión train:
+
+	La época actual es: 949
+		Precisión training: 0.5031887888908386
+Calculo precisión train:
+
+	La época actual es: 950
+		Precisión training: 0.4888956546783447
+Calculo precisión train:
+
+	La época actual es: 951
+		Precisión training: 0.4906211495399475
+Calculo precisión train:
+
+	La época actual es: 952
+		Precisión training: 0.49105262756347656
+Calculo precisión train:
+
+	La época actual es: 953
+		Precisión training: 0.4927220344543457
+Calculo precisión train:
+
+	La época actual es: 954
+		Precisión training: 0.4879201650619507
+Calculo precisión train:
+
+	La época actual es: 955
+		Precisión training: 0.48506906628608704
+Calculo precisión train:
+
+	La época actual es: 956
+		Precisión training: 0.48576316237449646
+Calculo precisión train:
+
+	La época actual es: 957
+		Precisión training: 0.483718603849411
+Calculo precisión train:
+
+	La época actual es: 958
+		Precisión training: 0.4962673485279083
+Calculo precisión train:
+
+	La época actual es: 959
+		Precisión training: 0.48403748869895935
+Calculo precisión train:
+
+	La época actual es: 960
+		Precisión training: 0.49230942130088806
+Calculo precisión train:
+
+	La época actual es: 961
+		Precisión training: 0.48874562978744507
+Calculo precisión train:
+
+	La época actual es: 962
+		Precisión training: 0.4942791163921356
+Calculo precisión train:
+
+	La época actual es: 963
+		Precisión training: 0.4901523292064667
+Calculo precisión train:
+
+	La época actual es: 964
+		Precisión training: 0.4930596947669983
+Calculo precisión train:
+
+	La época actual es: 965
+		Precisión training: 0.4902273416519165
+Calculo precisión train:
+
+	La época actual es: 966
+		Precisión training: 0.5018007159233093
+Calculo precisión train:
+
+	La época actual es: 967
+		Precisión training: 0.4852002263069153
+Calculo precisión train:
+
+	La época actual es: 968
+		Precisión training: 0.4962485134601593
+Calculo precisión train:
+
+	La época actual es: 969
+		Precisión training: 0.4978053867816925
+Calculo precisión train:
+
+	La época actual es: 970
+		Precisión training: 0.4801170825958252
+Calculo precisión train:
+
+	La época actual es: 971
+		Precisión training: 0.4845251441001892
+Calculo precisión train:
+
+	La época actual es: 972
+		Precisión training: 0.5016131401062012
+Calculo precisión train:
+
+	La época actual es: 973
+		Precisión training: 0.481411337852478
+Calculo precisión train:
+
+	La época actual es: 974
+		Precisión training: 0.48041728138923645
+Calculo precisión train:
+
+	La época actual es: 975
+		Precisión training: 0.48283690214157104
+Calculo precisión train:
+
+	La época actual es: 976
+		Precisión training: 0.4979553520679474
+Calculo precisión train:
+
+	La época actual es: 977
+		Precisión training: 0.4879764914512634
+Calculo precisión train:
+
+	La época actual es: 978
+		Precisión training: 0.487076073884964
+Calculo precisión train:
+
+	La época actual es: 979
+		Precisión training: 0.48544421792030334
+Calculo precisión train:
+
+	La época actual es: 980
+		Precisión training: 0.4866071939468384
+Calculo precisión train:
+
+	La época actual es: 981
+		Precisión training: 0.4926283061504364
+Calculo precisión train:
+
+	La época actual es: 982
+		Precisión training: 0.4868699014186859
+Calculo precisión train:
+
+	La época actual es: 983
+		Precisión training: 0.48191770911216736
+Calculo precisión train:
+
+	La época actual es: 984
+		Precisión training: 0.49302220344543457
+Calculo precisión train:
+
+	La época actual es: 985
+		Precisión training: 0.4903399348258972
+Calculo precisión train:
+
+	La época actual es: 986
+		Precisión training: 0.48713240027427673
+Calculo precisión train:
+
+	La época actual es: 987
+		Precisión training: 0.4828556478023529
+Calculo precisión train:
+
+	La época actual es: 988
+		Precisión training: 0.48904556035995483
+Calculo precisión train:
+
+	La época actual es: 989
+		Precisión training: 0.4883890748023987
+Calculo precisión train:
+
+	La época actual es: 990
+		Precisión training: 0.4980866611003876
+Calculo precisión train:
+
+	La época actual es: 991
+		Precisión training: 0.4842436611652374
+Calculo precisión train:
+
+	La época actual es: 992
+		Precisión training: 0.49767404794692993
+Calculo precisión train:
+
+	La época actual es: 993
+		Precisión training: 0.4872262179851532
+Calculo precisión train:
+
+	La época actual es: 994
+		Precisión training: 0.4958546757698059
+Calculo precisión train:
+
+	La época actual es: 995
+		Precisión training: 0.49099642038345337
+Calculo precisión train:
+
+	La época actual es: 996
+		Precisión training: 0.4918968081474304
+Calculo precisión train:
+
+	La época actual es: 997
+		Precisión training: 0.48694491386413574
+Calculo precisión train:
+
+	La época actual es: 998
+		Precisión training: 0.4943164587020874
+Calculo precisión train:
+
+	La época actual es: 999
+		Precisión training: 0.49602341651916504
+Calculo precisión train:
+
+	La época actual es: 1000
+		Precisión training: 0.5001688003540039
+Calculo precisión train:
+
+	La época actual es: 1001
+		Precisión training: 0.48927077651023865
+Calculo precisión train:
+
+	La época actual es: 1002
+		Precisión training: 0.5014631152153015
+Calculo precisión train:
+
+	La época actual es: 1003
+		Precisión training: 0.48797646164894104
+Calculo precisión train:
+
+	La época actual es: 1004
+		Precisión training: 0.4896082580089569
+Calculo precisión train:
+
+	La época actual es: 1005
+		Precisión training: 0.4966612756252289
+Calculo precisión train:
+
+	La época actual es: 1006
+		Precisión training: 0.48964589834213257
+Calculo precisión train:
+
+	La época actual es: 1007
+		Precisión training: 0.4918404817581177
+Calculo precisión train:
+
+	La época actual es: 1008
+		Precisión training: 0.48867055773735046
+Calculo precisión train:
+
+	La época actual es: 1009
+		Precisión training: 0.487357497215271
+Calculo precisión train:
+
+	La época actual es: 1010
+		Precisión training: 0.48741376399993896
+Calculo precisión train:
+
+	La época actual es: 1011
+		Precisión training: 0.4942227303981781
+Calculo precisión train:
+
+	La época actual es: 1012
+		Precisión training: 0.48850175738334656
+Calculo precisión train:
+
+	La época actual es: 1013
+		Precisión training: 0.4899272620677948
+Calculo precisión train:
+
+	La época actual es: 1014
+		Precisión training: 0.48527541756629944
+Calculo precisión train:
+
+	La época actual es: 1015
+		Precisión training: 0.4822366237640381
+Calculo precisión train:
+
+	La época actual es: 1016
+		Precisión training: 0.4891206920146942
+Calculo precisión train:
+
+	La época actual es: 1017
+		Precisión training: 0.4978615939617157
+Calculo precisión train:
+
+	La época actual es: 1018
+		Precisión training: 0.4900210499763489
+Calculo precisión train:
+
+	La época actual es: 1019
+		Precisión training: 0.5003750920295715
+Calculo precisión train:
+
+	La época actual es: 1020
+		Precisión training: 0.4948791265487671
+Calculo precisión train:
+
+	La época actual es: 1021
+		Precisión training: 0.488501638174057
+Calculo precisión train:
+
+	La época actual es: 1022
+		Precisión training: 0.48735755681991577
+Calculo precisión train:
+
+	La época actual es: 1023
+		Precisión training: 0.4959484338760376
+Calculo precisión train:
+
+	La época actual es: 1024
+		Precisión training: 0.4875637888908386
+Calculo precisión train:
+
+	La época actual es: 1025
+		Precisión training: 0.4908650517463684
+Calculo precisión train:
+
+	La época actual es: 1026
+		Precisión training: 0.49459779262542725
+Calculo precisión train:
+
+	La época actual es: 1027
+		Precisión training: 0.4938662648200989
+Calculo precisión train:
+
+	La época actual es: 1028
+		Precisión training: 0.4991372227668762
+Calculo precisión train:
+
+	La época actual es: 1029
+		Precisión training: 0.4942977726459503
+Calculo precisión train:
+
+	La época actual es: 1030
+		Precisión training: 0.4827244281768799
+Calculo precisión train:
+
+	La época actual es: 1031
+		Precisión training: 0.4851253926753998
+Calculo precisión train:
+
+	La época actual es: 1032
+		Precisión training: 0.49373501539230347
+Calculo precisión train:
+
+	La época actual es: 1033
+		Precisión training: 0.5020821690559387
+Calculo precisión train:
+
+	La época actual es: 1034
+		Precisión training: 0.48930826783180237
+Calculo precisión train:
+
+	La época actual es: 1035
+		Precisión training: 0.4835871756076813
+Calculo precisión train:
+
+	La época actual es: 1036
+		Precisión training: 0.4898521602153778
+Calculo precisión train:
+
+	La época actual es: 1037
+		Precisión training: 0.5041640400886536
+Calculo precisión train:
+
+	La época actual es: 1038
+		Precisión training: 0.49938100576400757
+Calculo precisión train:
+
+	La época actual es: 1039
+		Precisión training: 0.49210309982299805
+Calculo precisión train:
+
+	La época actual es: 1040
+		Precisión training: 0.49298474192619324
+Calculo precisión train:
+
+	La época actual es: 1041
+		Precisión training: 0.4872261881828308
+Calculo precisión train:
+
+	La época actual es: 1042
+		Precisión training: 0.48225533962249756
+Calculo precisión train:
+
+	La época actual es: 1043
+		Precisión training: 0.49281594157218933
+Calculo precisión train:
+
+	La época actual es: 1044
+		Precisión training: 0.4935474097728729
+Calculo precisión train:
+
+	La época actual es: 1045
+		Precisión training: 0.49332237243652344
+Calculo precisión train:
+
+	La época actual es: 1046
+		Precisión training: 0.49047115445137024
+Calculo precisión train:
+
+	La época actual es: 1047
+		Precisión training: 0.49007725715637207
+Calculo precisión train:
+
+	La época actual es: 1048
+		Precisión training: 0.4899272918701172
+Calculo precisión train:
+
+	La época actual es: 1049
+		Precisión training: 0.49109023809432983
+Calculo precisión train:
+
+	La época actual es: 1050
+		Precisión training: 0.4946165978908539
+Calculo precisión train:
+
+	La época actual es: 1051
+		Precisión training: 0.489589661359787
+Calculo precisión train:
+
+	La época actual es: 1052
+		Precisión training: 0.4915779232978821
+Calculo precisión train:
+
+	La época actual es: 1053
+		Precisión training: 0.49859315156936646
+Calculo precisión train:
+
+	La época actual es: 1054
+		Precisión training: 0.48628830909729004
+Calculo precisión train:
+
+	La época actual es: 1055
+		Precisión training: 0.48985227942466736
+Calculo precisión train:
+
+	La época actual es: 1056
+		Precisión training: 0.482349157333374
+Calculo precisión train:
+
+	La época actual es: 1057
+		Precisión training: 0.48278069496154785
+Calculo precisión train:
+
+	La época actual es: 1058
+		Precisión training: 0.4968111515045166
+Calculo precisión train:
+
+	La época actual es: 1059
+		Precisión training: 0.4804736077785492
+Calculo precisión train:
+
+	La época actual es: 1060
+		Precisión training: 0.49564820528030396
+Calculo precisión train:
+
+	La época actual es: 1061
+		Precisión training: 0.48771384358406067
+Calculo precisión train:
+
+	La época actual es: 1062
+		Precisión training: 0.48480644822120667
+Calculo precisión train:
+
+	La época actual es: 1063
+		Precisión training: 0.48733872175216675
+Calculo precisión train:
+
+	La época actual es: 1064
+		Precisión training: 0.4838685691356659
+Calculo precisión train:
+
+	La época actual es: 1065
+		Precisión training: 0.4951981008052826
+Calculo precisión train:
+
+	La época actual es: 1066
+		Precisión training: 0.48632583022117615
+Calculo precisión train:
+
+	La época actual es: 1067
+		Precisión training: 0.48634466528892517
+Calculo precisión train:
+
+	La época actual es: 1068
+		Precisión training: 0.4877889156341553
+Calculo precisión train:
+
+	La época actual es: 1069
+		Precisión training: 0.4983680248260498
+Calculo precisión train:
+
+	La época actual es: 1070
+		Precisión training: 0.4968112111091614
+Calculo precisión train:
+
+	La época actual es: 1071
+		Precisión training: 0.487488716840744
+Calculo precisión train:
+
+	La época actual es: 1072
+		Precisión training: 0.4947667121887207
+Calculo precisión train:
+
+	La época actual es: 1073
+		Precisión training: 0.4841499626636505
+Calculo precisión train:
+
+	La época actual es: 1074
+		Precisión training: 0.4863443970680237
+Calculo precisión train:
+
+	La época actual es: 1075
+		Precisión training: 0.48893317580223083
+Calculo precisión train:
+
+	La época actual es: 1076
+		Precisión training: 0.4887830317020416
+Calculo precisión train:
+
+	La época actual es: 1077
+		Precisión training: 0.4877326488494873
+Calculo precisión train:
+
+	La época actual es: 1078
+		Precisión training: 0.49416646361351013
+Calculo precisión train:
+
+	La época actual es: 1079
+		Precisión training: 0.48632583022117615
+Calculo precisión train:
+
+	La época actual es: 1080
+		Precisión training: 0.497298926115036
+Calculo precisión train:
+
+	La época actual es: 1081
+		Precisión training: 0.48270565271377563
+Calculo precisión train:
+
+	La época actual es: 1082
+		Precisión training: 0.49698013067245483
+Calculo precisión train:
+
+	La época actual es: 1083
+		Precisión training: 0.4945041835308075
+Calculo precisión train:
+
+	La época actual es: 1084
+		Precisión training: 0.48431870341300964
+Calculo precisión train:
+
+	La época actual es: 1085
+		Precisión training: 0.4962485432624817
+Calculo precisión train:
+
+	La época actual es: 1086
+		Precisión training: 0.4883327782154083
+Calculo precisión train:
+
+	La época actual es: 1087
+		Precisión training: 0.4987245202064514
+Calculo precisión train:
+
+	La época actual es: 1088
+		Precisión training: 0.4831933081150055
+Calculo precisión train:
+
+	La época actual es: 1089
+		Precisión training: 0.4983493983745575
+Calculo precisión train:
+
+	La época actual es: 1090
+		Precisión training: 0.48730114102363586
+Calculo precisión train:
+
+	La época actual es: 1091
+		Precisión training: 0.4863446354866028
+Calculo precisión train:
+
+	La época actual es: 1092
+		Precisión training: 0.48339956998825073
+Calculo precisión train:
+
+	La época actual es: 1093
+		Precisión training: 0.4782038629055023
+Calculo precisión train:
+
+	La época actual es: 1094
+		Precisión training: 0.4991559088230133
+Calculo precisión train:
+
+	La época actual es: 1095
+		Precisión training: 0.48416876792907715
+Calculo precisión train:
+
+	La época actual es: 1096
+		Precisión training: 0.4948417842388153
+Calculo precisión train:
+
+	La época actual es: 1097
+		Precisión training: 0.48306208848953247
+Calculo precisión train:
+
+	La época actual es: 1098
+		Precisión training: 0.48649469017982483
+Calculo precisión train:
+
+	La época actual es: 1099
+		Precisión training: 0.48865169286727905
+Calculo precisión train:
+
+	La época actual es: 1100
+		Precisión training: 0.49225324392318726
+Calculo precisión train:
+
+	La época actual es: 1101
+		Precisión training: 0.49894967675209045
+Calculo precisión train:
+
+	La época actual es: 1102
+		Precisión training: 0.5030949711799622
+Calculo precisión train:
+
+	La época actual es: 1103
+		Precisión training: 0.49609842896461487
+Calculo precisión train:
+
+	La época actual es: 1104
+		Precisión training: 0.4982743561267853
+Calculo precisión train:
+
+	La época actual es: 1105
+		Precisión training: 0.48885804414749146
+Calculo precisión train:
+
+	La época actual es: 1106
+		Precisión training: 0.4945978820323944
+Calculo precisión train:
+
+	La época actual es: 1107
+		Precisión training: 0.49531060457229614
+Calculo precisión train:
+
+	La época actual es: 1108
+		Precisión training: 0.49849939346313477
+Calculo precisión train:
+
+	La época actual es: 1109
+		Precisión training: 0.5036014318466187
+Calculo precisión train:
+
+	La época actual es: 1110
+		Precisión training: 0.4864571690559387
+Calculo precisión train:
+
+	La época actual es: 1111
+		Precisión training: 0.4876950979232788
+Calculo precisión train:
+
+	La época actual es: 1112
+		Precisión training: 0.4978991448879242
+Calculo precisión train:
+
+	La época actual es: 1113
+		Precisión training: 0.48681357502937317
+Calculo precisión train:
+
+	La época actual es: 1114
+		Precisión training: 0.4906400144100189
+Calculo precisión train:
+
+	La época actual es: 1115
+		Precisión training: 0.4898146688938141
+Calculo precisión train:
+
+	La época actual es: 1116
+		Precisión training: 0.48535045981407166
+Calculo precisión train:
+
+	La época actual es: 1117
+		Precisión training: 0.4984055757522583
+Calculo precisión train:
+
+	La época actual es: 1118
+		Precisión training: 0.495535671710968
+Calculo precisión train:
+
+	La época actual es: 1119
+		Precisión training: 0.4999624788761139
+Calculo precisión train:
+
+	La época actual es: 1120
+		Precisión training: 0.48977723717689514
+Calculo precisión train:
+
+	La época actual es: 1121
+		Precisión training: 0.48981475830078125
+Calculo precisión train:
+
+	La época actual es: 1122
+		Precisión training: 0.48557552695274353
+Calculo precisión train:
+
+	La época actual es: 1123
+		Precisión training: 0.4928721487522125
+Calculo precisión train:
+
+	La época actual es: 1124
+		Precisión training: 0.49260956048965454
+Calculo precisión train:
+
+	La época actual es: 1125
+		Precisión training: 0.4947103261947632
+Calculo precisión train:
+
+	La época actual es: 1126
+		Precisión training: 0.4887266755104065
+Calculo precisión train:
+
+	La época actual es: 1127
+		Precisión training: 0.49116528034210205
+Calculo precisión train:
+
+	La época actual es: 1128
+		Precisión training: 0.4924969971179962
+Calculo precisión train:
+
+	La época actual es: 1129
+		Precisión training: 0.48332467675209045
+Calculo precisión train:
+
+	La época actual es: 1130
+		Precisión training: 0.48728251457214355
+Calculo precisión train:
+
+	La época actual es: 1131
+		Precisión training: 0.48707619309425354
+Calculo precisión train:
+
+	La época actual es: 1132
+		Precisión training: 0.49350982904434204
+Calculo precisión train:
+
+	La época actual es: 1133
+		Precisión training: 0.4851253926753998
+Calculo precisión train:
+
+	La época actual es: 1134
+		Precisión training: 0.49079012870788574
+Calculo precisión train:
+
+	La época actual es: 1135
+		Precisión training: 0.49799293279647827
+Calculo precisión train:
+
+	La época actual es: 1136
+		Precisión training: 0.48463761806488037
+Calculo precisión train:
+
+	La época actual es: 1137
+		Precisión training: 0.5008252859115601
+Calculo precisión train:
+
+	La época actual es: 1138
+		Precisión training: 0.4887080192565918
+Calculo precisión train:
+
+	La época actual es: 1139
+		Precisión training: 0.5041829943656921
+Calculo precisión train:
+
+	La época actual es: 1140
+		Precisión training: 0.4806985557079315
+Calculo precisión train:
+
+	La época actual es: 1141
+		Precisión training: 0.4824618101119995
+Calculo precisión train:
+
+	La época actual es: 1142
+		Precisión training: 0.4866447448730469
+Calculo precisión train:
+
+	La época actual es: 1143
+		Precisión training: 0.4896833598613739
+Calculo precisión train:
+
+	La época actual es: 1144
+		Precisión training: 0.4894583225250244
+Calculo precisión train:
+
+	La época actual es: 1145
+		Precisión training: 0.48925188183784485
+Calculo precisión train:
+
+	La época actual es: 1146
+		Precisión training: 0.4927034080028534
+Calculo precisión train:
+
+	La época actual es: 1147
+		Precisión training: 0.493303507566452
+Calculo precisión train:
+
+	La época actual es: 1148
+		Precisión training: 0.4852190613746643
+Calculo precisión train:
+
+	La época actual es: 1149
+		Precisión training: 0.4879389703273773
+Calculo precisión train:
+
+	La época actual es: 1150
+		Precisión training: 0.4944291114807129
+Calculo precisión train:
+
+	La época actual es: 1151
+		Precisión training: 0.4967924952507019
+Calculo precisión train:
+
+	La época actual es: 1152
+		Precisión training: 0.4928909242153168
+Calculo precisión train:
+
+	La época actual es: 1153
+		Precisión training: 0.4837748408317566
+Calculo precisión train:
+
+	La época actual es: 1154
+		Precisión training: 0.4803047478199005
+Calculo precisión train:
+
+	La época actual es: 1155
+		Precisión training: 0.4835684895515442
+Calculo precisión train:
+
+	La época actual es: 1156
+		Precisión training: 0.48366227746009827
+Calculo precisión train:
+
+	La época actual es: 1157
+		Precisión training: 0.4872073829174042
+Calculo precisión train:
+
+	La época actual es: 1158
+		Precisión training: 0.49392256140708923
+Calculo precisión train:
+
+	La época actual es: 1159
+		Precisión training: 0.4871886968612671
+Calculo precisión train:
+
+	La época actual es: 1160
+		Precisión training: 0.4867572784423828
+Calculo precisión train:
+
+	La época actual es: 1161
+		Precisión training: 0.48835158348083496
+Calculo precisión train:
+
+	La época actual es: 1162
+		Precisión training: 0.5022508502006531
+Calculo precisión train:
+
+	La época actual es: 1163
+		Precisión training: 0.4852755069732666
+Calculo precisión train:
+
+	La época actual es: 1164
+		Precisión training: 0.5045393109321594
+Calculo precisión train:
+
+	La época actual es: 1165
+		Precisión training: 0.48658841848373413
+Calculo precisión train:
+
+	La época actual es: 1166
+		Precisión training: 0.49112772941589355
+Calculo precisión train:
+
+	La época actual es: 1167
+		Precisión training: 0.48469388484954834
+Calculo precisión train:
+
+	La época actual es: 1168
+		Precisión training: 0.5003376007080078
+Calculo precisión train:
+
+	La época actual es: 1169
+		Precisión training: 0.48988986015319824
+Calculo precisión train:
+
+	La época actual es: 1170
+		Precisión training: 0.4996436834335327
+Calculo precisión train:
+
+	La época actual es: 1171
+		Precisión training: 0.4916905462741852
+Calculo precisión train:
+
+	La época actual es: 1172
+		Precisión training: 0.4983305335044861
+Calculo precisión train:
+
+	La época actual es: 1173
+		Precisión training: 0.486344575881958
+Calculo precisión train:
+
+	La época actual es: 1174
+		Precisión training: 0.48088616132736206
+Calculo precisión train:
+
+	La época actual es: 1175
+		Precisión training: 0.4875262379646301
+Calculo precisión train:
+
+	La época actual es: 1176
+		Precisión training: 0.49062129855155945
+Calculo precisión train:
+
+	La época actual es: 1177
+		Precisión training: 0.5016319155693054
+Calculo precisión train:
+
+	La época actual es: 1178
+		Precisión training: 0.48364344239234924
+Calculo precisión train:
+
+	La época actual es: 1179
+		Precisión training: 0.4841499328613281
+Calculo precisión train:
+
+	La época actual es: 1180
+		Precisión training: 0.4862320125102997
+Calculo precisión train:
+
+	La época actual es: 1181
+		Precisión training: 0.4854629635810852
+Calculo precisión train:
+
+	La época actual es: 1182
+		Precisión training: 0.48041725158691406
+Calculo precisión train:
+
+	La época actual es: 1183
+		Precisión training: 0.4862508475780487
+Calculo precisión train:
+
+	La época actual es: 1184
+		Precisión training: 0.48572561144828796
+Calculo precisión train:
+
+	La época actual es: 1185
+		Precisión training: 0.4903586208820343
+Calculo precisión train:
+
+	La época actual es: 1186
+		Precisión training: 0.4899272918701172
+Calculo precisión train:
+
+	La época actual es: 1187
+		Precisión training: 0.4884829521179199
+Calculo precisión train:
+
+	La época actual es: 1188
+		Precisión training: 0.48405617475509644
+Calculo precisión train:
+
+	La época actual es: 1189
+		Precisión training: 0.48249930143356323
+Calculo precisión train:
+
+	La época actual es: 1190
+		Precisión training: 0.4923095405101776
+Calculo precisión train:
+
+	La época actual es: 1191
+		Precisión training: 0.490658700466156
+Calculo precisión train:
+
+	La época actual es: 1192
+		Precisión training: 0.48936447501182556
+Calculo precisión train:
+
+	La época actual es: 1193
+		Precisión training: 0.48641952872276306
+Calculo precisión train:
+
+	La época actual es: 1194
+		Precisión training: 0.4791041314601898
+Calculo precisión train:
+
+	La época actual es: 1195
+		Precisión training: 0.4892894923686981
+Calculo precisión train:
+
+	La época actual es: 1196
+		Precisión training: 0.4903962314128876
+Calculo precisión train:
+
+	La época actual es: 1197
+		Precisión training: 0.49202805757522583
+Calculo precisión train:
+
+	La época actual es: 1198
+		Precisión training: 0.48527535796165466
+Calculo precisión train:
+
+	La época actual es: 1199
+		Precisión training: 0.48868927359580994
+Calculo precisión train:
+
+	La época actual es: 1200
+		Precisión training: 0.48649460077285767
+Calculo precisión train:
+
+	La época actual es: 1201
+		Precisión training: 0.4896458089351654
+Calculo precisión train:
+
+	La época actual es: 1202
+		Precisión training: 0.4919530153274536
+Calculo precisión train:
+
+	La época actual es: 1203
+		Precisión training: 0.4788229465484619
+Calculo precisión train:
+
+	La época actual es: 1204
+		Precisión training: 0.4909026026725769
+Calculo precisión train:
+
+	La época actual es: 1205
+		Precisión training: 0.48129892349243164
+Calculo precisión train:
+
+	La época actual es: 1206
+		Precisión training: 0.4955732822418213
+Calculo precisión train:
+
+	La época actual es: 1207
+		Precisión training: 0.4847501516342163
+Calculo precisión train:
+
+	La época actual es: 1208
+		Precisión training: 0.49531054496765137
+Calculo precisión train:
+
+	La época actual es: 1209
+		Precisión training: 0.4936974048614502
+Calculo precisión train:
+
+	La época actual es: 1210
+		Precisión training: 0.49326613545417786
+Calculo precisión train:
+
+	La época actual es: 1211
+		Precisión training: 0.49289095401763916
+Calculo precisión train:
+
+	La época actual es: 1212
+		Precisión training: 0.4956670105457306
+Calculo precisión train:
+
+	La época actual es: 1213
+		Precisión training: 0.48900818824768066
+Calculo precisión train:
+
+	La época actual es: 1214
+		Precisión training: 0.495610773563385
+Calculo precisión train:
+
+	La época actual es: 1215
+		Precisión training: 0.48291197419166565
+Calculo precisión train:
+
+	La época actual es: 1216
+		Precisión training: 0.4958546757698059
+Calculo precisión train:
+
+	La época actual es: 1217
+		Precisión training: 0.4905649423599243
+Calculo precisión train:
+
+	La época actual es: 1218
+		Precisión training: 0.4902649223804474
+Calculo precisión train:
+
+	La época actual es: 1219
+		Precisión training: 0.4909588694572449
+Calculo precisión train:
+
+	La época actual es: 1220
+		Precisión training: 0.49268457293510437
+Calculo precisión train:
+
+	La época actual es: 1221
+		Precisión training: 0.4975427985191345
+Calculo precisión train:
+
+	La época actual es: 1222
+		Precisión training: 0.4874888062477112
+Calculo precisión train:
+
+	La época actual es: 1223
+		Precisión training: 0.487826406955719
+Calculo precisión train:
+
+	La época actual es: 1224
+		Precisión training: 0.482968270778656
+Calculo precisión train:
+
+	La época actual es: 1225
+		Precisión training: 0.4924594759941101
+Calculo precisión train:
+
+	La época actual es: 1226
+		Precisión training: 0.4895521402359009
+Calculo precisión train:
+
+	La época actual es: 1227
+		Precisión training: 0.4807361662387848
+Calculo precisión train:
+
+	La época actual es: 1228
+		Precisión training: 0.4898897409439087
+Calculo precisión train:
+
+	La época actual es: 1229
+		Precisión training: 0.4820866882801056
+Calculo precisión train:
+
+	La época actual es: 1230
+		Precisión training: 0.48548179864883423
+Calculo precisión train:
+
+	La época actual es: 1231
+		Precisión training: 0.4895145893096924
+Calculo precisión train:
+
+	La época actual es: 1232
+		Precisión training: 0.4940726161003113
+Calculo precisión train:
+
+	La época actual es: 1233
+		Precisión training: 0.4908275902271271
+Calculo precisión train:
+
+	La época actual es: 1234
+		Precisión training: 0.498761922121048
+Calculo precisión train:
+
+	La época actual es: 1235
+		Precisión training: 0.48784521222114563
+Calculo precisión train:
+
+	La época actual es: 1236
+		Precisión training: 0.4917466640472412
+Calculo precisión train:
+
+	La época actual es: 1237
+		Precisión training: 0.4927408695220947
+Calculo precisión train:
+
+	La época actual es: 1238
+		Precisión training: 0.4963047504425049
+Calculo precisión train:
+
+	La época actual es: 1239
+		Precisión training: 0.493434876203537
+Calculo precisión train:
+
+	La época actual es: 1240
+		Precisión training: 0.49125903844833374
+Calculo precisión train:
+
+	La época actual es: 1241
+		Precisión training: 0.4874887764453888
+Calculo precisión train:
+
+	La época actual es: 1242
+		Precisión training: 0.48775148391723633
+Calculo precisión train:
+
+	La época actual es: 1243
+		Precisión training: 0.49681127071380615
+Calculo precisión train:
+
+	La época actual es: 1244
+		Precisión training: 0.48611950874328613
+Calculo precisión train:
+
+	La época actual es: 1245
+		Precisión training: 0.4837373197078705
+Calculo precisión train:
+
+	La época actual es: 1246
+		Precisión training: 0.4918217957019806
+Calculo precisión train:
+
+	La época actual es: 1247
+		Precisión training: 0.48733875155448914
+Calculo precisión train:
+
+	La época actual es: 1248
+		Precisión training: 0.48943963646888733
+Calculo precisión train:
+
+	La época actual es: 1249
+		Precisión training: 0.4926658868789673
+Calculo precisión train:
+
+	La época actual es: 1250
+		Precisión training: 0.49069634079933167
+Calculo precisión train:
+
+	La época actual es: 1251
+		Precisión training: 0.47726601362228394
+Calculo precisión train:
+
+	La época actual es: 1252
+		Precisión training: 0.4991934895515442
+Calculo precisión train:
+
+	La época actual es: 1253
+		Precisión training: 0.49033987522125244
+Calculo precisión train:
+
+	La época actual es: 1254
+		Precisión training: 0.4942227303981781
+Calculo precisión train:
+
+	La época actual es: 1255
+		Precisión training: 0.49804913997650146
+Calculo precisión train:
+
+	La época actual es: 1256
+		Precisión training: 0.4892331659793854
+Calculo precisión train:
+
+	La época actual es: 1257
+		Precisión training: 0.4870198667049408
+Calculo precisión train:
+
+	La época actual es: 1258
+		Precisión training: 0.48947712779045105
+Calculo precisión train:
+
+	La época actual es: 1259
+		Precisión training: 0.49017107486724854
+Calculo precisión train:
+
+	La época actual es: 1260
+		Precisión training: 0.48898929357528687
+Calculo precisión train:
+
+	La época actual es: 1261
+		Precisión training: 0.4897209107875824
+Calculo precisión train:
+
+	La época actual es: 1262
+		Precisión training: 0.5033013224601746
+Calculo precisión train:
+
+	La época actual es: 1263
+		Precisión training: 0.4956294596195221
+Calculo precisión train:
+
+	La época actual es: 1264
+		Precisión training: 0.4929097890853882
+Calculo precisión train:
+
+	La época actual es: 1265
+		Precisión training: 0.48555678129196167
+Calculo precisión train:
+
+	La época actual es: 1266
+		Precisión training: 0.49587327241897583
+Calculo precisión train:
+
+	La época actual es: 1267
+		Precisión training: 0.4938664436340332
+Calculo precisión train:
+
+	La época actual es: 1268
+		Precisión training: 0.49369749426841736
+Calculo precisión train:
+
+	La época actual es: 1269
+		Precisión training: 0.4830244481563568
+Calculo precisión train:
+
+	La época actual es: 1270
+		Precisión training: 0.49592962861061096
+Calculo precisión train:
+
+	La época actual es: 1271
+		Precisión training: 0.49092140793800354
+Calculo precisión train:
+
+	La época actual es: 1272
+		Precisión training: 0.4894959628582001
+Calculo precisión train:
+
+	La época actual es: 1273
+		Precisión training: 0.5002626180648804
+Calculo precisión train:
+
+	La época actual es: 1274
+		Precisión training: 0.4900586009025574
+Calculo precisión train:
+
+	La época actual es: 1275
+		Precisión training: 0.4877888560295105
+Calculo precisión train:
+
+	La época actual es: 1276
+		Precisión training: 0.4872637093067169
+Calculo precisión train:
+
+	La época actual es: 1277
+		Precisión training: 0.48587566614151
+Calculo precisión train:
+
+	La época actual es: 1278
+		Precisión training: 0.48651325702667236
+Calculo precisión train:
+
+	La época actual es: 1279
+		Precisión training: 0.49371618032455444
+Calculo precisión train:
+
+	La época actual es: 1280
+		Precisión training: 0.48912063241004944
+Calculo precisión train:
+
+	La época actual es: 1281
+		Precisión training: 0.4839247763156891
+Calculo precisión train:
+
+	La época actual es: 1282
+		Precisión training: 0.5025510191917419
+Calculo precisión train:
+
+	La época actual es: 1283
+		Precisión training: 0.49484172463417053
+Calculo precisión train:
+
+	La época actual es: 1284
+		Precisión training: 0.5012380480766296
+Calculo precisión train:
+
+	La época actual es: 1285
+		Precisión training: 0.48799535632133484
+Calculo precisión train:
+
+	La época actual es: 1286
+		Precisión training: 0.48315584659576416
+Calculo precisión train:
+
+	La época actual es: 1287
+		Precisión training: 0.4846939444541931
+Calculo precisión train:
+
+	La época actual es: 1288
+		Precisión training: 0.48795777559280396
